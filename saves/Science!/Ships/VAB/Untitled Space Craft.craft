@@ -1,12 +1,12 @@
 ship = Untitled Space Craft
-version = 0.22.0
+version = 0.23.0
 description = 
 type = VAB
 PART
 {
-	part = mk1pod_4294698522
+	part = mk2LanderCabin_4294486242
 	partName = Part
-	pos = 2.233757,7.882074,0.8364758
+	pos = -0.01069546,5.03182,0.003201038
 	rot = 0,0,0,1
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -15,8 +15,19 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 0
-	link = fuelTank_4294636358
-	attN = bottom,fuelTank_4294636358
+	link = sensorThermometer_4294486154
+	link = sensorAccelerometer_4294486130
+	link = EngineerChipFlight_4294486106
+	link = science.module_4294486078
+	link = liquidEngine3_4294443028
+	link = strutCube_4294453020
+	link = strutCube_4294438598
+	link = strutCube_4294438254
+	link = strutCube_4294437910
+	link = strutCube_4294437566
+	link = strutCube_4294437222
+	attN = bottom,liquidEngine3_4294443028
+	attN = top,science.module_4294486078
 	EVENTS
 	{
 	}
@@ -72,7 +83,7 @@ PART
 	{
 		name = ModuleReactionWheel
 		isEnabled = True
-		stateString = 
+		stateString = Active
 		WheelState = Active
 		EVENTS
 		{
@@ -109,6 +120,7 @@ PART
 		name = ModuleScienceExperiment
 		isEnabled = True
 		Deployed = False
+		Inoperable = False
 		EVENTS
 		{
 			DeployExperiment
@@ -120,6 +132,17 @@ PART
 				category = Deploy
 				guiActiveUnfocused = False
 				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			CollectDataExternalEvent
+			{
+				active = True
+				guiActive = False
+				guiIcon = 
+				guiName = 
+				category = 
+				guiActiveUnfocused = True
+				unfocusedRange = 1.5
 				externalToEVAOnly = True
 			}
 			ReviewDataEvent
@@ -176,13 +199,24 @@ PART
 		{
 			StoreDataExternalEvent
 			{
-				active = True
+				active = False
 				guiActive = False
 				guiIcon = 
-				guiName = Store Experiments
+				guiName = Store Experiments (0)
 				category = 
 				guiActiveUnfocused = True
-				unfocusedRange = 1.3
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			CollectDataExternalEvent
+			{
+				active = False
+				guiActive = False
+				guiIcon = 
+				guiName = Take Data (0)
+				category = 
+				guiActiveUnfocused = True
+				unfocusedRange = 2
 				externalToEVAOnly = True
 			}
 			ReviewDataEvent
@@ -204,7 +238,7 @@ PART
 	MODULE
 	{
 		name = ModuleTripLogger
-		isEnabled = False
+		isEnabled = True
 		EVENTS
 		{
 		}
@@ -227,183 +261,33 @@ PART
 		{
 		}
 	}
-}
-PART
-{
-	part = fuelTank_4294636358
-	partName = Part
-	pos = 2.233757,6.511346,0.8364758
-	rot = 0,0,0,1
-	attRot = 0,0,0,1
-	mir = 1,1,1
-	istg = 0
-	dstg = 0
-	sidx = -1
-	sqor = -1
-	attm = 0
-	link = liquidEngine3_4294635518
-	link = fuelTank_4294627832
-	attN = top,mk1pod_4294698522
-	attN = bottom,liquidEngine3_4294635518
-	EVENTS
+	RESOURCE
 	{
+		name = ElectricCharge
+		amount = 100
+		maxAmount = 100
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
 	}
-	ACTIONS
+	RESOURCE
 	{
+		name = MonoPropellant
+		amount = 40
+		maxAmount = 40
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
 	}
 }
 PART
 {
-	part = liquidEngine3_4294635518
+	part = sensorThermometer_4294486154
 	partName = Part
-	pos = 2.233757,5.328224,0.8364758
-	rot = 0,0,0,1
-	attRot = 0,0,0,1
-	mir = 1,1,1
-	istg = 0
-	dstg = 0
-	sidx = -1
-	sqor = -1
-	attm = 0
-	attN = top,fuelTank_4294636358
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	MODULE
-	{
-		name = ModuleEngines
-		isEnabled = True
-		EngineIgnited = False
-		engineShutdown = False
-		currentThrottle = 0
-		flameout = False
-		staged = False
-		EVENTS
-		{
-			Activate
-			{
-				active = True
-				guiActive = True
-				guiIcon = Activate Engine
-				guiName = Activate Engine
-				category = Activate Engine
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			Shutdown
-			{
-				active = False
-				guiActive = True
-				guiIcon = Shutdown Engine
-				guiName = Shutdown Engine
-				category = Shutdown Engine
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-			OnAction
-			{
-				actionGroup = None
-			}
-			ShutdownAction
-			{
-				actionGroup = None
-			}
-			ActivateAction
-			{
-				actionGroup = None
-			}
-		}
-	}
-	MODULE
-	{
-		name = ModuleGimbal
-		isEnabled = True
-		gimbalLock = False
-		EVENTS
-		{
-			LockGimbal
-			{
-				active = True
-				guiActive = True
-				guiIcon = Lock Gimbal
-				guiName = Lock Gimbal
-				category = Lock Gimbal
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			FreeGimbal
-			{
-				active = False
-				guiActive = True
-				guiIcon = Free Gimbal
-				guiName = Free Gimbal
-				category = Free Gimbal
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-			ToggleAction
-			{
-				actionGroup = None
-			}
-		}
-	}
-	MODULE
-	{
-		name = ModuleAnimateHeat
-		isEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleJettison
-		isEnabled = True
-		EVENTS
-		{
-			Jettison
-			{
-				active = False
-				guiActive = True
-				guiIcon = Jettison
-				guiName = Jettison
-				category = Jettison
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-			JettisonAction
-			{
-				actionGroup = None
-			}
-		}
-	}
-}
-PART
-{
-	part = fuelTank_4294627832
-	partName = Part
-	pos = 3.481411,6.505731,0.8364758
-	rot = 0,1,0,0
+	pos = 0.3255619,5.012486,-1.088243
+	rot = 0.0007731392,0.1950904,0.000153787,-0.980785
 	attRot = 0,0,0,1
 	mir = 1,1,1
 	istg = 0
@@ -411,24 +295,301 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	link = liquidEngine3_4294627796
-	link = mk1pod_4294697964
-	srfN = srfAttach,fuelTank_4294636358
-	attN = top,mk1pod_4294697964
-	attN = bottom,liquidEngine3_4294627796
+	srfN = srfAttach,mk2LanderCabin_4294486242
 	EVENTS
 	{
 	}
 	ACTIONS
 	{
 	}
+	MODULE
+	{
+		name = ModuleEnviroSensor
+		isEnabled = True
+		sensorActive = False
+		EVENTS
+		{
+			Toggle
+			{
+				active = True
+				guiActive = True
+				guiIcon = Toggle Display
+				guiName = Toggle Display
+				category = Toggle Display
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleScienceExperiment
+		isEnabled = True
+		Deployed = False
+		Inoperable = False
+		EVENTS
+		{
+			DeployExperiment
+			{
+				active = True
+				guiActive = True
+				guiIcon = Deploy
+				guiName = Deploy
+				category = Deploy
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			CollectDataExternalEvent
+			{
+				active = True
+				guiActive = False
+				guiIcon = 
+				guiName = 
+				category = 
+				guiActiveUnfocused = True
+				unfocusedRange = 1.5
+				externalToEVAOnly = True
+			}
+			ReviewDataEvent
+			{
+				active = True
+				guiActive = True
+				guiIcon = Review Data
+				guiName = Review Data
+				category = Review Data
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ResetExperiment
+			{
+				active = True
+				guiActive = True
+				guiIcon = Reset
+				guiName = Reset
+				category = Reset
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ResetExperimentExternal
+			{
+				active = True
+				guiActive = False
+				guiIcon = Reset
+				guiName = Reset
+				category = Reset
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			DeployAction
+			{
+				actionGroup = None
+			}
+			ResetAction
+			{
+				actionGroup = None
+			}
+		}
+	}
 }
 PART
 {
-	part = liquidEngine3_4294627796
+	part = sensorAccelerometer_4294486130
 	partName = Part
-	pos = 3.481411,5.322608,0.8364758
-	rot = 0,1,0,0
+	pos = -0.3645694,4.985388,-1.0809
+	rot = 0.0007731455,-0.1950903,-0.0001537882,-0.980785
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	srfN = srfAttach,mk2LanderCabin_4294486242
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = ModuleEnviroSensor
+		isEnabled = True
+		sensorActive = False
+		EVENTS
+		{
+			Toggle
+			{
+				active = True
+				guiActive = True
+				guiIcon = Toggle Display
+				guiName = Toggle Display
+				category = Toggle Display
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleScienceExperiment
+		isEnabled = True
+		Deployed = False
+		Inoperable = False
+		EVENTS
+		{
+			DeployExperiment
+			{
+				active = True
+				guiActive = True
+				guiIcon = Deploy
+				guiName = Deploy
+				category = Deploy
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			CollectDataExternalEvent
+			{
+				active = True
+				guiActive = False
+				guiIcon = 
+				guiName = 
+				category = 
+				guiActiveUnfocused = True
+				unfocusedRange = 1.5
+				externalToEVAOnly = True
+			}
+			ReviewDataEvent
+			{
+				active = True
+				guiActive = True
+				guiIcon = Review Data
+				guiName = Review Data
+				category = Review Data
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ResetExperiment
+			{
+				active = True
+				guiActive = True
+				guiIcon = Reset
+				guiName = Reset
+				category = Reset
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ResetExperimentExternal
+			{
+				active = True
+				guiActive = False
+				guiIcon = Reset
+				guiName = Reset
+				category = Reset
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			DeployAction
+			{
+				actionGroup = None
+			}
+			ResetAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+}
+PART
+{
+	part = EngineerChipFlight_4294486106
+	partName = Part
+	pos = 0.6401163,5.145964,-0.9781576
+	rot = 0.2274713,0.6690527,-0.6701083,0.2271129
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	srfN = srfAttach,mk2LanderCabin_4294486242
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = BuildEngineer
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FlightEngineer
+		isEnabled = True
+		EVENTS
+		{
+			ShowWindow
+			{
+				active = False
+				guiActive = True
+				guiIcon = Toggle Flight Engineer
+				guiName = Toggle Flight Engineer
+				category = Toggle Flight Engineer
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = science.module_4294486078
+	partName = Part
+	pos = -0.01069546,6.296249,0.003201038
+	rot = 0,0,0,1
 	attRot = 0,0,0,1
 	mir = 1,1,1
 	istg = 0
@@ -436,7 +597,525 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 0
-	attN = top,fuelTank_4294627832
+	link = dockingPort2_4294485932
+	link = GooExperiment_4294485894
+	link = GooExperiment_4294485850
+	attN = top,dockingPort2_4294485932
+	attN = bottom,mk2LanderCabin_4294486242
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = ModuleAnimateGeneric
+		isEnabled = True
+		status = Locked
+		animSwitch = True
+		animTime = 0
+		animSpeed = 1
+		EVENTS
+		{
+			Toggle
+			{
+				active = True
+				guiActive = False
+				guiIcon = Toggle
+				guiName = Deploy
+				category = Toggle
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleScienceExperiment
+		isEnabled = True
+		Deployed = False
+		Inoperable = False
+		EVENTS
+		{
+			DeployExperiment
+			{
+				active = True
+				guiActive = True
+				guiIcon = Deploy
+				guiName = Deploy
+				category = Deploy
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			CollectDataExternalEvent
+			{
+				active = True
+				guiActive = False
+				guiIcon = 
+				guiName = 
+				category = 
+				guiActiveUnfocused = True
+				unfocusedRange = 1.5
+				externalToEVAOnly = True
+			}
+			ReviewDataEvent
+			{
+				active = True
+				guiActive = True
+				guiIcon = Review Data
+				guiName = Review Data
+				category = Review Data
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ResetExperiment
+			{
+				active = True
+				guiActive = True
+				guiIcon = Reset
+				guiName = Reset
+				category = Reset
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ResetExperimentExternal
+			{
+				active = True
+				guiActive = False
+				guiIcon = Reset
+				guiName = Reset
+				category = Reset
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			DeployAction
+			{
+				actionGroup = None
+			}
+			ResetAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+}
+PART
+{
+	part = dockingPort2_4294485932
+	partName = Part
+	pos = -0.01069546,6.90875,0.003201038
+	rot = 0,0,0,1
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 1
+	dstg = 1
+	sidx = -1
+	sqor = -1
+	attm = 0
+	attN = bottom,science.module_4294486078
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = ModuleDockingNode
+		isEnabled = True
+		state = Ready
+		dockUId = 0
+		dockNodeIdx = 0
+		EVENTS
+		{
+			Undock
+			{
+				active = False
+				guiActive = True
+				guiIcon = Undock
+				guiName = Undock
+				category = Undock
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			UndockSameVessel
+			{
+				active = False
+				guiActive = True
+				guiIcon = Undock
+				guiName = Undock
+				category = Undock
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Decouple
+			{
+				active = False
+				guiActive = True
+				guiIcon = Decouple Node
+				guiName = Decouple Node
+				category = Decouple Node
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			SetAsTarget
+			{
+				active = True
+				guiActive = False
+				guiIcon = Set as Target
+				guiName = Set as Target
+				category = Set as Target
+				guiActiveUnfocused = True
+				unfocusedRange = 200
+				externalToEVAOnly = False
+			}
+			UnsetTarget
+			{
+				active = True
+				guiActive = False
+				guiIcon = Unset Target
+				guiName = Unset Target
+				category = Unset Target
+				guiActiveUnfocused = True
+				unfocusedRange = 200
+				externalToEVAOnly = False
+			}
+			EnableXFeed
+			{
+				active = False
+				guiActive = True
+				guiIcon = Enable Crossfeed
+				guiName = Enable Crossfeed
+				category = Enable Crossfeed
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			DisableXFeed
+			{
+				active = False
+				guiActive = True
+				guiIcon = Disable Crossfeed
+				guiName = Disable Crossfeed
+				category = Disable Crossfeed
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			MakeReferenceTransform
+			{
+				active = True
+				guiActive = True
+				guiIcon = Control from Here
+				guiName = Control from Here
+				category = Control from Here
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			UndockAction
+			{
+				actionGroup = None
+			}
+			DecoupleAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+}
+PART
+{
+	part = GooExperiment_4294485894
+	partName = Part
+	pos = -0.481899,6.430111,-0.1230575
+	rot = -6.389873E-08,-0.6087615,3.689195E-08,-0.7933534
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 1
+	dstg = 1
+	sidx = -1
+	sqor = -1
+	attm = 1
+	sym = GooExperiment_4294485850
+	srfN = srfAttach,science.module_4294486078
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = ModuleAnimateGeneric
+		isEnabled = True
+		status = Locked
+		animSwitch = True
+		animTime = 0
+		animSpeed = 1
+		EVENTS
+		{
+			Toggle
+			{
+				active = True
+				guiActive = False
+				guiIcon = Toggle
+				guiName = Deploy
+				category = Toggle
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleScienceExperiment
+		isEnabled = True
+		Deployed = False
+		Inoperable = False
+		EVENTS
+		{
+			DeployExperiment
+			{
+				active = True
+				guiActive = True
+				guiIcon = Deploy
+				guiName = Deploy
+				category = Deploy
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			CollectDataExternalEvent
+			{
+				active = True
+				guiActive = False
+				guiIcon = 
+				guiName = 
+				category = 
+				guiActiveUnfocused = True
+				unfocusedRange = 1.5
+				externalToEVAOnly = True
+			}
+			ReviewDataEvent
+			{
+				active = True
+				guiActive = True
+				guiIcon = Review Data
+				guiName = Review Data
+				category = Review Data
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ResetExperiment
+			{
+				active = True
+				guiActive = True
+				guiIcon = Reset
+				guiName = Reset
+				category = Reset
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ResetExperimentExternal
+			{
+				active = True
+				guiActive = False
+				guiIcon = Reset
+				guiName = Reset
+				category = Reset
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			DeployAction
+			{
+				actionGroup = None
+			}
+			ResetAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+}
+PART
+{
+	part = GooExperiment_4294485850
+	partName = Part
+	pos = 0.4605081,6.430111,0.1294596
+	rot = 3.689196E-08,-0.7933533,6.389873E-08,0.6087615
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 1
+	dstg = 1
+	sidx = -1
+	sqor = -1
+	attm = 1
+	sym = GooExperiment_4294485894
+	srfN = srfAttach,science.module_4294486078
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = ModuleAnimateGeneric
+		isEnabled = True
+		status = Locked
+		animSwitch = True
+		animTime = 0
+		animSpeed = 1
+		EVENTS
+		{
+			Toggle
+			{
+				active = True
+				guiActive = False
+				guiIcon = Toggle
+				guiName = Deploy
+				category = Toggle
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleScienceExperiment
+		isEnabled = True
+		Deployed = False
+		Inoperable = False
+		EVENTS
+		{
+			DeployExperiment
+			{
+				active = True
+				guiActive = True
+				guiIcon = Deploy
+				guiName = Deploy
+				category = Deploy
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			CollectDataExternalEvent
+			{
+				active = True
+				guiActive = False
+				guiIcon = 
+				guiName = 
+				category = 
+				guiActiveUnfocused = True
+				unfocusedRange = 1.5
+				externalToEVAOnly = True
+			}
+			ReviewDataEvent
+			{
+				active = True
+				guiActive = True
+				guiIcon = Review Data
+				guiName = Review Data
+				category = Review Data
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ResetExperiment
+			{
+				active = True
+				guiActive = True
+				guiIcon = Reset
+				guiName = Reset
+				category = Reset
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ResetExperimentExternal
+			{
+				active = True
+				guiActive = False
+				guiIcon = Reset
+				guiName = Reset
+				category = Reset
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			DeployAction
+			{
+				actionGroup = None
+			}
+			ResetAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+}
+PART
+{
+	part = liquidEngine3_4294443028
+	partName = Part
+	pos = -0.01069546,4.357623,0.003201038
+	rot = 0,0,0,1
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = 0
+	sqor = 0
+	attm = 0
+	attN = top,mk2LanderCabin_4294486242
 	EVENTS
 	{
 	}
@@ -447,11 +1126,20 @@ PART
 	{
 		name = ModuleEngines
 		isEnabled = True
+		staged = False
+		flameout = False
 		EngineIgnited = False
 		engineShutdown = False
 		currentThrottle = 0
-		flameout = False
-		staged = False
+		thrustPercentage = 100
+		manuallyOverridden = False
+		thrustPercentage_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 100
+			stepIncrement = 0.5
+		}
 		EVENTS
 		{
 			Activate
@@ -504,6 +1192,7 @@ PART
 			{
 				active = True
 				guiActive = True
+				guiActiveEditor = True
 				guiIcon = Lock Gimbal
 				guiName = Lock Gimbal
 				category = Lock Gimbal
@@ -515,6 +1204,7 @@ PART
 			{
 				active = False
 				guiActive = True
+				guiActiveEditor = True
 				guiIcon = Free Gimbal
 				guiName = Free Gimbal
 				category = Free Gimbal
@@ -571,226 +1261,1477 @@ PART
 }
 PART
 {
-	part = mk1pod_4294697964
+	part = strutCube_4294453020
 	partName = Part
-	pos = 3.481411,7.876459,0.8364758
-	rot = 0,0,0,-1
-	attRot = 0,0,0,-0.9999999
+	pos = 0.8833685,4.51568,-0.4132188
+	rot = 0.9779056,0.2090455,0.0007178239,0.0001794612
+	attRot = -0.000179272,0.2090456,0.0007178631,0.9779059
 	mir = 1,1,1
 	istg = 0
 	dstg = 0
 	sidx = -1
 	sqor = -1
-	attm = 0
-	attN = bottom,fuelTank_4294627832
+	attm = 1
+	link = miniFuelTank_4294432246
+	sym = strutCube_4294438598
+	sym = strutCube_4294438254
+	sym = strutCube_4294437910
+	sym = strutCube_4294437566
+	sym = strutCube_4294437222
+	srfN = srfAttach,mk2LanderCabin_4294486242
+	attN = bottom,miniFuelTank_4294432246
 	EVENTS
 	{
 	}
 	ACTIONS
 	{
 	}
-	MODULE
+}
+PART
+{
+	part = strutCube_4294438598
+	partName = Part
+	pos = 0.07570634,4.51568,-0.979291
+	rot = 0.84725,0.1811285,-0.4883312,-0.1043673
+	attRot = -0.000179272,0.2090456,0.0007178631,0.9779059
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	link = miniFuelTank_4294438574
+	sym = strutCube_4294453020
+	sym = strutCube_4294438254
+	sym = strutCube_4294437910
+	sym = strutCube_4294437566
+	sym = strutCube_4294437222
+	srfN = srfAttach,mk2LanderCabin_4294486242
+	attN = bottom,miniFuelTank_4294438574
+	EVENTS
 	{
-		name = ModuleCommand
-		isEnabled = True
-		controlSrcStatusText = 
-		EVENTS
-		{
-			MakeReference
-			{
-				active = True
-				guiActive = True
-				guiIcon = Control From Here
-				guiName = Control From Here
-				category = Control From Here
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			RenameVessel
-			{
-				active = True
-				guiActive = True
-				guiIcon = Rename Vessel
-				guiName = Rename Vessel
-				category = Rename Vessel
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
 	}
-	MODULE
+	ACTIONS
 	{
-		name = ModuleSAS
-		isEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
 	}
-	MODULE
+}
+PART
+{
+	part = strutCube_4294438254
+	partName = Part
+	pos = -0.8183577,4.51568,-0.562871
+	rot = 0.4895744,0.1046782,-0.8465322,-0.180949
+	attRot = -0.000179272,0.2090456,0.0007178631,0.9779059
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	link = miniFuelTank_4294431926
+	sym = strutCube_4294453020
+	sym = strutCube_4294438598
+	sym = strutCube_4294437910
+	sym = strutCube_4294437566
+	sym = strutCube_4294437222
+	srfN = srfAttach,mk2LanderCabin_4294486242
+	attN = bottom,miniFuelTank_4294431926
+	EVENTS
 	{
-		name = ModuleReactionWheel
-		isEnabled = True
-		stateString = 
-		WheelState = Active
-		EVENTS
-		{
-			OnToggle
-			{
-				active = True
-				guiActive = True
-				guiIcon = Toggle Torque
-				guiName = Toggle Torque
-				category = Toggle Torque
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-			Activate
-			{
-				actionGroup = None
-			}
-			Deactivate
-			{
-				actionGroup = None
-			}
-			Toggle
-			{
-				actionGroup = None
-			}
-		}
 	}
-	MODULE
+	ACTIONS
 	{
-		name = ModuleScienceExperiment
-		isEnabled = True
-		Deployed = False
-		EVENTS
-		{
-			DeployExperiment
-			{
-				active = True
-				guiActive = True
-				guiIcon = Deploy
-				guiName = Deploy
-				category = Deploy
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			ReviewDataEvent
-			{
-				active = True
-				guiActive = True
-				guiIcon = Review Data
-				guiName = Review Data
-				category = Review Data
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			ResetExperiment
-			{
-				active = True
-				guiActive = True
-				guiIcon = Reset
-				guiName = Reset
-				category = Reset
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			ResetExperimentExternal
-			{
-				active = True
-				guiActive = False
-				guiIcon = Reset
-				guiName = Reset
-				category = Reset
-				guiActiveUnfocused = True
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-			DeployAction
-			{
-				actionGroup = None
-			}
-			ResetAction
-			{
-				actionGroup = None
-			}
-		}
 	}
-	MODULE
+}
+PART
+{
+	part = strutCube_4294437910
+	partName = Part
+	pos = -0.9047593,4.51568,0.419621
+	rot = 0.0007177811,0.0001794521,-0.9779056,-0.2090455
+	attRot = -0.000179272,0.2090456,0.0007178631,0.9779059
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	link = miniFuelTank_4294431606
+	sym = strutCube_4294453020
+	sym = strutCube_4294438598
+	sym = strutCube_4294438254
+	sym = strutCube_4294437566
+	sym = strutCube_4294437222
+	srfN = srfAttach,mk2LanderCabin_4294486242
+	attN = bottom,miniFuelTank_4294431606
+	EVENTS
 	{
-		name = ModuleScienceContainer
-		isEnabled = True
-		EVENTS
-		{
-			StoreDataExternalEvent
-			{
-				active = True
-				guiActive = False
-				guiIcon = 
-				guiName = Store Experiments
-				category = 
-				guiActiveUnfocused = True
-				unfocusedRange = 1.3
-				externalToEVAOnly = True
-			}
-			ReviewDataEvent
-			{
-				active = False
-				guiActive = True
-				guiIcon = Review Data
-				guiName = Review Stored Data (0)
-				category = Review Data
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
 	}
-	MODULE
+	ACTIONS
 	{
-		name = ModuleTripLogger
-		isEnabled = False
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		Surfaced
-		{
-		}
-		Flew
-		{
-		}
-		FlewBy
-		{
-		}
-		Orbited
-		{
-		}
-		SubOrbited
-		{
-		}
+	}
+}
+PART
+{
+	part = strutCube_4294437566
+	partName = Part
+	pos = -0.09709721,4.51568,0.9856932
+	rot = -0.4883312,-0.1043674,-0.84725,-0.1811285
+	attRot = -0.000179272,0.2090456,0.0007178631,0.9779059
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	link = miniFuelTank_4294431286
+	sym = strutCube_4294453020
+	sym = strutCube_4294438598
+	sym = strutCube_4294438254
+	sym = strutCube_4294437910
+	sym = strutCube_4294437222
+	srfN = srfAttach,mk2LanderCabin_4294486242
+	attN = bottom,miniFuelTank_4294431286
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+}
+PART
+{
+	part = strutCube_4294437222
+	partName = Part
+	pos = 0.7969666,4.51568,0.5692734
+	rot = -0.8465322,-0.180949,-0.4895745,-0.1046782
+	attRot = -0.000179272,0.2090456,0.0007178631,0.9779059
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	link = miniFuelTank_4294430966
+	sym = strutCube_4294453020
+	sym = strutCube_4294438598
+	sym = strutCube_4294438254
+	sym = strutCube_4294437910
+	sym = strutCube_4294437566
+	srfN = srfAttach,mk2LanderCabin_4294486242
+	attN = bottom,miniFuelTank_4294430966
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+}
+PART
+{
+	part = miniFuelTank_4294438574
+	partName = Part
+	pos = 0.08504146,4.474121,-0.9954005
+	rot = 0.05378336,0.6914839,0.2020084,0.6914839
+	attRot = 0,0.7071067,0,0.7071067
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 0
+	link = toroidalFuelTank_4294438542
+	link = fuelLine_4294438338
+	sym = miniFuelTank_4294432246
+	sym = miniFuelTank_4294431926
+	sym = miniFuelTank_4294431606
+	sym = miniFuelTank_4294431286
+	sym = miniFuelTank_4294430966
+	attN = top,strutCube_4294438598
+	attN = bottom,toroidalFuelTank_4294438542
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	RESOURCE
+	{
+		name = LiquidFuel
+		amount = 5.735
+		maxAmount = 5.735
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+	RESOURCE
+	{
+		name = Oxidizer
+		amount = 7
+		maxAmount = 7
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+}
+PART
+{
+	part = toroidalFuelTank_4294438542
+	partName = Part
+	pos = 0.1309873,4.269573,-1.074689
+	rot = -0.6914839,0.05378335,-0.6914839,0.2020085
+	attRot = 0.7071067,-0.7071067,0,0
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 0
+	link = toroidalFuelTank_4294438474
+	sym = toroidalFuelTank_4294432214
+	sym = toroidalFuelTank_4294431894
+	sym = toroidalFuelTank_4294431574
+	sym = toroidalFuelTank_4294431254
+	sym = toroidalFuelTank_4294430934
+	attN = top,toroidalFuelTank_4294438474
+	attN = bottom,miniFuelTank_4294438574
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	RESOURCE
+	{
+		name = LiquidFuel
+		amount = 10
+		maxAmount = 10
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+	RESOURCE
+	{
+		name = Oxidizer
+		amount = 12.2
+		maxAmount = 12.2
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+}
+PART
+{
+	part = toroidalFuelTank_4294438474
+	partName = Part
+	pos = 0.1514302,4.178564,-1.109967
+	rot = -0.6914839,0.05378329,-0.6914839,0.2020085
+	attRot = 0.7071067,-0.7071067,0,0
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 0
+	link = toroidalFuelTank_4294438406
+	sym = toroidalFuelTank_4294432146
+	sym = toroidalFuelTank_4294431826
+	sym = toroidalFuelTank_4294431506
+	sym = toroidalFuelTank_4294431186
+	sym = toroidalFuelTank_4294430866
+	attN = top,toroidalFuelTank_4294438406
+	attN = bottom,toroidalFuelTank_4294438542
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	RESOURCE
+	{
+		name = LiquidFuel
+		amount = 10
+		maxAmount = 10
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+	RESOURCE
+	{
+		name = Oxidizer
+		amount = 12.2
+		maxAmount = 12.2
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+}
+PART
+{
+	part = toroidalFuelTank_4294438406
+	partName = Part
+	pos = 0.171873,4.087554,-1.145245
+	rot = -0.691484,0.05378322,-0.6914839,0.2020085
+	attRot = 0.7071067,-0.7071067,0,0
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 0
+	sym = toroidalFuelTank_4294432078
+	sym = toroidalFuelTank_4294431758
+	sym = toroidalFuelTank_4294431438
+	sym = toroidalFuelTank_4294431118
+	sym = toroidalFuelTank_4294430798
+	attN = bottom,toroidalFuelTank_4294438474
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	RESOURCE
+	{
+		name = LiquidFuel
+		amount = 10
+		maxAmount = 10
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+	RESOURCE
+	{
+		name = Oxidizer
+		amount = 12.2
+		maxAmount = 12.2
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+}
+PART
+{
+	part = fuelLine_4294438338
+	partName = FuelLine
+	pos = 0.03594245,4.507836,-0.6579055
+	rot = 0.05378342,0.691484,0.2020085,0.6914839
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	cData = tgt: liquidEngine3_8; pos: -0.03383423,0.07459462,-0.01598788; dir: -0.4054203,0.8938307,-0.1915754; rot: -0.6173714,0.1278959,-0.127896,0.7655964
+	sym = fuelLine_4294432010
+	sym = fuelLine_4294431690
+	sym = fuelLine_4294431370
+	sym = fuelLine_4294431050
+	sym = fuelLine_4294430730
+	srfN = srfAttach,miniFuelTank_4294438574
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+}
+PART
+{
+	part = miniFuelTank_4294432246
+	partName = Part
+	pos = 0.9019874,4.474121,-0.4131892
+	rot = -0.05442645,0.2531007,0.2018361,0.9445846
+	attRot = 0,0.7071067,0,0.7071067
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 0
+	link = toroidalFuelTank_4294432214
+	link = fuelLine_4294432010
+	sym = miniFuelTank_4294438574
+	sym = miniFuelTank_4294431926
+	sym = miniFuelTank_4294431606
+	sym = miniFuelTank_4294431286
+	sym = miniFuelTank_4294430966
+	attN = top,strutCube_4294453020
+	attN = bottom,toroidalFuelTank_4294432214
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	RESOURCE
+	{
+		name = LiquidFuel
+		amount = 5.735
+		maxAmount = 5.735
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+	RESOURCE
+	{
+		name = Oxidizer
+		amount = 7
+		maxAmount = 7
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+}
+PART
+{
+	part = toroidalFuelTank_4294432214
+	partName = Part
+	pos = 0.9936265,4.269573,-0.4130433
+	rot = -0.2531007,-0.05442651,-0.9445846,0.2018362
+	attRot = 0.7071067,-0.7071067,0,0
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 0
+	link = toroidalFuelTank_4294432146
+	sym = toroidalFuelTank_4294438542
+	sym = toroidalFuelTank_4294431894
+	sym = toroidalFuelTank_4294431574
+	sym = toroidalFuelTank_4294431254
+	sym = toroidalFuelTank_4294430934
+	attN = top,toroidalFuelTank_4294432146
+	attN = bottom,miniFuelTank_4294432246
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	RESOURCE
+	{
+		name = LiquidFuel
+		amount = 10
+		maxAmount = 10
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+	RESOURCE
+	{
+		name = Oxidizer
+		amount = 12.2
+		maxAmount = 12.2
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+}
+PART
+{
+	part = toroidalFuelTank_4294432146
+	partName = Part
+	pos = 1.0344,4.178564,-0.4129783
+	rot = -0.2531007,-0.05442655,-0.9445846,0.2018362
+	attRot = 0.7071067,-0.7071067,0,0
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 0
+	link = toroidalFuelTank_4294432078
+	sym = toroidalFuelTank_4294438474
+	sym = toroidalFuelTank_4294431826
+	sym = toroidalFuelTank_4294431506
+	sym = toroidalFuelTank_4294431186
+	sym = toroidalFuelTank_4294430866
+	attN = top,toroidalFuelTank_4294432078
+	attN = bottom,toroidalFuelTank_4294432214
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	RESOURCE
+	{
+		name = LiquidFuel
+		amount = 10
+		maxAmount = 10
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+	RESOURCE
+	{
+		name = Oxidizer
+		amount = 12.2
+		maxAmount = 12.2
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+}
+PART
+{
+	part = toroidalFuelTank_4294432078
+	partName = Part
+	pos = 1.075173,4.087554,-0.4129133
+	rot = -0.2531008,-0.05442661,-0.9445846,0.2018361
+	attRot = 0.7071067,-0.7071067,0,0
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 0
+	sym = toroidalFuelTank_4294438406
+	sym = toroidalFuelTank_4294431758
+	sym = toroidalFuelTank_4294431438
+	sym = toroidalFuelTank_4294431118
+	sym = toroidalFuelTank_4294430798
+	attN = bottom,toroidalFuelTank_4294432146
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	RESOURCE
+	{
+		name = LiquidFuel
+		amount = 10
+		maxAmount = 10
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+	RESOURCE
+	{
+		name = Oxidizer
+		amount = 12.2
+		maxAmount = 12.2
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+}
+PART
+{
+	part = fuelLine_4294432010
+	partName = FuelLine
+	pos = 0.5851586,4.507836,-0.2869627
+	rot = -0.05442642,0.2531008,0.2018362,0.9445846
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	cData = tgt: liquidEngine3_8; pos: -0.03383441,0.07459524,-0.01598806; dir: -0.4054203,0.8938307,-0.1915754; rot: -0.6173714,0.1278957,-0.1278963,0.7655964
+	sym = fuelLine_4294438338
+	sym = fuelLine_4294431690
+	sym = fuelLine_4294431370
+	sym = fuelLine_4294431050
+	sym = fuelLine_4294430730
+	srfN = srfAttach,miniFuelTank_4294432246
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+}
+PART
+{
+	part = miniFuelTank_4294431926
+	partName = Part
+	pos = -0.8276415,4.474121,-0.5790103
+	rot = 0.147582,0.9445846,0.1480528,0.2531006
+	attRot = 0,0.7071067,0,0.7071067
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 0
+	link = toroidalFuelTank_4294431894
+	link = fuelLine_4294431690
+	sym = miniFuelTank_4294438574
+	sym = miniFuelTank_4294432246
+	sym = miniFuelTank_4294431606
+	sym = miniFuelTank_4294431286
+	sym = miniFuelTank_4294430966
+	attN = top,strutCube_4294438254
+	attN = bottom,toroidalFuelTank_4294431894
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	RESOURCE
+	{
+		name = LiquidFuel
+		amount = 5.735
+		maxAmount = 5.735
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+	RESOURCE
+	{
+		name = Oxidizer
+		amount = 7
+		maxAmount = 7
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+}
+PART
+{
+	part = toroidalFuelTank_4294431894
+	partName = Part
+	pos = -0.8733346,4.269573,-0.6584449
+	rot = -0.9445846,0.147582,-0.2531006,0.1480528
+	attRot = 0.7071067,-0.7071067,0,0
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 0
+	link = toroidalFuelTank_4294431826
+	sym = toroidalFuelTank_4294438542
+	sym = toroidalFuelTank_4294432214
+	sym = toroidalFuelTank_4294431574
+	sym = toroidalFuelTank_4294431254
+	sym = toroidalFuelTank_4294430934
+	attN = top,toroidalFuelTank_4294431826
+	attN = bottom,miniFuelTank_4294431926
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	RESOURCE
+	{
+		name = LiquidFuel
+		amount = 10
+		maxAmount = 10
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+	RESOURCE
+	{
+		name = Oxidizer
+		amount = 12.2
+		maxAmount = 12.2
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+}
+PART
+{
+	part = toroidalFuelTank_4294431826
+	partName = Part
+	pos = -0.8936649,4.178564,-0.693788
+	rot = -0.9445846,0.147582,-0.2531007,0.1480529
+	attRot = 0.7071067,-0.7071067,0,0
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 0
+	link = toroidalFuelTank_4294431758
+	sym = toroidalFuelTank_4294438474
+	sym = toroidalFuelTank_4294432146
+	sym = toroidalFuelTank_4294431506
+	sym = toroidalFuelTank_4294431186
+	sym = toroidalFuelTank_4294430866
+	attN = top,toroidalFuelTank_4294431758
+	attN = bottom,toroidalFuelTank_4294431894
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	RESOURCE
+	{
+		name = LiquidFuel
+		amount = 10
+		maxAmount = 10
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+	RESOURCE
+	{
+		name = Oxidizer
+		amount = 12.2
+		maxAmount = 12.2
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+}
+PART
+{
+	part = toroidalFuelTank_4294431758
+	partName = Part
+	pos = -0.9139951,4.087554,-0.729131
+	rot = -0.9445846,0.1475819,-0.2531006,0.1480529
+	attRot = 0.7071067,-0.7071067,0,0
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 0
+	sym = toroidalFuelTank_4294438406
+	sym = toroidalFuelTank_4294432078
+	sym = toroidalFuelTank_4294431438
+	sym = toroidalFuelTank_4294431118
+	sym = toroidalFuelTank_4294430798
+	attN = bottom,toroidalFuelTank_4294431826
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	RESOURCE
+	{
+		name = LiquidFuel
+		amount = 10
+		maxAmount = 10
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+	RESOURCE
+	{
+		name = Oxidizer
+		amount = 12.2
+		maxAmount = 12.2
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+}
+PART
+{
+	part = fuelLine_4294431690
+	partName = FuelLine
+	pos = -0.5599116,4.507836,-0.3677418
+	rot = 0.1475821,0.9445846,0.1480528,0.2531006
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	cData = tgt: liquidEngine3_8; pos: -0.03383474,0.0745954,-0.01598824; dir: -0.4054203,0.8938307,-0.1915754; rot: -0.6173714,0.1278955,-0.1278966,0.7655963
+	sym = fuelLine_4294438338
+	sym = fuelLine_4294432010
+	sym = fuelLine_4294431370
+	sym = fuelLine_4294431050
+	sym = fuelLine_4294430730
+	srfN = srfAttach,miniFuelTank_4294431926
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+}
+PART
+{
+	part = miniFuelTank_4294431606
+	partName = Part
+	pos = -0.9233783,4.474121,0.4195913
+	rot = 0.2018361,0.9445846,0.05442645,-0.2531007
+	attRot = 0,0.7071067,0,0.7071067
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 0
+	link = toroidalFuelTank_4294431574
+	link = fuelLine_4294431370
+	sym = miniFuelTank_4294438574
+	sym = miniFuelTank_4294432246
+	sym = miniFuelTank_4294431926
+	sym = miniFuelTank_4294431286
+	sym = miniFuelTank_4294430966
+	attN = top,strutCube_4294437910
+	attN = bottom,toroidalFuelTank_4294431574
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	RESOURCE
+	{
+		name = LiquidFuel
+		amount = 5.735
+		maxAmount = 5.735
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+	RESOURCE
+	{
+		name = Oxidizer
+		amount = 7
+		maxAmount = 7
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+}
+PART
+{
+	part = toroidalFuelTank_4294431574
+	partName = Part
+	pos = -1.015017,4.269573,0.4194455
+	rot = -0.9445845,0.2018362,0.2531008,0.0544265
+	attRot = 0.7071067,-0.7071067,0,0
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 0
+	link = toroidalFuelTank_4294431506
+	sym = toroidalFuelTank_4294438542
+	sym = toroidalFuelTank_4294432214
+	sym = toroidalFuelTank_4294431894
+	sym = toroidalFuelTank_4294431254
+	sym = toroidalFuelTank_4294430934
+	attN = top,toroidalFuelTank_4294431506
+	attN = bottom,miniFuelTank_4294431606
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	RESOURCE
+	{
+		name = LiquidFuel
+		amount = 10
+		maxAmount = 10
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+	RESOURCE
+	{
+		name = Oxidizer
+		amount = 12.2
+		maxAmount = 12.2
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+}
+PART
+{
+	part = toroidalFuelTank_4294431506
+	partName = Part
+	pos = -1.05579,4.178564,0.4193804
+	rot = -0.9445846,0.2018361,0.2531007,0.05442655
+	attRot = 0.7071067,-0.7071067,0,0
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 0
+	link = toroidalFuelTank_4294431438
+	sym = toroidalFuelTank_4294438474
+	sym = toroidalFuelTank_4294432146
+	sym = toroidalFuelTank_4294431826
+	sym = toroidalFuelTank_4294431186
+	sym = toroidalFuelTank_4294430866
+	attN = top,toroidalFuelTank_4294431438
+	attN = bottom,toroidalFuelTank_4294431574
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	RESOURCE
+	{
+		name = LiquidFuel
+		amount = 10
+		maxAmount = 10
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+	RESOURCE
+	{
+		name = Oxidizer
+		amount = 12.2
+		maxAmount = 12.2
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+}
+PART
+{
+	part = toroidalFuelTank_4294431438
+	partName = Part
+	pos = -1.096563,4.087554,0.4193154
+	rot = -0.9445846,0.2018361,0.2531008,0.0544266
+	attRot = 0.7071067,-0.7071067,0,0
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 0
+	sym = toroidalFuelTank_4294438406
+	sym = toroidalFuelTank_4294432078
+	sym = toroidalFuelTank_4294431758
+	sym = toroidalFuelTank_4294431118
+	sym = toroidalFuelTank_4294430798
+	attN = bottom,toroidalFuelTank_4294431506
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	RESOURCE
+	{
+		name = LiquidFuel
+		amount = 10
+		maxAmount = 10
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+	RESOURCE
+	{
+		name = Oxidizer
+		amount = 12.2
+		maxAmount = 12.2
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+}
+PART
+{
+	part = fuelLine_4294431370
+	partName = FuelLine
+	pos = -0.6065494,4.507836,0.2933647
+	rot = 0.2018362,0.9445845,0.05442642,-0.2531008
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	cData = tgt: liquidEngine3_8; pos: -0.03383441,0.07459521,-0.01598795; dir: -0.4054203,0.8938307,-0.1915754; rot: -0.6173711,0.1278968,-0.1278949,0.7655966
+	sym = fuelLine_4294438338
+	sym = fuelLine_4294432010
+	sym = fuelLine_4294431690
+	sym = fuelLine_4294431050
+	sym = fuelLine_4294430730
+	srfN = srfAttach,miniFuelTank_4294431606
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+}
+PART
+{
+	part = miniFuelTank_4294431286
+	partName = Part
+	pos = -0.1064323,4.474121,1.001803
+	rot = 0.2020084,0.6914839,-0.05378338,-0.691484
+	attRot = 0,0.7071067,0,0.7071067
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 0
+	link = toroidalFuelTank_4294431254
+	link = fuelLine_4294431050
+	sym = miniFuelTank_4294438574
+	sym = miniFuelTank_4294432246
+	sym = miniFuelTank_4294431926
+	sym = miniFuelTank_4294431606
+	sym = miniFuelTank_4294430966
+	attN = top,strutCube_4294437566
+	attN = bottom,toroidalFuelTank_4294431254
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	RESOURCE
+	{
+		name = LiquidFuel
+		amount = 5.735
+		maxAmount = 5.735
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+	RESOURCE
+	{
+		name = Oxidizer
+		amount = 7
+		maxAmount = 7
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+}
+PART
+{
+	part = toroidalFuelTank_4294431254
+	partName = Part
+	pos = -0.1523782,4.269573,1.081092
+	rot = -0.6914839,0.2020085,0.691484,-0.05378337
+	attRot = 0.7071067,-0.7071067,0,0
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 0
+	link = toroidalFuelTank_4294431186
+	sym = toroidalFuelTank_4294438542
+	sym = toroidalFuelTank_4294432214
+	sym = toroidalFuelTank_4294431894
+	sym = toroidalFuelTank_4294431574
+	sym = toroidalFuelTank_4294430934
+	attN = top,toroidalFuelTank_4294431186
+	attN = bottom,miniFuelTank_4294431286
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	RESOURCE
+	{
+		name = LiquidFuel
+		amount = 10
+		maxAmount = 10
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+	RESOURCE
+	{
+		name = Oxidizer
+		amount = 12.2
+		maxAmount = 12.2
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+}
+PART
+{
+	part = toroidalFuelTank_4294431186
+	partName = Part
+	pos = -0.172821,4.178564,1.11637
+	rot = -0.6914839,0.2020085,0.6914839,-0.05378331
+	attRot = 0.7071067,-0.7071067,0,0
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 0
+	link = toroidalFuelTank_4294431118
+	sym = toroidalFuelTank_4294438474
+	sym = toroidalFuelTank_4294432146
+	sym = toroidalFuelTank_4294431826
+	sym = toroidalFuelTank_4294431506
+	sym = toroidalFuelTank_4294430866
+	attN = top,toroidalFuelTank_4294431118
+	attN = bottom,toroidalFuelTank_4294431254
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	RESOURCE
+	{
+		name = LiquidFuel
+		amount = 10
+		maxAmount = 10
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+	RESOURCE
+	{
+		name = Oxidizer
+		amount = 12.2
+		maxAmount = 12.2
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+}
+PART
+{
+	part = toroidalFuelTank_4294431118
+	partName = Part
+	pos = -0.1932639,4.087554,1.151648
+	rot = -0.6914839,0.2020085,0.691484,-0.05378324
+	attRot = 0.7071067,-0.7071067,0,0
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 0
+	sym = toroidalFuelTank_4294438406
+	sym = toroidalFuelTank_4294432078
+	sym = toroidalFuelTank_4294431758
+	sym = toroidalFuelTank_4294431438
+	sym = toroidalFuelTank_4294430798
+	attN = bottom,toroidalFuelTank_4294431186
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	RESOURCE
+	{
+		name = LiquidFuel
+		amount = 10
+		maxAmount = 10
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+	RESOURCE
+	{
+		name = Oxidizer
+		amount = 12.2
+		maxAmount = 12.2
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+}
+PART
+{
+	part = fuelLine_4294431050
+	partName = FuelLine
+	pos = -0.05733333,4.507836,0.6643077
+	rot = 0.2020085,0.6914839,-0.05378344,-0.691484
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	cData = tgt: liquidEngine3_8; pos: -0.03383438,0.07459527,-0.01598812; dir: -0.4054203,0.8938307,-0.1915754; rot: 0.6173714,-0.1278958,0.1278961,-0.7655964
+	sym = fuelLine_4294438338
+	sym = fuelLine_4294432010
+	sym = fuelLine_4294431690
+	sym = fuelLine_4294431370
+	sym = fuelLine_4294430730
+	srfN = srfAttach,miniFuelTank_4294431286
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+}
+PART
+{
+	part = miniFuelTank_4294430966
+	partName = Part
+	pos = 0.8062504,4.474121,0.5854126
+	rot = 0.1480528,0.2531008,-0.147582,-0.9445845
+	attRot = 0,0.7071067,0,0.7071067
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 0
+	link = toroidalFuelTank_4294430934
+	link = fuelLine_4294430730
+	sym = miniFuelTank_4294438574
+	sym = miniFuelTank_4294432246
+	sym = miniFuelTank_4294431926
+	sym = miniFuelTank_4294431606
+	sym = miniFuelTank_4294431286
+	attN = top,strutCube_4294437222
+	attN = bottom,toroidalFuelTank_4294430934
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	RESOURCE
+	{
+		name = LiquidFuel
+		amount = 5.735
+		maxAmount = 5.735
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+	RESOURCE
+	{
+		name = Oxidizer
+		amount = 7
+		maxAmount = 7
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+}
+PART
+{
+	part = toroidalFuelTank_4294430934
+	partName = Part
+	pos = 0.8519436,4.269574,0.6648473
+	rot = -0.2531008,0.1480528,0.9445845,-0.147582
+	attRot = 0.7071067,-0.7071067,0,0
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 0
+	link = toroidalFuelTank_4294430866
+	sym = toroidalFuelTank_4294438542
+	sym = toroidalFuelTank_4294432214
+	sym = toroidalFuelTank_4294431894
+	sym = toroidalFuelTank_4294431574
+	sym = toroidalFuelTank_4294431254
+	attN = top,toroidalFuelTank_4294430866
+	attN = bottom,miniFuelTank_4294430966
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	RESOURCE
+	{
+		name = LiquidFuel
+		amount = 10
+		maxAmount = 10
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+	RESOURCE
+	{
+		name = Oxidizer
+		amount = 12.2
+		maxAmount = 12.2
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+}
+PART
+{
+	part = toroidalFuelTank_4294430866
+	partName = Part
+	pos = 0.8722738,4.178564,0.7001904
+	rot = -0.2531008,0.1480529,0.9445845,-0.1475819
+	attRot = 0.7071067,-0.7071067,0,0
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 0
+	link = toroidalFuelTank_4294430798
+	sym = toroidalFuelTank_4294438474
+	sym = toroidalFuelTank_4294432146
+	sym = toroidalFuelTank_4294431826
+	sym = toroidalFuelTank_4294431506
+	sym = toroidalFuelTank_4294431186
+	attN = top,toroidalFuelTank_4294430798
+	attN = bottom,toroidalFuelTank_4294430934
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	RESOURCE
+	{
+		name = LiquidFuel
+		amount = 10
+		maxAmount = 10
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+	RESOURCE
+	{
+		name = Oxidizer
+		amount = 12.2
+		maxAmount = 12.2
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+}
+PART
+{
+	part = toroidalFuelTank_4294430798
+	partName = Part
+	pos = 0.892604,4.087554,0.7355334
+	rot = -0.2531007,0.1480529,0.9445846,-0.1475819
+	attRot = 0.7071067,-0.7071067,0,0
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 0
+	sym = toroidalFuelTank_4294438406
+	sym = toroidalFuelTank_4294432078
+	sym = toroidalFuelTank_4294431758
+	sym = toroidalFuelTank_4294431438
+	sym = toroidalFuelTank_4294431118
+	attN = bottom,toroidalFuelTank_4294430866
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	RESOURCE
+	{
+		name = LiquidFuel
+		amount = 10
+		maxAmount = 10
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+	RESOURCE
+	{
+		name = Oxidizer
+		amount = 12.2
+		maxAmount = 12.2
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+}
+PART
+{
+	part = fuelLine_4294430730
+	partName = FuelLine
+	pos = 0.5385206,4.507836,0.374144
+	rot = 0.1480528,0.2531007,-0.1475821,-0.9445845
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	cData = tgt: liquidEngine3_8; pos: -0.03383432,0.07459522,-0.01598813; dir: -0.4054203,0.8938307,-0.1915754; rot: 0.6173716,-0.127895,0.1278972,-0.7655962
+	sym = fuelLine_4294438338
+	sym = fuelLine_4294432010
+	sym = fuelLine_4294431690
+	sym = fuelLine_4294431370
+	sym = fuelLine_4294431050
+	srfN = srfAttach,miniFuelTank_4294430966
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
 	}
 }
