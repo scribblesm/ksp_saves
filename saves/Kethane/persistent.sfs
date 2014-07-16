@@ -1,8 +1,10 @@
 GAME
 {
-	version = 0.23.0
+	version = 0.23.5
 	Title = Kethane (Sandbox)
 	Description = No description available.
+	linkURL = 
+	linkCaption = 
 	Mode = 0
 	Status = 1
 	scene = 5
@@ -737,10 +739,23 @@ GAME
 		name = SCANcontroller
 		scene = 7
 	}
+	SCENARIO
+	{
+		name = ScenarioDiscoverableObjects
+		scene = 7, 8, 5
+		 = 559298752
+		sizeCurve
+		{
+			key = 0 0 1.5 1.5
+			key = 0.3 0.45 0.875 0.875
+			key = 0.7 0.55 0.875 0.875
+			key = 1 1 1.5 1.5
+		}
+	}
 	FLIGHTSTATE
 	{
-		version = 0.23.0
-		UT = 9036545.31683205
+		version = 0.23.5
+		UT = 9036576.39683137
 		activeVessel = 0
 		VESSEL
 		{
@@ -769,13 +784,13 @@ GAME
 			cMod = -1
 			ORBIT
 			{
-				SMA = 300189.558757297
+				SMA = 300189.556331224
 				ECC = 1
 				INC = NaN
-				LPE = 44.5033366510904
-				LAN = 330.297633440193
+				LPE = 73.219791848227
+				LAN = 359.313125413827
 				MNA = 3.14159265358979
-				EPH = 9036541.83683213
+				EPH = 9036558.81683176
 				REF = 1
 			}
 			PART
@@ -885,6 +900,20 @@ GAME
 				Custom08 = False, 0
 				Custom09 = False, 0
 				Custom10 = False, 0
+			}
+			DISCOVERY
+			{
+				state = -1
+				lastObservedTime = 0
+				lifetime = Infinity
+				refTime = Infinity
+				size = 2
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
 			}
 		}
 		VESSEL
@@ -1748,6 +1777,20 @@ GAME
 				Custom08 = False, 0
 				Custom09 = False, 0
 				Custom10 = False, 0
+			}
+			DISCOVERY
+			{
+				state = -1
+				lastObservedTime = 0
+				lifetime = Infinity
+				refTime = Infinity
+				size = 2
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
 			}
 		}
 		VESSEL
@@ -2956,6 +2999,20 @@ GAME
 				Custom09 = False, 0
 				Custom10 = False, 0
 			}
+			DISCOVERY
+			{
+				state = -1
+				lastObservedTime = 0
+				lifetime = Infinity
+				refTime = Infinity
+				size = 2
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+			}
 		}
 		VESSEL
 		{
@@ -4163,6 +4220,20 @@ GAME
 				Custom09 = False, 0
 				Custom10 = False, 0
 			}
+			DISCOVERY
+			{
+				state = -1
+				lastObservedTime = 0
+				lifetime = Infinity
+				refTime = Infinity
+				size = 2
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+			}
 		}
 		VESSEL
 		{
@@ -4503,6 +4574,20 @@ GAME
 				Custom09 = False, 0
 				Custom10 = False, 0
 			}
+			DISCOVERY
+			{
+				state = -1
+				lastObservedTime = 0
+				lifetime = Infinity
+				refTime = Infinity
+				size = 2
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+			}
 		}
 		VESSEL
 		{
@@ -4618,6 +4703,20 @@ GAME
 				Custom08 = False, 0
 				Custom09 = False, 0
 				Custom10 = False, 0
+			}
+			DISCOVERY
+			{
+				state = -1
+				lastObservedTime = 0
+				lifetime = Infinity
+				refTime = Infinity
+				size = 2
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
 			}
 		}
 		VESSEL
@@ -4735,6 +4834,20 @@ GAME
 				Custom09 = False, 0
 				Custom10 = False, 0
 			}
+			DISCOVERY
+			{
+				state = -1
+				lastObservedTime = 0
+				lifetime = Infinity
+				refTime = Infinity
+				size = 2
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+			}
 		}
 		VESSEL
 		{
@@ -4851,6 +4964,20 @@ GAME
 				Custom09 = False, 0
 				Custom10 = False, 0
 			}
+			DISCOVERY
+			{
+				state = -1
+				lastObservedTime = 0
+				lifetime = Infinity
+				refTime = Infinity
+				size = 2
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+			}
 		}
 		VESSEL
 		{
@@ -4966,6 +5093,20 @@ GAME
 				Custom08 = False, 0
 				Custom09 = False, 0
 				Custom10 = False, 0
+			}
+			DISCOVERY
+			{
+				state = -1
+				lastObservedTime = 0
+				lifetime = Infinity
+				refTime = Infinity
+				size = 2
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
 			}
 		}
 		VESSEL
@@ -11127,6 +11268,20 @@ GAME
 				Custom09 = False, 0
 				Custom10 = False, 0
 			}
+			DISCOVERY
+			{
+				state = -1
+				lastObservedTime = 0
+				lifetime = Infinity
+				refTime = Infinity
+				size = 2
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+			}
 		}
 		VESSEL
 		{
@@ -11242,6 +11397,20 @@ GAME
 				Custom08 = False, 0
 				Custom09 = False, 0
 				Custom10 = False, 0
+			}
+			DISCOVERY
+			{
+				state = -1
+				lastObservedTime = 0
+				lifetime = Infinity
+				refTime = Infinity
+				size = 2
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
 			}
 		}
 		VESSEL
@@ -11476,6 +11645,20 @@ GAME
 				Custom09 = False, 0
 				Custom10 = False, 0
 			}
+			DISCOVERY
+			{
+				state = -1
+				lastObservedTime = 0
+				lifetime = Infinity
+				refTime = Infinity
+				size = 2
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+			}
 		}
 		VESSEL
 		{
@@ -11591,6 +11774,20 @@ GAME
 				Custom08 = False, 0
 				Custom09 = False, 0
 				Custom10 = False, 0
+			}
+			DISCOVERY
+			{
+				state = -1
+				lastObservedTime = 0
+				lifetime = Infinity
+				refTime = Infinity
+				size = 2
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
 			}
 		}
 		VESSEL
@@ -26549,6 +26746,20 @@ GAME
 				Custom09 = False, 0
 				Custom10 = False, 0
 			}
+			DISCOVERY
+			{
+				state = -1
+				lastObservedTime = 0
+				lifetime = Infinity
+				refTime = Infinity
+				size = 2
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+			}
 		}
 		VESSEL
 		{
@@ -26577,13 +26788,13 @@ GAME
 			cMod = 0
 			ORBIT
 			{
-				SMA = NaN
+				SMA = 0
 				ECC = 1
 				INC = NaN
-				LPE = 5.87388636089668
-				LAN = 330.297633440193
+				LPE = 34.6058108002219
+				LAN = 359.313125413827
 				MNA = -8.40714670366795
-				EPH = 9036541.83683213
+				EPH = 9036558.81683176
 				REF = 1
 			}
 			PART
@@ -29191,6 +29402,20 @@ GAME
 				Custom09 = False, 0
 				Custom10 = False, 0
 			}
+			DISCOVERY
+			{
+				state = -1
+				lastObservedTime = 0
+				lifetime = Infinity
+				refTime = Infinity
+				size = 2
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+			}
 		}
 		VESSEL
 		{
@@ -29530,6 +29755,20 @@ GAME
 				Custom08 = False, 0
 				Custom09 = False, 0
 				Custom10 = False, 0
+			}
+			DISCOVERY
+			{
+				state = -1
+				lastObservedTime = 0
+				lifetime = Infinity
+				refTime = Infinity
+				size = 2
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
 			}
 		}
 		VESSEL
@@ -36006,6 +36245,20 @@ GAME
 				Custom09 = True, 8979576.9164657
 				Custom10 = False, 0
 			}
+			DISCOVERY
+			{
+				state = -1
+				lastObservedTime = 0
+				lifetime = Infinity
+				refTime = Infinity
+				size = 2
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+			}
 		}
 		VESSEL
 		{
@@ -37125,6 +37378,20 @@ GAME
 				Custom08 = False, 0
 				Custom09 = False, 0
 				Custom10 = False, 0
+			}
+			DISCOVERY
+			{
+				state = -1
+				lastObservedTime = 0
+				lifetime = Infinity
+				refTime = Infinity
+				size = 2
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
 			}
 		}
 		VESSEL
@@ -38620,6 +38887,20 @@ GAME
 				Custom09 = False, 0
 				Custom10 = False, 0
 			}
+			DISCOVERY
+			{
+				state = -1
+				lastObservedTime = 0
+				lifetime = Infinity
+				refTime = Infinity
+				size = 2
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+			}
 		}
 		VESSEL
 		{
@@ -38852,6 +39133,20 @@ GAME
 				Custom08 = False, 0
 				Custom09 = False, 0
 				Custom10 = False, 0
+			}
+			DISCOVERY
+			{
+				state = -1
+				lastObservedTime = 0
+				lifetime = Infinity
+				refTime = Infinity
+				size = 2
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
 			}
 		}
 		VESSEL
@@ -43630,6 +43925,20 @@ GAME
 				Custom08 = False, 0
 				Custom09 = False, 0
 				Custom10 = False, 0
+			}
+			DISCOVERY
+			{
+				state = -1
+				lastObservedTime = 0
+				lifetime = Infinity
+				refTime = Infinity
+				size = 2
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
 			}
 		}
 		VESSEL
@@ -49528,6 +49837,20 @@ GAME
 				Custom09 = False, 0
 				Custom10 = False, 0
 			}
+			DISCOVERY
+			{
+				state = -1
+				lastObservedTime = 0
+				lifetime = Infinity
+				refTime = Infinity
+				size = 2
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+			}
 		}
 		VESSEL
 		{
@@ -53526,6 +53849,95 @@ GAME
 				Custom08 = False, 0
 				Custom09 = False, 0
 				Custom10 = False, 0
+			}
+			DISCOVERY
+			{
+				state = -1
+				lastObservedTime = 0
+				lifetime = Infinity
+				refTime = Infinity
+				size = 2
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+			}
+		}
+		VESSEL
+		{
+			pid = 9accd0985a3f43f38f130216712bc669
+			name = Ast. HSJ-227
+			type = SpaceObject
+			sit = ORBITING
+			landed = False
+			landedAt = 
+			splashed = False
+			met = 9036545.35683205
+			lct = 9036545.35683205
+			root = 0
+			lat = 0.864826337741382
+			lon = 202.410467613535
+			alt = 13331232083.0921
+			hgt = -1
+			nrm = 0,1,0
+			rot = -0.2984336,0.402898,-0.8173988,0.283672
+			CoM = 0,0,0
+			stg = 0
+			prst = False
+			ref = 0
+			ORBIT
+			{
+				SMA = 13731108060.8973
+				ECC = 0.0136813161102869
+				INC = 0.898737690583987
+				LPE = 148.925363151266
+				LAN = 67.0741802805375
+				MNA = 0.640877449409371
+				EPH = 11080131.092916
+				REF = 0
+			}
+			PART
+			{
+				name = PotatoRoid
+				uid = 559298752
+				mid = 559298752
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				istg = 0
+				dstg = 0
+				sqor = 0
+				sidx = 0
+				attm = 0
+				srfN = None, -1
+				mass = 150
+				temp = 0
+				expt = 0.1
+				state = 1
+				connected = True
+				attached = True
+				flag = 
+				rTrf = 
+			}
+			ACTIONGROUPS
+			{
+			}
+			DISCOVERY
+			{
+				state = 1
+				lastObservedTime = 9036545.35683205
+				lifetime = 1717762.28027344
+				refTime = 1728000
+				size = 2
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
 			}
 		}
 	}
