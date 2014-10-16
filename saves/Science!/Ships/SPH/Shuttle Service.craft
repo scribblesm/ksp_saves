@@ -4,9 +4,9 @@ description =
 type = SPH
 PART
 {
-	part = mk2SpacePlaneAdapter_4289387916
+	part = mk2SpacePlaneAdapter_4294731722
 	partName = Part
-	pos = -2.846969,3.304979,8.884744
+	pos = -2.769991,10.20811,9.51273
 	rot = 0.7071068,0,0,0.7071068
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -16,12 +16,12 @@ PART
 	sqor = -1
 	attm = 0
 	modCost = 0
-	link = RCSBlock_4289387438
-	link = RCSBlock_4289387398
-	link = mk2Cockpit.Inline_4289387880
-	link = noseCone_4289387358
-	attN = top,noseCone_4289387358
-	attN = bottom,mk2Cockpit.Inline_4289387880
+	link = RCSBlock_4294731244
+	link = RCSBlock_4294731204
+	link = mk2Cockpit.Inline_4294731686
+	link = noseCone_4294731164
+	attN = top,noseCone_4294731164
+	attN = bottom,mk2Cockpit.Inline_4294731686
 	EVENTS
 	{
 	}
@@ -62,9 +62,9 @@ PART
 }
 PART
 {
-	part = mk2Cockpit.Inline_4289387880
+	part = mk2Cockpit.Inline_4294731686
 	partName = Part
-	pos = -2.846969,3.30498,6.697244
+	pos = -2.769991,10.20811,7.32523
 	rot = 0.7071068,0,0,0.7071068
 	attRot = -0.7071067,-5.202829E-16,5.202829E-16,0.7071067
 	mir = 1,1,1
@@ -74,11 +74,11 @@ PART
 	sqor = -1
 	attm = 0
 	modCost = 0
-	link = SmallGearBay_4289387794
-	link = SmallGearBay_4289387616
-	link = mk2DockingPort_4289387330
-	attN = top,mk2SpacePlaneAdapter_4289387916
-	attN = bottom,mk2DockingPort_4289387330
+	link = SmallGearBay_4294731600
+	link = SmallGearBay_4294731422
+	link = mk2DockingPort_4294731136
+	attN = top,mk2SpacePlaneAdapter_4294731722
+	attN = bottom,mk2DockingPort_4294731136
 	EVENTS
 	{
 	}
@@ -401,9 +401,9 @@ PART
 }
 PART
 {
-	part = SmallGearBay_4289387794
+	part = SmallGearBay_4294731600
 	partName = Part
-	pos = -3.845133,2.853771,6.697244
+	pos = -3.768155,9.756897,7.32523
 	rot = 1.624205E-08,-1,8.42937E-08,1.615958E-07
 	attRot = -0.6087617,0.7933537,-5.487822E-08,-2.393323E-09
 	mir = 1,1,1
@@ -413,8 +413,8 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = 0
-	sym = SmallGearBay_4289387616
-	srfN = srfAttach,mk2Cockpit.Inline_4289387880
+	sym = SmallGearBay_4294731422
+	srfN = srfAttach,mk2Cockpit.Inline_4294731686
 	EVENTS
 	{
 	}
@@ -578,8 +578,8 @@ PART
 		isEnabled = True
 		isOn = False
 		lightR = 1
-		lightG = 1
-		lightB = 1
+		lightG = 0
+		lightB = 0
 		lightR_UIFlight
 		{
 			controlEnabled = True
@@ -669,9 +669,9 @@ PART
 }
 PART
 {
-	part = SmallGearBay_4289387616
+	part = SmallGearBay_4294731422
 	partName = Part
-	pos = -1.848804,2.853771,6.697244
+	pos = -1.771826,9.756897,7.32523
 	rot = 1.624205E-08,1,0,1.615958E-07
 	attRot = 0.6087617,-0.7933537,5.487822E-08,-2.393323E-09
 	mir = 1,1,1
@@ -681,8 +681,8 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = 0
-	sym = SmallGearBay_4289387794
-	srfN = srfAttach,mk2Cockpit.Inline_4289387880
+	sym = SmallGearBay_4294731600
+	srfN = srfAttach,mk2Cockpit.Inline_4294731686
 	EVENTS
 	{
 	}
@@ -846,8 +846,8 @@ PART
 		isEnabled = True
 		isOn = False
 		lightR = 1
-		lightG = 1
-		lightB = 1
+		lightG = 0
+		lightB = 0
 		lightR_UIFlight
 		{
 			controlEnabled = True
@@ -937,9 +937,9 @@ PART
 }
 PART
 {
-	part = RCSBlock_4289387438
+	part = RCSBlock_4294731244
 	partName = Part
-	pos = -4.004688,3.304237,8.465564
+	pos = -3.92771,10.20736,9.09355
 	rot = -0.6963645,-0.1227869,0.1227869,-0.6963645
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -949,8 +949,8 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = 0
-	sym = RCSBlock_4289387398
-	srfN = srfAttach,mk2SpacePlaneAdapter_4289387916
+	sym = RCSBlock_4294731204
+	srfN = srfAttach,mk2SpacePlaneAdapter_4294731722
 	EVENTS
 	{
 	}
@@ -1044,9 +1044,9 @@ PART
 }
 PART
 {
-	part = RCSBlock_4289387398
+	part = RCSBlock_4294731204
 	partName = Part
-	pos = -1.689249,3.304237,8.465564
+	pos = -1.612271,10.20736,9.09355
 	rot = -0.1227869,0.6963645,0.6963644,0.1227868
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -1056,8 +1056,8 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = 0
-	sym = RCSBlock_4289387438
-	srfN = srfAttach,mk2SpacePlaneAdapter_4289387916
+	sym = RCSBlock_4294731244
+	srfN = srfAttach,mk2SpacePlaneAdapter_4294731722
 	EVENTS
 	{
 	}
@@ -1151,9 +1151,9 @@ PART
 }
 PART
 {
-	part = noseCone_4289387358
+	part = noseCone_4294731164
 	partName = Part
-	pos = -2.846969,3.304979,9.822244
+	pos = -2.769991,10.20811,10.45023
 	rot = 0.7071068,5.202831E-16,-5.202831E-16,0.7071068
 	attRot = -0.7071068,0,0,0.7071068
 	mir = 1,1,1
@@ -1163,7 +1163,7 @@ PART
 	sqor = -1
 	attm = 0
 	modCost = 0
-	attN = bottom01,mk2SpacePlaneAdapter_4289387916
+	attN = bottom01,mk2SpacePlaneAdapter_4294731722
 	EVENTS
 	{
 	}
@@ -1173,9 +1173,9 @@ PART
 }
 PART
 {
-	part = mk2DockingPort_4289387330
+	part = mk2DockingPort_4294731136
 	partName = Part
-	pos = -2.846969,3.30498,4.822241
+	pos = -2.769991,10.20811,5.450224
 	rot = 0.7071068,0,0,0.7071068
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -1185,9 +1185,9 @@ PART
 	sqor = -1
 	attm = 0
 	modCost = 0
-	link = mk2FuselageShortMono_4289387236
-	attN = top,mk2Cockpit.Inline_4289387880
-	attN = bottom,mk2FuselageShortMono_4289387236
+	link = mk2FuselageShortMono_4294731042
+	attN = top,mk2Cockpit.Inline_4294731686
+	attN = bottom,mk2FuselageShortMono_4294731042
 	EVENTS
 	{
 	}
@@ -1384,9 +1384,9 @@ PART
 }
 PART
 {
-	part = mk2FuselageShortMono_4289387236
+	part = mk2FuselageShortMono_4294731042
 	partName = Part
-	pos = -2.846969,3.30498,3.259733
+	pos = -2.769991,10.20811,3.887716
 	rot = 0.7071068,0,0,0.7071068
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -1396,18 +1396,18 @@ PART
 	sqor = -1
 	attm = 0
 	modCost = 0
-	link = solarPanels5_4289387202
-	link = solarPanels5_4289387174
-	link = solarPanels5_4289387146
-	link = solarPanels5_4289387118
-	link = solarPanels5_4289387090
-	link = solarPanels5_4289387062
-	link = solarPanels5_4289387034
-	link = mk2CargoBayL_4289387006
-	link = delta.small_4289385012
-	link = delta.small_4289363750
-	attN = top,mk2DockingPort_4289387330
-	attN = bottom,mk2CargoBayL_4289387006
+	link = solarPanels5_4294731008
+	link = solarPanels5_4294730980
+	link = solarPanels5_4294730952
+	link = solarPanels5_4294730924
+	link = solarPanels5_4294730896
+	link = solarPanels5_4294730868
+	link = solarPanels5_4294730840
+	link = mk2CargoBayL_4294730812
+	link = delta.small_4294729116
+	link = delta.small_4294729086
+	attN = top,mk2DockingPort_4294731136
+	attN = bottom,mk2CargoBayL_4294730812
 	EVENTS
 	{
 	}
@@ -1438,9 +1438,9 @@ PART
 }
 PART
 {
-	part = solarPanels5_4289387202
+	part = solarPanels5_4294731008
 	partName = Part
-	pos = -2.255728,3.837334,3.259731
+	pos = -2.17875,10.74046,3.887714
 	rot = -0.2008291,-0.6779878,-0.6779881,-0.2008293
 	attRot = -1.540127E-15,7.779966E-09,0.1305262,0.9914448
 	mir = 1,1,1
@@ -1450,8 +1450,8 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = 0
-	sym = solarPanels5_4289387174
-	srfN = srfAttach,mk2FuselageShortMono_4289387236
+	sym = solarPanels5_4294730980
+	srfN = srfAttach,mk2FuselageShortMono_4294731042
 	EVENTS
 	{
 	}
@@ -1556,9 +1556,9 @@ PART
 }
 PART
 {
-	part = solarPanels5_4289387174
+	part = solarPanels5_4294730980
 	partName = Part
-	pos = -3.438208,3.837334,3.259731
+	pos = -3.36123,10.74046,3.887714
 	rot = -0.2008291,0.6779878,0.6779881,-0.2008293
 	attRot = 1.540127E-15,-7.779966E-09,-0.1305262,0.9914448
 	mir = 1,1,1
@@ -1568,8 +1568,8 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = 0
-	sym = solarPanels5_4289387202
-	srfN = srfAttach,mk2FuselageShortMono_4289387236
+	sym = solarPanels5_4294731008
+	srfN = srfAttach,mk2FuselageShortMono_4294731042
 	EVENTS
 	{
 	}
@@ -1674,9 +1674,9 @@ PART
 }
 PART
 {
-	part = solarPanels5_4289387146
+	part = solarPanels5_4294730952
 	partName = Part
-	pos = -1.956421,3.664784,3.259731
+	pos = -1.879443,10.56791,3.887714
 	rot = -0.2008291,-0.6779878,-0.6779881,-0.2008293
 	attRot = -2.063914E-17,1.792347E-08,0.3007059,0.953717
 	mir = 1,1,1
@@ -1686,8 +1686,8 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = 0
-	sym = solarPanels5_4289387118
-	srfN = srfAttach,mk2FuselageShortMono_4289387236
+	sym = solarPanels5_4294730924
+	srfN = srfAttach,mk2FuselageShortMono_4294731042
 	EVENTS
 	{
 	}
@@ -1792,9 +1792,9 @@ PART
 }
 PART
 {
-	part = solarPanels5_4289387118
+	part = solarPanels5_4294730924
 	partName = Part
-	pos = -3.737515,3.664784,3.259731
+	pos = -3.660537,10.56791,3.887714
 	rot = -0.2008291,0.6779879,0.6779881,-0.2008292
 	attRot = 2.063914E-17,-1.792347E-08,-0.3007059,0.953717
 	mir = 1,1,1
@@ -1804,8 +1804,8 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = 0
-	sym = solarPanels5_4289387146
-	srfN = srfAttach,mk2FuselageShortMono_4289387236
+	sym = solarPanels5_4294730952
+	srfN = srfAttach,mk2FuselageShortMono_4294731042
 	EVENTS
 	{
 	}
@@ -1910,9 +1910,9 @@ PART
 }
 PART
 {
-	part = solarPanels5_4289387090
+	part = solarPanels5_4294730896
 	partName = Part
-	pos = -2.846969,4.035316,3.259732
+	pos = -2.769991,10.93844,3.887715
 	rot = 8.432164E-09,-0.7071068,-0.7071068,8.432164E-09
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -1922,7 +1922,7 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = 0
-	srfN = srfAttach,mk2FuselageShortMono_4289387236
+	srfN = srfAttach,mk2FuselageShortMono_4294731042
 	EVENTS
 	{
 	}
@@ -2027,9 +2027,9 @@ PART
 }
 PART
 {
-	part = solarPanels5_4289387062
+	part = solarPanels5_4294730868
 	partName = Part
-	pos = -3.16444,3.985799,3.259731
+	pos = -3.087462,10.88893,3.887714
 	rot = -0.1227878,0.6963641,0.6963644,-0.1227878
 	attRot = 1.843633E-20,-2.599919E-09,-0.04361939,0.9990482
 	mir = 1,1,1
@@ -2039,8 +2039,8 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = 0
-	sym = solarPanels5_4289387034
-	srfN = srfAttach,mk2FuselageShortMono_4289387236
+	sym = solarPanels5_4294730840
+	srfN = srfAttach,mk2FuselageShortMono_4294731042
 	EVENTS
 	{
 	}
@@ -2145,9 +2145,9 @@ PART
 }
 PART
 {
-	part = solarPanels5_4289387034
+	part = solarPanels5_4294730840
 	partName = Part
-	pos = -2.529497,3.985799,3.259731
+	pos = -2.452519,10.88893,3.887714
 	rot = 0.1227878,0.6963642,0.6963643,0.1227878
 	attRot = -1.843633E-20,2.599919E-09,0.04361939,0.9990482
 	mir = 1,1,1
@@ -2157,8 +2157,8 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = 0
-	sym = solarPanels5_4289387062
-	srfN = srfAttach,mk2FuselageShortMono_4289387236
+	sym = solarPanels5_4294730868
+	srfN = srfAttach,mk2FuselageShortMono_4294731042
 	EVENTS
 	{
 	}
@@ -2263,9 +2263,9 @@ PART
 }
 PART
 {
-	part = mk2CargoBayL_4289387006
+	part = mk2CargoBayL_4294730812
 	partName = Part
-	pos = -2.846969,3.30498,0.4472289
+	pos = -2.769991,10.20811,1.075209
 	rot = 0.7071068,0,0,0.7071068
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -2275,12 +2275,11 @@ PART
 	sqor = -1
 	attm = 0
 	modCost = 0
-	link = mk2DroneCore_4289386918
-	link = IntakeRadialLong_4289386882
-	link = wingConnector3_4289363964
-	link = wingConnector3_4289363892
-	attN = top2,mk2FuselageShortMono_4289387236
-	attN = bottom2,mk2DroneCore_4289386918
+	link = mk2DroneCore_4294730724
+	link = wingConnector3_4294729176
+	link = wingConnector3_4294729146
+	attN = top2,mk2FuselageShortMono_4294731042
+	attN = bottom2,mk2DroneCore_4294730724
 	EVENTS
 	{
 	}
@@ -2332,9 +2331,9 @@ PART
 }
 PART
 {
-	part = mk2DroneCore_4289386918
+	part = mk2DroneCore_4294730724
 	partName = Part
-	pos = -2.846969,3.30498,-1.552775
+	pos = -2.769991,10.20811,-0.9247952
 	rot = 0.7071068,0,0,0.7071068
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -2344,9 +2343,9 @@ PART
 	sqor = -1
 	attm = 0
 	modCost = 0
-	link = mk2FuselageShortLFO_4289386850
-	attN = top,mk2CargoBayL_4289387006
-	attN = bottom,mk2FuselageShortLFO_4289386850
+	link = mk2FuselageShortLFO_4294730656
+	attN = top,mk2CargoBayL_4294730812
+	attN = bottom,mk2FuselageShortLFO_4294730656
 	EVENTS
 	{
 	}
@@ -2473,79 +2472,9 @@ PART
 }
 PART
 {
-	part = IntakeRadialLong_4289386882
+	part = mk2FuselageShortLFO_4294730656
 	partName = Part
-	pos = -1.815211,3.028521,0.4472289
-	rot = -8.42937E-08,0,-0.6087615,-0.7933534
-	attRot = 0,0,0,1
-	mir = 1,1,1
-	istg = 0
-	dstg = 0
-	sidx = -1
-	sqor = -1
-	attm = 1
-	modCost = 0
-	srfN = srfAttach,mk2CargoBayL_4289387006
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	MODULE
-	{
-		name = ModuleResourceIntake
-		isEnabled = True
-		intakeEnabled = True
-		EVENTS
-		{
-			Deactivate
-			{
-				active = True
-				guiActive = True
-				guiIcon = Close Intake
-				guiName = Close Intake
-				category = Close Intake
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			Activate
-			{
-				active = False
-				guiActive = True
-				guiIcon = Open Intake
-				guiName = Open Intake
-				category = Open Intake
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-			ToggleAction
-			{
-				actionGroup = None
-			}
-		}
-	}
-	RESOURCE
-	{
-		name = IntakeAir
-		amount = 0.5
-		maxAmount = 1
-		flowState = True
-		isTweakable = False
-		hideFlow = False
-		flowMode = Both
-	}
-}
-PART
-{
-	part = mk2FuselageShortLFO_4289386850
-	partName = Part
-	pos = -2.846969,3.30498,-2.615277
+	pos = -2.769991,10.20811,-1.987297
 	rot = 0.7071068,0,0,0.7071068
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -2555,13 +2484,15 @@ PART
 	sqor = -1
 	attm = 0
 	modCost = 0
-	link = wingConnector_4289386814
-	link = wingConnector_4289386754
-	link = SmallGearBay_4289386694
-	link = SmallGearBay_4289386516
-	link = mk2.1m.Bicoupler_4289386338
-	attN = top,mk2DroneCore_4289386918
-	attN = bottom,mk2.1m.Bicoupler_4289386338
+	link = wingConnector_4294730620
+	link = wingConnector_4294730560
+	link = SmallGearBay_4294730500
+	link = SmallGearBay_4294730322
+	link = mk2.1m.Bicoupler_4294730144
+	link = RCSBlock_4294728548
+	link = RCSBlock_4294728508
+	attN = top,mk2DroneCore_4294730724
+	attN = bottom,mk2.1m.Bicoupler_4294730144
 	EVENTS
 	{
 	}
@@ -2602,9 +2533,9 @@ PART
 }
 PART
 {
-	part = wingConnector_4289386814
+	part = wingConnector_4294730620
 	partName = Winglet
-	pos = -4.098819,3.304981,-1.929539
+	pos = -4.021841,10.20811,-1.301558
 	rot = -0.7071068,0,0,-0.7071068
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -2614,10 +2545,10 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = 0
-	link = elevon2_4289386784
-	link = wingConnector_4289362134
-	sym = wingConnector_4289386754
-	srfN = srfAttach,mk2FuselageShortLFO_4289386850
+	link = elevon2_4294730590
+	link = wingConnector_4294728996
+	sym = wingConnector_4294730560
+	srfN = srfAttach,mk2FuselageShortLFO_4294730656
 	EVENTS
 	{
 	}
@@ -2627,9 +2558,9 @@ PART
 }
 PART
 {
-	part = elevon2_4289386784
+	part = elevon2_4294730590
 	partName = Part
-	pos = -5.030579,3.30498,-3.733272
+	pos = -4.953601,10.20811,-3.105297
 	rot = -0.7372774,4.426731E-08,1.667802E-07,-0.6755903
 	attRot = -0.7071067,5.202829E-16,5.202829E-16,0.7071067
 	mir = 1,1,1
@@ -2639,8 +2570,8 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = 0
-	sym = elevon2_4289386724
-	srfN = srfAttach,wingConnector_4289386814
+	sym = elevon2_4294730530
+	srfN = srfAttach,wingConnector_4294730620
 	EVENTS
 	{
 	}
@@ -2676,9 +2607,9 @@ PART
 }
 PART
 {
-	part = wingConnector_4289386754
+	part = wingConnector_4294730560
 	partName = Winglet
-	pos = -1.595118,3.304981,-1.929539
+	pos = -1.51814,10.20811,-1.301558
 	rot = -3.090863E-08,0.7071068,0.7071068,-3.090862E-08
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -2688,10 +2619,10 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = 0
-	link = elevon2_4289386724
-	link = wingConnector_4289362060
-	sym = wingConnector_4289386814
-	srfN = srfAttach,mk2FuselageShortLFO_4289386850
+	link = elevon2_4294730530
+	link = wingConnector_4294728936
+	sym = wingConnector_4294730620
+	srfN = srfAttach,mk2FuselageShortLFO_4294730656
 	EVENTS
 	{
 	}
@@ -2701,9 +2632,9 @@ PART
 }
 PART
 {
-	part = elevon2_4289386724
+	part = elevon2_4294730530
 	partName = Part
-	pos = -0.6633556,3.30498,-3.733272
+	pos = -0.5863767,10.20811,-3.105297
 	rot = -1.990076E-07,0.6755901,0.7372775,-7.379834E-08
 	attRot = -0.7071067,5.202829E-16,5.202829E-16,0.7071067
 	mir = 1,1,1
@@ -2713,8 +2644,8 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = 0
-	sym = elevon2_4289386784
-	srfN = srfAttach,wingConnector_4289386754
+	sym = elevon2_4294730590
+	srfN = srfAttach,wingConnector_4294730560
 	EVENTS
 	{
 	}
@@ -2750,9 +2681,9 @@ PART
 }
 PART
 {
-	part = SmallGearBay_4289386694
+	part = SmallGearBay_4294730500
 	partName = Part
-	pos = -1.67177,2.806338,-3.417358
+	pos = -1.594792,9.709464,-2.78938
 	rot = 0,1.817892E-07,1.748702E-07,-1
 	attRot = 1.198145E-16,-3.628503E-08,-0.6087617,0.7933535
 	mir = 1,1,1
@@ -2762,8 +2693,8 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = 0
-	sym = SmallGearBay_4289386516
-	srfN = srfAttach,mk2FuselageShortLFO_4289386850
+	sym = SmallGearBay_4294730322
+	srfN = srfAttach,mk2FuselageShortLFO_4294730656
 	EVENTS
 	{
 	}
@@ -2925,10 +2856,10 @@ PART
 	{
 		name = ModuleLight
 		isEnabled = True
-		isOn = True
-		lightR = 1
+		isOn = False
+		lightR = 0
 		lightG = 1
-		lightB = 1
+		lightB = 0
 		lightR_UIFlight
 		{
 			controlEnabled = True
@@ -2954,7 +2885,7 @@ PART
 		{
 			LightsOff
 			{
-				active = True
+				active = False
 				guiActive = True
 				guiActiveEditor = True
 				guiIcon = Lights Off
@@ -2966,7 +2897,7 @@ PART
 			}
 			LightsOn
 			{
-				active = False
+				active = True
 				guiActive = True
 				guiActiveEditor = True
 				guiIcon = Lights On
@@ -3018,9 +2949,9 @@ PART
 }
 PART
 {
-	part = SmallGearBay_4289386516
+	part = SmallGearBay_4294730322
 	partName = Part
-	pos = -4.022167,2.806338,-3.417358
+	pos = -3.945189,9.709464,-2.78938
 	rot = 0,1.817892E-07,1.748703E-07,1
 	attRot = -1.198145E-16,3.628503E-08,0.6087617,0.7933535
 	mir = 1,1,1
@@ -3030,8 +2961,8 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = 0
-	sym = SmallGearBay_4289386694
-	srfN = srfAttach,mk2FuselageShortLFO_4289386850
+	sym = SmallGearBay_4294730500
+	srfN = srfAttach,mk2FuselageShortLFO_4294730656
 	EVENTS
 	{
 	}
@@ -3193,10 +3124,10 @@ PART
 	{
 		name = ModuleLight
 		isEnabled = True
-		isOn = True
-		lightR = 1
+		isOn = False
+		lightR = 0
 		lightG = 1
-		lightB = 1
+		lightB = 0
 		lightR_UIFlight
 		{
 			controlEnabled = True
@@ -3222,7 +3153,7 @@ PART
 		{
 			LightsOff
 			{
-				active = True
+				active = False
 				guiActive = True
 				guiActiveEditor = True
 				guiIcon = Lights Off
@@ -3234,7 +3165,7 @@ PART
 			}
 			LightsOn
 			{
-				active = False
+				active = True
 				guiActive = True
 				guiActiveEditor = True
 				guiIcon = Lights On
@@ -3286,9 +3217,9 @@ PART
 }
 PART
 {
-	part = mk2.1m.Bicoupler_4289386338
+	part = mk2.1m.Bicoupler_4294730144
 	partName = Part
-	pos = -2.846969,3.30498,-4.490282
+	pos = -2.769991,10.20811,-3.862308
 	rot = 0.7071068,0,0,0.7071068
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -3298,19 +3229,19 @@ PART
 	sqor = -1
 	attm = 0
 	modCost = 0
-	link = sh1_4289386286
-	link = sh1_4289386130
-	link = winglet3_4289385974
-	link = winglet3_4289385936
-	link = RCSBlock_4289385898
-	link = RCSBlock_4289385858
-	link = strutConnector_4289385818
-	link = strutConnector_4289385762
-	link = km.se3_4289385706
-	link = km.se3_4289385538
-	attN = top,mk2FuselageShortLFO_4289386850
-	attN = bottom01,km.se3_4289385538
-	attN = bottom02,km.se3_4289385706
+	link = sh1_4294730092
+	link = sh1_4294729936
+	link = winglet3_4294729780
+	link = winglet3_4294729742
+	link = RCSBlock_4294729704
+	link = RCSBlock_4294729664
+	link = strutConnector_4294729624
+	link = strutConnector_4294729568
+	link = km.se3_4294729512
+	link = km.se3_4294729344
+	attN = top,mk2FuselageShortLFO_4294730656
+	attN = bottom01,km.se3_4294729344
+	attN = bottom02,km.se3_4294729512
 	EVENTS
 	{
 	}
@@ -3351,9 +3282,9 @@ PART
 }
 PART
 {
-	part = sh1_4289386286
+	part = sh1_4294730092
 	partName = Part
-	pos = -1.098871,3.288716,-4.699986
+	pos = -1.021893,10.19184,-4.072012
 	rot = 0,-8.42937E-08,0.6755903,0.7372774
 	attRot = 1.848574E-16,-0.04361941,2.599921E-09,0.9990483
 	mir = 1,1,1
@@ -3363,10 +3294,10 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = 0
-	link = oms_4289386258
-	sym = sh1_4289386130
-	srfN = srfAttach,mk2.1m.Bicoupler_4289386338
-	attN = bottom,oms_4289386258
+	link = oms_4294730064
+	sym = sh1_4294729936
+	srfN = srfAttach,mk2.1m.Bicoupler_4294730144
+	attN = bottom,oms_4294730064
 	EVENTS
 	{
 	}
@@ -3376,10 +3307,10 @@ PART
 }
 PART
 {
-	part = oms_4289386258
+	part = oms_4294730064
 	partName = Part
-	pos = -1.348786,3.310581,-5.496894
-	rot = 0.7071068,-6.127461E-09,-6.12746E-09,0.7071068
+	pos = -1.271808,10.21371,-4.868919
+	rot = 0.7071069,0,0,0.7071069
 	attRot = 0,0,0,1
 	mir = 1,1,1
 	istg = 0
@@ -3388,8 +3319,8 @@ PART
 	sqor = 0
 	attm = 0
 	modCost = 0
-	sym = oms_4289386102
-	attN = top,sh1_4289386286
+	sym = oms_4294729908
+	attN = top,sh1_4294730092
 	EVENTS
 	{
 	}
@@ -3607,10 +3538,10 @@ PART
 }
 PART
 {
-	part = sh1_4289386130
+	part = sh1_4294729936
 	partName = Part
-	pos = -4.595066,3.288716,-4.699986
-	rot = 0,6.322027E-08,-0.6755901,0.7372774
+	pos = -4.518088,10.19184,-4.072012
+	rot = 0,6.322028E-08,-0.6755902,0.7372775
 	attRot = -1.848574E-16,0.04361941,-2.599921E-09,0.9990483
 	mir = 1,1,1
 	istg = 0
@@ -3619,10 +3550,10 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = 0
-	link = oms_4289386102
-	sym = sh1_4289386286
-	srfN = srfAttach,mk2.1m.Bicoupler_4289386338
-	attN = bottom,oms_4289386102
+	link = oms_4294729908
+	sym = sh1_4294730092
+	srfN = srfAttach,mk2.1m.Bicoupler_4294730144
+	attN = bottom,oms_4294729908
 	EVENTS
 	{
 	}
@@ -3632,10 +3563,10 @@ PART
 }
 PART
 {
-	part = oms_4289386102
+	part = oms_4294729908
 	partName = Part
-	pos = -4.34515,3.310581,-5.496894
-	rot = 0.7071068,3.262345E-08,-7.35626E-08,0.7071068
+	pos = -4.268172,10.21371,-4.868919
+	rot = 0.7071068,2.197258E-08,-8.421348E-08,0.7071068
 	attRot = 0,0,0,1
 	mir = 1,1,1
 	istg = 0
@@ -3644,8 +3575,8 @@ PART
 	sqor = 0
 	attm = 0
 	modCost = 0
-	sym = oms_4289386258
-	attN = top,sh1_4289386130
+	sym = oms_4294730064
+	attN = top,sh1_4294729936
 	EVENTS
 	{
 	}
@@ -3863,10 +3794,10 @@ PART
 }
 PART
 {
-	part = winglet3_4289385974
+	part = winglet3_4294729780
 	partName = Part
-	pos = -3.701251,4.276283,-4.499275
-	rot = -0.4999999,0.5000001,0.4999999,-0.5000001
+	pos = -3.624273,11.17941,-3.871301
+	rot = -0.5,0.5000002,0.5,-0.5000002
 	attRot = 1.611179E-17,-2.980233E-08,-0.5000001,0.8660255
 	mir = 1,1,1
 	istg = 0
@@ -3875,8 +3806,8 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = 0
-	sym = winglet3_4289385936
-	srfN = srfAttach,mk2.1m.Bicoupler_4289386338
+	sym = winglet3_4294729742
+	srfN = srfAttach,mk2.1m.Bicoupler_4294730144
 	EVENTS
 	{
 	}
@@ -3912,10 +3843,10 @@ PART
 }
 PART
 {
-	part = winglet3_4289385936
+	part = winglet3_4294729742
 	partName = Part
-	pos = -1.992686,4.276283,-4.499275
-	rot = -0.4999999,0.5000001,0.4999999,-0.5000001
+	pos = -1.915708,11.17941,-3.871301
+	rot = -0.5,0.5000002,0.5,-0.5000002
 	attRot = -1.611179E-17,2.980233E-08,0.5000001,0.8660255
 	mir = 1,1,1
 	istg = 0
@@ -3924,8 +3855,8 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = 0
-	sym = winglet3_4289385974
-	srfN = srfAttach,mk2.1m.Bicoupler_4289386338
+	sym = winglet3_4294729780
+	srfN = srfAttach,mk2.1m.Bicoupler_4294730144
 	EVENTS
 	{
 	}
@@ -3961,9 +3892,9 @@ PART
 }
 PART
 {
-	part = RCSBlock_4289385898
+	part = RCSBlock_4294729704
 	partName = Part
-	pos = -4.153483,3.418541,-3.857004
+	pos = -4.076505,10.32167,-3.22903
 	rot = -0.7064339,0.03084367,0.03084345,-0.7064338
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -3973,8 +3904,8 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = 0
-	sym = RCSBlock_4289385858
-	srfN = srfAttach,mk2.1m.Bicoupler_4289386338
+	sym = RCSBlock_4294729664
+	srfN = srfAttach,mk2.1m.Bicoupler_4294730144
 	EVENTS
 	{
 	}
@@ -4068,9 +3999,9 @@ PART
 }
 PART
 {
-	part = RCSBlock_4289385858
+	part = RCSBlock_4294729664
 	partName = Part
-	pos = -1.540454,3.418541,-3.857004
+	pos = -1.463476,10.32167,-3.22903
 	rot = -0.03084348,0.7064338,0.7064339,-0.03084371
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -4080,8 +4011,8 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = 0
-	sym = RCSBlock_4289385898
-	srfN = srfAttach,mk2.1m.Bicoupler_4289386338
+	sym = RCSBlock_4294729704
+	srfN = srfAttach,mk2.1m.Bicoupler_4294730144
 	EVENTS
 	{
 	}
@@ -4175,9 +4106,9 @@ PART
 }
 PART
 {
-	part = strutConnector_4289385818
+	part = strutConnector_4294729624
 	partName = StrutConnector
-	pos = -2.284389,3.86756,-4.978362
+	pos = -2.207411,10.77069,-4.350388
 	rot = 0.2705977,-0.6532815,-0.6532816,0.2705981
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -4187,9 +4118,9 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = 0
-	cData = tgt: mk2CargoBayL_15; pos: -0.09861568,6.539026,-0.4122798; dir: -0.01504944,0.9979053,-0.06291667
-	sym = strutConnector_4289385762
-	srfN = srfAttach,mk2.1m.Bicoupler_4289386338
+	cData = tgt: mk2CargoBayL_15; pos: -0.09861624,6.539027,-0.4122784; dir: -0.01504944,0.9979053,-0.06291667
+	sym = strutConnector_4294729568
+	srfN = srfAttach,mk2.1m.Bicoupler_4294730144
 	EVENTS
 	{
 	}
@@ -4199,9 +4130,9 @@ PART
 }
 PART
 {
-	part = strutConnector_4289385762
+	part = strutConnector_4294729568
 	partName = StrutConnector
-	pos = -3.409548,3.86756,-4.978362
+	pos = -3.33257,10.77069,-4.350388
 	rot = -0.6532816,0.2705981,0.2705977,-0.6532816
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -4211,9 +4142,9 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = 0
-	cData = tgt: mk2CargoBayL_15; pos: -0.09863096,6.539916,0.4123353; dir: -0.01504954,0.9979055,0.06291633
-	sym = strutConnector_4289385818
-	srfN = srfAttach,mk2.1m.Bicoupler_4289386338
+	cData = tgt: mk2CargoBayL_15; pos: -0.09863216,6.539995,0.4123403; dir: -0.01504954,0.9979055,0.06291633
+	sym = strutConnector_4294729624
+	srfN = srfAttach,mk2.1m.Bicoupler_4294730144
 	EVENTS
 	{
 	}
@@ -4223,9 +4154,9 @@ PART
 }
 PART
 {
-	part = km.se3_4289385706
+	part = km.se3_4294729512
 	partName = Part
-	pos = -3.471969,3.30498,-6.367786
+	pos = -3.394991,10.20811,-5.739811
 	rot = 0.7071068,0,0,0.7071068
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -4235,8 +4166,8 @@ PART
 	sqor = -1
 	attm = 0
 	modCost = 0
-	sym = km.se3_4289385538
-	attN = top,mk2.1m.Bicoupler_4289386338
+	sym = km.se3_4294729344
+	attN = top,mk2.1m.Bicoupler_4294730144
 	EVENTS
 	{
 	}
@@ -4592,9 +4523,9 @@ PART
 }
 PART
 {
-	part = km.se3_4289385538
+	part = km.se3_4294729344
 	partName = Part
-	pos = -2.221969,3.30498,-6.367786
+	pos = -2.144991,10.20811,-5.739811
 	rot = 0.7071069,0,0,0.7071068
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -4604,8 +4535,8 @@ PART
 	sqor = -1
 	attm = 0
 	modCost = 0
-	sym = km.se3_4289385706
-	attN = top,mk2.1m.Bicoupler_4289386338
+	sym = km.se3_4294729512
+	attN = top,mk2.1m.Bicoupler_4294730144
 	EVENTS
 	{
 	}
@@ -4961,9 +4892,9 @@ PART
 }
 PART
 {
-	part = wingConnector3_4289363964
+	part = wingConnector3_4294729176
 	partName = Winglet
-	pos = -4.099991,3.30498,0.9650777
+	pos = -4.023013,10.20811,1.593058
 	rot = -0.7071068,0,0,-0.7071068
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -4973,9 +4904,9 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = 0
-	link = delta.small_4289362360
-	sym = wingConnector3_4289363892
-	srfN = srfAttach,mk2CargoBayL_4289387006
+	link = delta.small_4294729056
+	sym = wingConnector3_4294729146
+	srfN = srfAttach,mk2CargoBayL_4294730812
 	EVENTS
 	{
 	}
@@ -4985,9 +4916,9 @@ PART
 }
 PART
 {
-	part = wingConnector3_4289363892
+	part = wingConnector3_4294729146
 	partName = Winglet
-	pos = -1.593947,3.30498,0.9650777
+	pos = -1.516969,10.20811,1.593058
 	rot = -3.090863E-08,0.7071068,0.7071068,-3.090862E-08
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -4997,9 +4928,9 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = 0
-	link = delta.small_4289362192
-	sym = wingConnector3_4289363964
-	srfN = srfAttach,mk2CargoBayL_4289387006
+	link = delta.small_4294729026
+	sym = wingConnector3_4294729176
+	srfN = srfAttach,mk2CargoBayL_4294730812
 	EVENTS
 	{
 	}
@@ -5009,9 +4940,9 @@ PART
 }
 PART
 {
-	part = delta.small_4289385012
+	part = delta.small_4294729116
 	partName = Winglet
-	pos = -4.09776,3.30498,2.510722
+	pos = -4.020782,10.20811,3.138702
 	rot = -0.7071068,0,0,-0.7071068
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -5021,8 +4952,8 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = 0
-	sym = delta.small_4289363750
-	srfN = srfAttach,mk2FuselageShortMono_4289387236
+	sym = delta.small_4294729086
+	srfN = srfAttach,mk2FuselageShortMono_4294731042
 	EVENTS
 	{
 	}
@@ -5032,9 +4963,9 @@ PART
 }
 PART
 {
-	part = delta.small_4289363750
+	part = delta.small_4294729086
 	partName = Winglet
-	pos = -1.596178,3.30498,2.510722
+	pos = -1.5192,10.20811,3.138702
 	rot = -3.090863E-08,0.7071068,0.7071068,-3.090862E-08
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -5044,8 +4975,8 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = 0
-	sym = delta.small_4289385012
-	srfN = srfAttach,mk2FuselageShortMono_4289387236
+	sym = delta.small_4294729116
+	srfN = srfAttach,mk2FuselageShortMono_4294731042
 	EVENTS
 	{
 	}
@@ -5055,9 +4986,9 @@ PART
 }
 PART
 {
-	part = delta.small_4289362360
+	part = delta.small_4294729056
 	partName = Winglet
-	pos = -5.976114,3.30498,0.7102132
+	pos = -5.899136,10.20811,1.338194
 	rot = -0.7071068,0,0,-0.7071068
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -5067,8 +4998,9 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = 0
-	sym = delta.small_4289362192
-	srfN = srfAttach,wingConnector3_4289363964
+	link = RCSBlock_4294728588
+	sym = delta.small_4294729026
+	srfN = srfAttach,wingConnector3_4294729176
 	EVENTS
 	{
 	}
@@ -5078,9 +5010,9 @@ PART
 }
 PART
 {
-	part = delta.small_4289362192
+	part = delta.small_4294729026
 	partName = Winglet
-	pos = 0.282177,3.30498,0.7102132
+	pos = 0.3591566,10.20811,1.338194
 	rot = -3.090862E-08,0.7071068,0.7071068,-3.090862E-08
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -5090,8 +5022,9 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = 0
-	sym = delta.small_4289362360
-	srfN = srfAttach,wingConnector3_4289363892
+	link = RCSBlock_4294728628
+	sym = delta.small_4294729056
+	srfN = srfAttach,wingConnector3_4294729146
 	EVENTS
 	{
 	}
@@ -5101,9 +5034,9 @@ PART
 }
 PART
 {
-	part = wingConnector_4289362134
+	part = wingConnector_4294728996
 	partName = Winglet
-	pos = -5.968685,3.304981,-1.900177
+	pos = -5.891707,10.20811,-1.272197
 	rot = -0.7071068,0,0,-0.7071068
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -5113,10 +5046,10 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = 0
-	link = elevon2_4289362100
-	link = deltaWing_4289385370
-	sym = wingConnector_4289362060
-	srfN = srfAttach,wingConnector_4289386814
+	link = elevon2_4294728966
+	link = deltaWing_4294728876
+	sym = wingConnector_4294728936
+	srfN = srfAttach,wingConnector_4294730620
 	EVENTS
 	{
 	}
@@ -5126,9 +5059,9 @@ PART
 }
 PART
 {
-	part = elevon2_4289362100
+	part = elevon2_4294728966
 	partName = Part
-	pos = -6.900445,3.30498,-3.70391
+	pos = -6.823467,10.20811,-3.075935
 	rot = -0.7372774,4.426731E-08,1.667802E-07,-0.6755903
 	attRot = -0.7071067,5.202829E-16,5.202829E-16,0.7071067
 	mir = 1,1,1
@@ -5138,8 +5071,8 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = 0
-	sym = elevon2_4289362024
-	srfN = srfAttach,wingConnector_4289362134
+	sym = elevon2_4294728906
+	srfN = srfAttach,wingConnector_4294728996
 	EVENTS
 	{
 	}
@@ -5175,9 +5108,9 @@ PART
 }
 PART
 {
-	part = wingConnector_4289362060
+	part = wingConnector_4294728936
 	partName = Winglet
-	pos = 0.2747474,3.304981,-1.900177
+	pos = 0.351727,10.20811,-1.272197
 	rot = -3.090862E-08,0.7071068,0.7071068,-3.090862E-08
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -5187,10 +5120,10 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = 0
-	link = elevon2_4289362024
-	link = deltaWing_4289361936
-	sym = wingConnector_4289362134
-	srfN = srfAttach,wingConnector_4289386754
+	link = elevon2_4294728906
+	link = deltaWing_4294728752
+	sym = wingConnector_4294728996
+	srfN = srfAttach,wingConnector_4294730560
 	EVENTS
 	{
 	}
@@ -5200,10 +5133,10 @@ PART
 }
 PART
 {
-	part = elevon2_4289362024
+	part = elevon2_4294728906
 	partName = Part
-	pos = 1.206508,3.304981,-3.703911
-	rot = -1.990076E-07,0.6755902,0.7372775,-7.379828E-08
+	pos = 1.283487,10.20811,-3.075937
+	rot = -1.990076E-07,0.6755902,0.7372774,-7.379828E-08
 	attRot = -0.7071067,5.202829E-16,5.202829E-16,0.7071067
 	mir = 1,1,1
 	istg = 0
@@ -5212,8 +5145,8 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = 0
-	sym = elevon2_4289362100
-	srfN = srfAttach,wingConnector_4289362060
+	sym = elevon2_4294728966
+	srfN = srfAttach,wingConnector_4294728936
 	EVENTS
 	{
 	}
@@ -5249,10 +5182,10 @@ PART
 }
 PART
 {
-	part = deltaWing_4289385370
+	part = deltaWing_4294728876
 	partName = Winglet
-	pos = -7.761218,3.304981,-2.56037
-	rot = -0.7044161,0.06162842,0.06162842,-0.7044161
+	pos = -7.68424,10.20811,-1.93239
+	rot = -0.7044162,0.0616284,0.0616284,-0.7044162
 	attRot = 0,-5.194888E-09,-0.08715575,0.9961947
 	mir = 1,1,1
 	istg = 0
@@ -5261,12 +5194,11 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = 0
-	link = elevon2_4289385336
-	link = smallCtrlSrf_4289385306
-	link = smallCtrlSrf_4289385276
-	link = RCSBlock_4289385246
-	sym = deltaWing_4289361936
-	srfN = srfAttach,wingConnector_4289362134
+	link = elevon2_4294728842
+	link = smallCtrlSrf_4294728812
+	link = smallCtrlSrf_4294728782
+	sym = deltaWing_4294728752
+	srfN = srfAttach,wingConnector_4294728996
 	EVENTS
 	{
 	}
@@ -5276,10 +5208,10 @@ PART
 }
 PART
 {
-	part = elevon2_4289385336
+	part = elevon2_4294728842
 	partName = Part
-	pos = -10.54977,3.796678,-3.607664
-	rot = 0.7903342,-0.06914528,-0.05305715,0.6064453
+	pos = -10.47279,10.6998,-2.97969
+	rot = 0.7903343,-0.06914528,-0.05305715,0.6064454
 	attRot = 0.7071067,0,0,-0.7071067
 	mir = 1,1,1
 	istg = 0
@@ -5288,8 +5220,8 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = 0
-	sym = elevon2_4289361898
-	srfN = srfAttach,deltaWing_4289385370
+	sym = elevon2_4294728718
+	srfN = srfAttach,deltaWing_4294728876
 	EVENTS
 	{
 	}
@@ -5325,10 +5257,10 @@ PART
 }
 PART
 {
-	part = smallCtrlSrf_4289385306
+	part = smallCtrlSrf_4294728812
 	partName = Part
-	pos = -8.24535,3.390347,-3.607664
-	rot = 0.05305719,0.6064453,0.7903341,0.06914522
+	pos = -8.168372,10.29347,-2.97969
+	rot = 0.0530572,0.6064454,0.7903343,0.06914524
 	attRot = -2.296639E-15,-0.7071067,4.214684E-08,0.7071067
 	mir = 1,1,1
 	istg = 0
@@ -5337,8 +5269,8 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = 0
-	sym = smallCtrlSrf_4289361864
-	srfN = srfAttach,deltaWing_4289385370
+	sym = smallCtrlSrf_4294728688
+	srfN = srfAttach,deltaWing_4294728876
 	EVENTS
 	{
 	}
@@ -5374,10 +5306,10 @@ PART
 }
 PART
 {
-	part = smallCtrlSrf_4289385276
+	part = smallCtrlSrf_4294728782
 	partName = Part
-	pos = -9.152288,3.550266,-3.607664
-	rot = 0.05305719,0.6064453,0.7903341,0.06914522
+	pos = -9.075311,10.45339,-2.97969
+	rot = 0.0530572,0.6064454,0.7903343,0.06914524
 	attRot = -2.296639E-15,-0.7071067,4.214684E-08,0.7071067
 	mir = 1,1,1
 	istg = 0
@@ -5386,8 +5318,8 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = 0
-	sym = smallCtrlSrf_4289361830
-	srfN = srfAttach,deltaWing_4289385370
+	sym = smallCtrlSrf_4294728658
+	srfN = srfAttach,deltaWing_4294728876
 	EVENTS
 	{
 	}
@@ -5423,10 +5355,183 @@ PART
 }
 PART
 {
-	part = RCSBlock_4289385246
+	part = deltaWing_4294728752
+	partName = Winglet
+	pos = 2.144262,10.20811,-1.93239
+	rot = -0.06162846,0.704416,0.7044163,-0.06162846
+	attRot = 0,5.194888E-09,0.08715575,0.9961947
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	modCost = 0
+	link = elevon2_4294728718
+	link = smallCtrlSrf_4294728688
+	link = smallCtrlSrf_4294728658
+	sym = deltaWing_4294728876
+	srfN = srfAttach,wingConnector_4294728936
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+}
+PART
+{
+	part = elevon2_4294728718
 	partName = Part
-	pos = -8.880506,3.405333,-0.9142467
-	rot = -0.7008353,-0.01201179,0.1121491,-0.7043496
+	pos = 4.932818,10.69981,-2.97969
+	rot = -0.05305719,0.6064454,0.7903342,-0.06914533
+	attRot = 0.7071067,0,0,-0.7071067
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	modCost = 0
+	sym = elevon2_4294728842
+	srfN = srfAttach,deltaWing_4294728752
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = ModuleControlSurface
+		isEnabled = True
+		ignorePitch = False
+		ignoreYaw = False
+		ignoreRoll = False
+		ignorePitch_UIFlight
+		{
+			controlEnabled = True
+		}
+		ignoreYaw_UIFlight
+		{
+			controlEnabled = True
+		}
+		ignoreRoll_UIFlight
+		{
+			controlEnabled = True
+		}
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = smallCtrlSrf_4294728688
+	partName = Part
+	pos = 2.628395,10.29347,-2.97969
+	rot = -0.05305723,0.6064456,0.7903342,-0.06914525
+	attRot = -2.296639E-15,-0.7071067,4.214684E-08,0.7071067
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	modCost = 0
+	sym = smallCtrlSrf_4294728812
+	srfN = srfAttach,deltaWing_4294728752
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = ModuleControlSurface
+		isEnabled = True
+		ignorePitch = False
+		ignoreYaw = False
+		ignoreRoll = False
+		ignorePitch_UIFlight
+		{
+			controlEnabled = True
+		}
+		ignoreYaw_UIFlight
+		{
+			controlEnabled = True
+		}
+		ignoreRoll_UIFlight
+		{
+			controlEnabled = True
+		}
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = smallCtrlSrf_4294728658
+	partName = Part
+	pos = 3.535334,10.45339,-2.97969
+	rot = -0.05305723,0.6064456,0.7903342,-0.06914525
+	attRot = -2.296639E-15,-0.7071067,4.214684E-08,0.7071067
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	modCost = 0
+	sym = smallCtrlSrf_4294728782
+	srfN = srfAttach,deltaWing_4294728752
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = ModuleControlSurface
+		isEnabled = True
+		ignorePitch = False
+		ignoreYaw = False
+		ignoreRoll = False
+		ignorePitch_UIFlight
+		{
+			controlEnabled = True
+		}
+		ignoreYaw_UIFlight
+		{
+			controlEnabled = True
+		}
+		ignoreRoll_UIFlight
+		{
+			controlEnabled = True
+		}
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = RCSBlock_4294728628
+	partName = Part
+	pos = 1.843238,10.20885,1.171665
+	rot = -0.06162823,0.704416,0.7044162,0.06162823
 	attRot = 0.3007059,0,0,0.953717
 	mir = 1,1,1
 	istg = 0
@@ -5435,8 +5540,8 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = 0
-	sym = RCSBlock_4289361796
-	srfN = srfAttach,deltaWing_4289385370
+	sym = RCSBlock_4294728588
+	srfN = srfAttach,delta.small_4294729026
 	EVENTS
 	{
 	}
@@ -5530,38 +5635,11 @@ PART
 }
 PART
 {
-	part = deltaWing_4289361936
-	partName = Winglet
-	pos = 2.067281,3.304981,-2.56037
-	rot = -0.06162845,0.704416,0.7044161,-0.06162845
-	attRot = 0,5.194888E-09,0.08715575,0.9961947
-	mir = 1,1,1
-	istg = 0
-	dstg = 0
-	sidx = -1
-	sqor = -1
-	attm = 1
-	modCost = 0
-	link = elevon2_4289361898
-	link = smallCtrlSrf_4289361864
-	link = smallCtrlSrf_4289361830
-	link = RCSBlock_4289361796
-	sym = deltaWing_4289385370
-	srfN = srfAttach,wingConnector_4289362060
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-}
-PART
-{
-	part = elevon2_4289361898
+	part = RCSBlock_4294728588
 	partName = Part
-	pos = 4.855837,3.796679,-3.607664
-	rot = -0.05305718,0.6064453,0.7903341,-0.06914531
-	attRot = 0.7071067,0,0,-0.7071067
+	pos = -7.383218,10.20885,1.171665
+	rot = -0.7044165,-0.06162822,0.06162823,-0.7044157
+	attRot = -0.3007059,0,0,0.953717
 	mir = 1,1,1
 	istg = 0
 	dstg = 0
@@ -5569,8 +5647,8 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = 0
-	sym = elevon2_4289385336
-	srfN = srfAttach,deltaWing_4289361936
+	sym = RCSBlock_4294728628
+	srfN = srfAttach,delta.small_4294729056
 	EVENTS
 	{
 	}
@@ -5579,25 +5657,83 @@ PART
 	}
 	MODULE
 	{
-		name = ModuleControlSurface
+		name = ModuleRCS
 		isEnabled = True
-		ignorePitch = False
-		ignoreYaw = False
-		ignoreRoll = False
-		ignorePitch_UIFlight
-		{
-			controlEnabled = True
-		}
-		ignoreYaw_UIFlight
-		{
-			controlEnabled = True
-		}
-		ignoreRoll_UIFlight
-		{
-			controlEnabled = True
-		}
+		isEnabled = True
 		EVENTS
 		{
+			Disable
+			{
+				active = True
+				guiActive = True
+				guiIcon = Disable RCS Port
+				guiName = Disable RCS Port
+				category = Disable RCS Port
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Enable
+			{
+				active = False
+				guiActive = True
+				guiIcon = Enable RCS Port
+				guiName = Enable RCS Port
+				category = Enable RCS Port
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = KASModuleGrab
+		isEnabled = True
+		grabbed = False
+		evaHolderVesselName = 
+		EVENTS
+		{
+			ContextMenuGrab
+			{
+				active = True
+				guiActive = False
+				guiIcon = Grab
+				guiName = Grab
+				category = Grab
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuDrop
+			{
+				active = True
+				guiActive = False
+				guiIcon = Drop
+				guiName = Drop
+				category = Drop
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuEvaAttach
+			{
+				active = True
+				guiActive = False
+				guiIcon = Attach
+				guiName = Attach
+				category = Attach
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
 		}
 		ACTIONS
 		{
@@ -5606,11 +5742,11 @@ PART
 }
 PART
 {
-	part = smallCtrlSrf_4289361864
+	part = RCSBlock_4294728548
 	partName = Part
-	pos = 2.551414,3.390347,-3.607664
-	rot = -0.05305721,0.6064454,0.790334,-0.06914522
-	attRot = -2.296639E-15,-0.7071067,4.214684E-08,0.7071067
+	pos = -2.770733,10.99887,-1.985984
+	rot = 0.5000001,-0.5000001,-0.5000001,0.5000001
+	attRot = 0,0,0,1
 	mir = 1,1,1
 	istg = 0
 	dstg = 0
@@ -5618,8 +5754,7 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = 0
-	sym = smallCtrlSrf_4289385306
-	srfN = srfAttach,deltaWing_4289361936
+	srfN = srfAttach,mk2FuselageShortLFO_4294730656
 	EVENTS
 	{
 	}
@@ -5628,74 +5763,83 @@ PART
 	}
 	MODULE
 	{
-		name = ModuleControlSurface
+		name = ModuleRCS
 		isEnabled = True
-		ignorePitch = False
-		ignoreYaw = False
-		ignoreRoll = False
-		ignorePitch_UIFlight
-		{
-			controlEnabled = True
-		}
-		ignoreYaw_UIFlight
-		{
-			controlEnabled = True
-		}
-		ignoreRoll_UIFlight
-		{
-			controlEnabled = True
-		}
+		isEnabled = True
 		EVENTS
 		{
+			Disable
+			{
+				active = True
+				guiActive = True
+				guiIcon = Disable RCS Port
+				guiName = Disable RCS Port
+				category = Disable RCS Port
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Enable
+			{
+				active = False
+				guiActive = True
+				guiIcon = Enable RCS Port
+				guiName = Enable RCS Port
+				category = Enable RCS Port
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
 		}
 		ACTIONS
 		{
+			ToggleAction
+			{
+				actionGroup = None
+			}
 		}
-	}
-}
-PART
-{
-	part = smallCtrlSrf_4289361830
-	partName = Part
-	pos = 3.458353,3.550266,-3.607664
-	rot = -0.05305721,0.6064454,0.790334,-0.06914522
-	attRot = -2.296639E-15,-0.7071067,4.214684E-08,0.7071067
-	mir = 1,1,1
-	istg = 0
-	dstg = 0
-	sidx = -1
-	sqor = -1
-	attm = 1
-	modCost = 0
-	sym = smallCtrlSrf_4289385276
-	srfN = srfAttach,deltaWing_4289361936
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
 	}
 	MODULE
 	{
-		name = ModuleControlSurface
+		name = KASModuleGrab
 		isEnabled = True
-		ignorePitch = False
-		ignoreYaw = False
-		ignoreRoll = False
-		ignorePitch_UIFlight
-		{
-			controlEnabled = True
-		}
-		ignoreYaw_UIFlight
-		{
-			controlEnabled = True
-		}
-		ignoreRoll_UIFlight
-		{
-			controlEnabled = True
-		}
+		grabbed = False
+		evaHolderVesselName = 
 		EVENTS
 		{
+			ContextMenuGrab
+			{
+				active = True
+				guiActive = False
+				guiIcon = Grab
+				guiName = Grab
+				category = Grab
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuDrop
+			{
+				active = True
+				guiActive = False
+				guiIcon = Drop
+				guiName = Drop
+				category = Drop
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ContextMenuEvaAttach
+			{
+				active = True
+				guiActive = False
+				guiIcon = Attach
+				guiName = Attach
+				category = Attach
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
 		}
 		ACTIONS
 		{
@@ -5704,11 +5848,11 @@ PART
 }
 PART
 {
-	part = RCSBlock_4289361796
+	part = RCSBlock_4294728508
 	partName = Part
-	pos = 3.18657,3.405333,-0.9142466
-	rot = -0.1121491,0.7043496,0.7008353,0.01201177
-	attRot = 0.3007059,0,0,0.953717
+	pos = -2.769248,9.417684,-1.985984
+	rot = -0.5,-0.5000002,-0.5000002,-0.5
+	attRot = 0,0,0,1
 	mir = 1,1,1
 	istg = 0
 	dstg = 0
@@ -5716,8 +5860,7 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = 0
-	sym = RCSBlock_4289385246
-	srfN = srfAttach,deltaWing_4289361936
+	srfN = srfAttach,mk2FuselageShortLFO_4294730656
 	EVENTS
 	{
 	}
