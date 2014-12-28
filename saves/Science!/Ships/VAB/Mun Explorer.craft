@@ -16,7 +16,7 @@ PART
 	sqor = -1
 	attm = 0
 	link = fuelTank_4293720444
-	link = EngineerChipFlight_4293719200
+	link = EngineerChip_4293719200
 	link = stackDecoupler_4293719172
 	attN = top,stackDecoupler_4293719172
 	attN = bottom,fuelTank_4293720444
@@ -1848,7 +1848,7 @@ PART
 }
 PART
 {
-	part = EngineerChipFlight_4293719200
+	part = EngineerChip_4293719200
 	partName = Part
 	pos = 0.07557872,15.39805,0.2816236
 	rot = -0.270598,0.6532815,-0.6532815,-0.270598
@@ -1868,7 +1868,7 @@ PART
 	}
 	MODULE
 	{
-		name = BuildEngineer
+		
 		isEnabled = True
 		EVENTS
 		{
@@ -1879,7 +1879,7 @@ PART
 	}
 	MODULE
 	{
-		name = FlightEngineer
+		name = FlightEngineerModule
 		isEnabled = True
 		EVENTS
 		{
@@ -2135,7 +2135,7 @@ PART
 	link = strutCube_4293717414
 	link = strutCube_4293717220
 	link = strutCube_4293717026
-	link = EngineerChipFlight_4293716832
+	link = EngineerChip_4293716832
 	attN = bottom,liquidEngine3_4293719136
 	attN = top,science.module_4293718988
 	EVENTS
@@ -5390,7 +5390,7 @@ PART
 }
 PART
 {
-	part = EngineerChipFlight_4293716832
+	part = EngineerChip_4293716832
 	partName = Part
 	pos = 0.5547625,17.68699,1.606702
 	rot = 0.7071068,0,0,0.7071068
@@ -5410,7 +5410,7 @@ PART
 	}
 	MODULE
 	{
-		name = BuildEngineer
+		
 		isEnabled = True
 		EVENTS
 		{
@@ -5421,7 +5421,7 @@ PART
 	}
 	MODULE
 	{
-		name = FlightEngineer
+		name = FlightEngineerModule
 		isEnabled = True
 		EVENTS
 		{

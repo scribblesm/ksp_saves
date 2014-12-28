@@ -77,7 +77,7 @@ PART
 	link = strutCube_4294122122
 	link = strutCube_4294122100
 	link = strutCube_4294122078
-	link = EngineerChipFlight_4294122172
+	link = EngineerChip_4294122172
 	attN = bottom,liquidEngine3_4294123492
 	attN = top,science.module_4294123638
 	EVENTS
@@ -3441,7 +3441,7 @@ PART
 }
 PART
 {
-	part = EngineerChipFlight_4294122172
+	part = EngineerChip_4294122172
 	partName = Part
 	pos = -0.0809335,4.091107,0.8320004
 	rot = 0.7071068,0,0,0.7071068
@@ -3461,7 +3461,7 @@ PART
 	}
 	MODULE
 	{
-		name = BuildEngineer
+		
 		isEnabled = True
 		EVENTS
 		{
@@ -3472,7 +3472,7 @@ PART
 	}
 	MODULE
 	{
-		name = FlightEngineer
+		name = FlightEngineerModule
 		isEnabled = True
 		EVENTS
 		{

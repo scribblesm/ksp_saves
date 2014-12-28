@@ -3068,7 +3068,7 @@ PART
 	link = RCSBlock_4291441796
 	link = sensorThermometer_4291441718
 	link = sensorGravimeter_4291441692
-	link = EngineerChipFlight_4291441666
+	link = EngineerChip_4291441666
 	link = strutConnector_4291437706
 	link = strutConnector_4291437650
 	link = strutConnector_4291437594
@@ -4451,7 +4451,7 @@ PART
 }
 PART
 {
-	part = EngineerChipFlight_4291441666
+	part = EngineerChip_4291441666
 	partName = Part
 	pos = 1.589502,35.18925,0.6326119
 	rot = -0.6830781,-0.1829905,0.1830349,-0.6829473
@@ -4472,7 +4472,7 @@ PART
 	}
 	MODULE
 	{
-		name = BuildEngineer
+		
 		isEnabled = True
 		minBESimTime = 200
 		percentASP = 100
@@ -4536,7 +4536,7 @@ PART
 	}
 	MODULE
 	{
-		name = FlightEngineer
+		name = FlightEngineerModule
 		isEnabled = True
 		minFESimTime = 200
 		vectoredThrust = False

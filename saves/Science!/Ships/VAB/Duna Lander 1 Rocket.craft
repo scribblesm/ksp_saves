@@ -24,7 +24,7 @@ PART
 	link = parachuteRadial_4294637660
 	link = parachuteRadial_4294637614
 	link = parachuteRadial_4294637568
-	link = EngineerChipFlight_4294637522
+	link = EngineerChip_4294637522
 	link = parachuteRadial_4294637494
 	link = parachuteRadial_4294637448
 	link = parachuteRadial_4294637402
@@ -1778,7 +1778,7 @@ PART
 }
 PART
 {
-	part = EngineerChipFlight_4294637522
+	part = EngineerChip_4294637522
 	partName = Part
 	pos = -1.562125,7.489287,-0.03877664
 	rot = -0.4307203,0.5608348,-0.5611362,-0.4301983
@@ -1798,7 +1798,7 @@ PART
 	}
 	MODULE
 	{
-		name = BuildEngineer
+		
 		isEnabled = True
 		EVENTS
 		{
@@ -1809,7 +1809,7 @@ PART
 	}
 	MODULE
 	{
-		name = FlightEngineer
+		name = FlightEngineerModule
 		isEnabled = True
 		EVENTS
 		{

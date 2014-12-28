@@ -14820,7 +14820,7 @@ PART
 	sqor = -1
 	attm = 0
 	modCost = 0
-	link = EngineerChipFlight_4293391034
+	link = EngineerChip_4293391034
 	link = KzProcFairingBaseRing2.5_4293391006
 	attN = top,KzProcFairingBaseRing2.5_4293391006
 	attN = bottom,asasmodule1-2_4293399636
@@ -14843,7 +14843,7 @@ PART
 }
 PART
 {
-	part = EngineerChipFlight_4293391034
+	part = EngineerChip_4293391034
 	partName = Part
 	pos = 1.157942,21.11676,-1.071296
 	rot = 0.2705981,0.6532815,-0.6532816,0.2705981
@@ -14864,7 +14864,7 @@ PART
 	}
 	MODULE
 	{
-		name = BuildEngineer
+		
 		isEnabled = True
 		minBESimTime = 200
 		percentASP = 100
@@ -14928,7 +14928,7 @@ PART
 	}
 	MODULE
 	{
-		name = FlightEngineer
+		name = FlightEngineerModule
 		isEnabled = True
 		minFESimTime = 200
 		vectoredThrust = False

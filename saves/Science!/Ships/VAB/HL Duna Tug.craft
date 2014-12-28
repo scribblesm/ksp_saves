@@ -13302,7 +13302,7 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 0
-	link = EngineerChipFlight_4293092298
+	link = EngineerChip_4293092298
 	link = KzProcFairingBase2.5_4293092270
 	attN = top,KzProcFairingBase2.5_4293092270
 	attN = bottom,asasmodule1-2_4293093100
@@ -13325,7 +13325,7 @@ PART
 }
 PART
 {
-	part = EngineerChipFlight_4293092298
+	part = EngineerChip_4293092298
 	partName = Part
 	pos = 1.157942,21.11676,-1.071296
 	rot = 0.2705981,0.6532815,-0.6532816,0.2705981
@@ -13345,7 +13345,7 @@ PART
 	}
 	MODULE
 	{
-		name = BuildEngineer
+		
 		isEnabled = True
 		EVENTS
 		{
@@ -13356,7 +13356,7 @@ PART
 	}
 	MODULE
 	{
-		name = FlightEngineer
+		name = FlightEngineerModule
 		isEnabled = True
 		EVENTS
 		{
@@ -15509,7 +15509,7 @@ PART
 	attm = 0
 	link = trussPiece1x_4293091442
 	link = trussPiece1x_4293091296
-	link = EngineerChipFlight_4293091150
+	link = EngineerChip_4293091150
 	link = solarPanels5_4293091122
 	link = solarPanels5_4293091094
 	link = solarPanels3_4293091066
@@ -16150,7 +16150,7 @@ PART
 }
 PART
 {
-	part = EngineerChipFlight_4293091150
+	part = EngineerChip_4293091150
 	partName = Part
 	pos = -0.07413977,29.22888,-1.399256
 	rot = -0.09229581,0.7010582,-0.7010569,-0.09229619
@@ -16170,7 +16170,7 @@ PART
 	}
 	MODULE
 	{
-		name = BuildEngineer
+		
 		isEnabled = True
 		EVENTS
 		{
@@ -16181,7 +16181,7 @@ PART
 	}
 	MODULE
 	{
-		name = FlightEngineer
+		name = FlightEngineerModule
 		isEnabled = True
 		EVENTS
 		{

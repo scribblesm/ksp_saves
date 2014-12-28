@@ -4339,7 +4339,7 @@ PART
 	sqor = -1
 	attm = 0
 	link = fuelTank2-2_4293321918
-	link = EngineerChipFlight_4293318550
+	link = EngineerChip_4293318550
 	attN = top,asasmodule1-2_4293321974
 	attN = bottom,fuelTank2-2_4293321918
 	EVENTS
@@ -8067,7 +8067,7 @@ PART
 }
 PART
 {
-	part = EngineerChipFlight_4293318550
+	part = EngineerChip_4293318550
 	partName = Part
 	pos = 0.2615779,18.58395,0.3918191
 	rot = 0.1830127,0.6830128,-0.6830128,0.1830127
@@ -8087,7 +8087,7 @@ PART
 	}
 	MODULE
 	{
-		name = BuildEngineer
+		
 		isEnabled = True
 		EVENTS
 		{
@@ -8098,7 +8098,7 @@ PART
 	}
 	MODULE
 	{
-		name = FlightEngineer
+		name = FlightEngineerModule
 		isEnabled = True
 		EVENTS
 		{

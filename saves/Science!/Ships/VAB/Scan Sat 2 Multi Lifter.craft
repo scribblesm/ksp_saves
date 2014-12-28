@@ -8308,8 +8308,8 @@ PART
 	sqor = -1
 	attm = 0
 	link = liquidEngine2-2_4292826034
-	link = EngineerChipFlight_4292823390
-	link = EngineerChipFlight_4292823362
+	link = EngineerChip_4292823390
+	link = EngineerChip_4292823362
 	attN = top,KzProcFairingBaseRing2.5_4292826094
 	attN = bottom,liquidEngine2-2_4292826034
 	EVENTS
@@ -8583,7 +8583,7 @@ PART
 	sqor = -1
 	attm = 0
 	link = fuelTank1-2_4292825846
-	link = EngineerChipFlight_4292823530
+	link = EngineerChip_4292823530
 	link = solarPanels5_4292823502
 	link = solarPanels5_4292823474
 	link = solarPanels5_4292823446
@@ -11411,7 +11411,7 @@ PART
 }
 PART
 {
-	part = EngineerChipFlight_4292823530
+	part = EngineerChip_4292823530
 	partName = Part
 	pos = 0.5932218,15.26475,0.586912
 	rot = -3.090862E-08,0.7071068,-0.7071068,-3.090862E-08
@@ -11431,7 +11431,7 @@ PART
 	}
 	MODULE
 	{
-		name = BuildEngineer
+		
 		isEnabled = True
 		EVENTS
 		{
@@ -11442,7 +11442,7 @@ PART
 	}
 	MODULE
 	{
-		name = FlightEngineer
+		name = FlightEngineerModule
 		isEnabled = True
 		EVENTS
 		{
@@ -11941,7 +11941,7 @@ PART
 }
 PART
 {
-	part = EngineerChipFlight_4292823390
+	part = EngineerChip_4292823390
 	partName = Part
 	pos = -0.02930689,19.08811,0.7614135
 	rot = -0.1830127,0.6830127,-0.6830127,-0.1830127
@@ -11952,7 +11952,7 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	sym = EngineerChipFlight_4292823362
+	sym = EngineerChip_4292823362
 	srfN = srfAttach,fuelTank2-2_4292826062
 	EVENTS
 	{
@@ -11962,7 +11962,7 @@ PART
 	}
 	MODULE
 	{
-		name = BuildEngineer
+		
 		isEnabled = True
 		EVENTS
 		{
@@ -11973,7 +11973,7 @@ PART
 	}
 	MODULE
 	{
-		name = FlightEngineer
+		name = FlightEngineerModule
 		isEnabled = True
 		EVENTS
 		{
@@ -11996,7 +11996,7 @@ PART
 }
 PART
 {
-	part = EngineerChipFlight_4292823362
+	part = EngineerChip_4292823362
 	partName = Part
 	pos = 1.215751,19.08811,2.917916
 	rot = -0.6830127,-0.1830127,0.1830127,-0.6830127
@@ -12007,7 +12007,7 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	sym = EngineerChipFlight_4292823390
+	sym = EngineerChip_4292823390
 	srfN = srfAttach,fuelTank2-2_4292826062
 	EVENTS
 	{
@@ -12017,7 +12017,7 @@ PART
 	}
 	MODULE
 	{
-		name = BuildEngineer
+		
 		isEnabled = True
 		EVENTS
 		{
@@ -12028,7 +12028,7 @@ PART
 	}
 	MODULE
 	{
-		name = FlightEngineer
+		name = FlightEngineerModule
 		isEnabled = True
 		EVENTS
 		{

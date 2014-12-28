@@ -4817,7 +4817,7 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 0
-	link = EngineerChipFlight_4293759628
+	link = EngineerChip_4293759628
 	link = Large.Crewed.Lab_4293724512
 	attN = top,Large.Crewed.Lab_4293724512
 	attN = bottom,asasmodule1-2_4293760202
@@ -4840,7 +4840,7 @@ PART
 }
 PART
 {
-	part = EngineerChipFlight_4293759628
+	part = EngineerChip_4293759628
 	partName = Part
 	pos = 1.157942,21.11676,-1.071296
 	rot = 0.2705981,0.6532815,-0.6532816,0.2705981
@@ -4860,7 +4860,7 @@ PART
 	}
 	MODULE
 	{
-		name = BuildEngineer
+		
 		isEnabled = True
 		EVENTS
 		{
@@ -4871,7 +4871,7 @@ PART
 	}
 	MODULE
 	{
-		name = FlightEngineer
+		name = FlightEngineerModule
 		isEnabled = True
 		EVENTS
 		{

@@ -244,7 +244,7 @@ PART
 	modCost = 0
 	link = km-tank-mid-small-2_4290322278
 	link = fuelLine_4290317074
-	link = EngineerChipFlight_4290316658
+	link = EngineerChip_4290316658
 	attN = top,km-tank-top-2_4290322420
 	attN = bottom,km-tank-mid-small-2_4290322278
 	EVENTS
@@ -8788,7 +8788,7 @@ PART
 }
 PART
 {
-	part = EngineerChipFlight_4290316658
+	part = EngineerChip_4290316658
 	partName = Part
 	pos = 1.308721,16.37103,-2.458712
 	rot = -0.2126311,-0.6743798,0.6903456,-0.153046
@@ -8809,7 +8809,7 @@ PART
 	}
 	MODULE
 	{
-		name = BuildEngineer
+		
 		isEnabled = True
 		minBESimTime = 200
 		percentASP = 100
@@ -8873,7 +8873,7 @@ PART
 	}
 	MODULE
 	{
-		name = FlightEngineer
+		name = FlightEngineerModule
 		isEnabled = True
 		minFESimTime = 200
 		vectoredThrust = False

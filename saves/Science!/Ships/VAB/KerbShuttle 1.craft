@@ -4300,7 +4300,7 @@ PART
 	link = B9.Structure.SN.Strut_4291653336
 	link = B9.Structure.SN.Strut_4291653276
 	link = B9.Structure.SN.Strut_4291653216
-	link = EngineerChipFlight_4291652436
+	link = EngineerChip_4291652436
 	attN = bottom,km-tank-mid-3_4291656598
 	EVENTS
 	{
@@ -4537,7 +4537,7 @@ PART
 }
 PART
 {
-	part = EngineerChipFlight_4291652436
+	part = EngineerChip_4291652436
 	partName = Part
 	pos = 0.09982049,19.25797,1.029375
 	rot = -0.4673055,0.259323,-0.1406746,-0.8334194
@@ -4557,7 +4557,7 @@ PART
 	}
 	MODULE
 	{
-		name = BuildEngineer
+		
 		isEnabled = True
 		EVENTS
 		{
@@ -4568,7 +4568,7 @@ PART
 	}
 	MODULE
 	{
-		name = FlightEngineer
+		name = FlightEngineerModule
 		isEnabled = True
 		EVENTS
 		{

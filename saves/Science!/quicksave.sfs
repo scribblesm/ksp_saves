@@ -543,7 +543,7 @@ GAME
 			part = parachuteSingle
 			part = Engineer7500
 			part = EngineerChip
-			part = EngineerChipFlight
+			part = EngineerChip
 			part = FASAlaunchClamp125
 		}
 		Tech
@@ -55744,7 +55744,7 @@ GAME
 				}
 				MODULE
 				{
-					name = BuildEngineer
+					
 					isEnabled = True
 					EVENTS
 					{
@@ -56219,7 +56219,7 @@ GAME
 				}
 				MODULE
 				{
-					name = BuildEngineer
+					
 					isEnabled = True
 					EVENTS
 					{
@@ -75195,7 +75195,7 @@ GAME
 			}
 			PART
 			{
-				name = EngineerChipFlight
+				name = EngineerChip
 				uid = 1709521033
 				mid = 3616562966
 				launchID = 0
@@ -75216,7 +75216,7 @@ GAME
 				connected = True
 				attached = True
 				flag = Squad/Flags/hexagon
-				rTrf = EngineerChipFlight
+				rTrf = EngineerChip
 				modCost = 0
 				EVENTS
 				{
@@ -75226,7 +75226,7 @@ GAME
 				}
 				MODULE
 				{
-					name = BuildEngineer
+					
 					isEnabled = True
 					minBESimTime = 200
 					percentASP = 100
@@ -75290,7 +75290,7 @@ GAME
 				}
 				MODULE
 				{
-					name = FlightEngineer
+					name = FlightEngineerModule
 					isEnabled = True
 					minFESimTime = 200
 					vectoredThrust = False
@@ -83717,7 +83717,7 @@ GAME
 			}
 			PART
 			{
-				name = EngineerChipFlight
+				name = EngineerChip
 				uid = 1089027667
 				mid = 692918859
 				launchID = 0
@@ -83739,7 +83739,7 @@ GAME
 				connected = True
 				attached = True
 				flag = Squad/Flags/hexagon
-				rTrf = EngineerChipFlight
+				rTrf = EngineerChip
 				modCost = 0
 				EVENTS
 				{
@@ -83749,7 +83749,7 @@ GAME
 				}
 				MODULE
 				{
-					name = BuildEngineer
+					
 					isEnabled = True
 					EVENTS
 					{
@@ -83760,7 +83760,7 @@ GAME
 				}
 				MODULE
 				{
-					name = FlightEngineer
+					name = FlightEngineerModule
 					isEnabled = True
 					EVENTS
 					{
@@ -83783,7 +83783,7 @@ GAME
 			}
 			PART
 			{
-				name = EngineerChipFlight
+				name = EngineerChip
 				uid = 3057127043
 				mid = 692918859
 				launchID = 0
@@ -83805,7 +83805,7 @@ GAME
 				connected = True
 				attached = True
 				flag = Squad/Flags/hexagon
-				rTrf = EngineerChipFlight
+				rTrf = EngineerChip
 				modCost = 0
 				EVENTS
 				{
@@ -83815,7 +83815,7 @@ GAME
 				}
 				MODULE
 				{
-					name = BuildEngineer
+					
 					isEnabled = True
 					EVENTS
 					{
@@ -83826,7 +83826,7 @@ GAME
 				}
 				MODULE
 				{
-					name = FlightEngineer
+					name = FlightEngineerModule
 					isEnabled = True
 					EVENTS
 					{
@@ -98851,7 +98851,7 @@ GAME
 			}
 			PART
 			{
-				name = EngineerChipFlight
+				name = EngineerChip
 				uid = 899578124
 				mid = 4076811809
 				launchID = 0
@@ -98872,7 +98872,7 @@ GAME
 				connected = True
 				attached = True
 				flag = Squad/Flags/hexagon
-				rTrf = EngineerChipFlight
+				rTrf = EngineerChip
 				modCost = 0
 				EVENTS
 				{
@@ -98882,7 +98882,7 @@ GAME
 				}
 				MODULE
 				{
-					name = BuildEngineer
+					
 					isEnabled = True
 					minBESimTime = 200
 					percentASP = 100
@@ -98946,7 +98946,7 @@ GAME
 				}
 				MODULE
 				{
-					name = FlightEngineer
+					name = FlightEngineerModule
 					isEnabled = True
 					minFESimTime = 200
 					vectoredThrust = False
@@ -121890,7 +121890,7 @@ GAME
 			}
 			PART
 			{
-				name = EngineerChipFlight
+				name = EngineerChip
 				uid = 735212754
 				mid = 2586687701
 				launchID = 0
@@ -121911,7 +121911,7 @@ GAME
 				connected = True
 				attached = True
 				flag = NASAmission/Flags/NASA
-				rTrf = EngineerChipFlight
+				rTrf = EngineerChip
 				modCost = 0
 				EVENTS
 				{
@@ -121921,7 +121921,7 @@ GAME
 				}
 				MODULE
 				{
-					name = BuildEngineer
+					
 					isEnabled = True
 					minBESimTime = 200
 					percentASP = 100
@@ -121985,7 +121985,7 @@ GAME
 				}
 				MODULE
 				{
-					name = FlightEngineer
+					name = FlightEngineerModule
 					isEnabled = True
 					minFESimTime = 200
 					vectoredThrust = False
@@ -131171,7 +131171,7 @@ GAME
 			}
 			PART
 			{
-				name = EngineerChipFlight
+				name = EngineerChip
 				uid = 128671208
 				mid = 3030235256
 				launchID = 0
@@ -131192,7 +131192,7 @@ GAME
 				connected = True
 				attached = True
 				flag = Squad/Flags/hexagon
-				rTrf = EngineerChipFlight
+				rTrf = EngineerChip
 				modCost = 0
 				EVENTS
 				{
@@ -131202,7 +131202,7 @@ GAME
 				}
 				MODULE
 				{
-					name = BuildEngineer
+					
 					isEnabled = True
 					minBESimTime = 200
 					percentASP = 100
@@ -131266,7 +131266,7 @@ GAME
 				}
 				MODULE
 				{
-					name = FlightEngineer
+					name = FlightEngineerModule
 					isEnabled = True
 					minFESimTime = 200
 					vectoredThrust = False
@@ -144007,7 +144007,7 @@ GAME
 			}
 			PART
 			{
-				name = EngineerChipFlight
+				name = EngineerChip
 				uid = 489747653
 				mid = 3743240478
 				launchID = 11
@@ -144028,7 +144028,7 @@ GAME
 				connected = True
 				attached = True
 				flag = KSP_Misc_Flags/Flags/101 - Aperture Science from quotPortalquot
-				rTrf = EngineerChipFlight
+				rTrf = EngineerChip
 				modCost = 0
 				EVENTS
 				{
@@ -144038,7 +144038,7 @@ GAME
 				}
 				MODULE
 				{
-					name = BuildEngineer
+					
 					isEnabled = True
 					minBESimTime = 200
 					percentASP = 100
@@ -144102,7 +144102,7 @@ GAME
 				}
 				MODULE
 				{
-					name = FlightEngineer
+					name = FlightEngineerModule
 					isEnabled = True
 					minFESimTime = 200
 					vectoredThrust = False
@@ -158217,7 +158217,7 @@ GAME
 			}
 			PART
 			{
-				name = EngineerChipFlight
+				name = EngineerChip
 				uid = 560733504
 				mid = 2535830627
 				launchID = 17
@@ -158238,7 +158238,7 @@ GAME
 				connected = True
 				attached = True
 				flag = KSP_Misc_Flags/Flags/101 - Aperture Science from 'Portal'
-				rTrf = EngineerChipFlight
+				rTrf = EngineerChip
 				modCost = 0
 				EVENTS
 				{
@@ -158248,7 +158248,7 @@ GAME
 				}
 				MODULE
 				{
-					name = BuildEngineer
+					
 					isEnabled = True
 					minBESimTime = 200
 					percentASP = 100
@@ -158312,7 +158312,7 @@ GAME
 				}
 				MODULE
 				{
-					name = FlightEngineer
+					name = FlightEngineerModule
 					isEnabled = True
 					minFESimTime = 200
 					vectoredThrust = False

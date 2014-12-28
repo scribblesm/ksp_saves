@@ -371,7 +371,7 @@ PART
 	attm = 0
 	link = trussPiece1x_4293324652
 	link = trussPiece1x_4293324610
-	link = EngineerChipFlight_4293324568
+	link = EngineerChip_4293324568
 	link = fuelTank2-2_4293324540
 	link = solarPanels5_4293324450
 	link = solarPanels5_4293324422
@@ -598,7 +598,7 @@ PART
 }
 PART
 {
-	part = EngineerChipFlight_4293324568
+	part = EngineerChip_4293324568
 	partName = Part
 	pos = -0.2942095,20.63716,-1.211827
 	rot = -0.09229577,0.7010581,-0.7010567,-0.09229618
@@ -618,7 +618,7 @@ PART
 	}
 	MODULE
 	{
-		name = BuildEngineer
+		
 		isEnabled = True
 		EVENTS
 		{
@@ -629,7 +629,7 @@ PART
 	}
 	MODULE
 	{
-		name = FlightEngineer
+		name = FlightEngineerModule
 		isEnabled = True
 		EVENTS
 		{

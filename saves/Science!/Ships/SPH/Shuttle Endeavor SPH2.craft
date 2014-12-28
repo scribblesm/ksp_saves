@@ -243,7 +243,7 @@ PART
 	sqor = -1
 	attm = 0
 	modCost = 0
-	link = EngineerChipFlight_4292707512
+	link = EngineerChip_4292707512
 	link = km-tank-mid-small-2_4292707484
 	link = fuelLine_4292704616
 	link = FASAUmbilicalTower_4292702932
@@ -324,7 +324,7 @@ PART
 }
 PART
 {
-	part = EngineerChipFlight_4292707512
+	part = EngineerChip_4292707512
 	partName = Part
 	pos = 1.240526,13.18134,2.520897
 	rot = 0.6385009,0.3686387,-0.3377951,0.5850784
@@ -345,7 +345,7 @@ PART
 	}
 	MODULE
 	{
-		name = BuildEngineer
+		
 		isEnabled = True
 		minBESimTime = 200
 		percentASP = 100
@@ -409,7 +409,7 @@ PART
 	}
 	MODULE
 	{
-		name = FlightEngineer
+		name = FlightEngineerModule
 		isEnabled = True
 		minFESimTime = 200
 		vectoredThrust = False

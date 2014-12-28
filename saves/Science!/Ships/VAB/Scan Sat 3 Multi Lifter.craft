@@ -8316,7 +8316,7 @@ PART
 	attm = 0
 	link = liquidEngine2-2_4293695766
 	link = protractor.plain_4293693930
-	link = EngineerChipFlight_4293627892
+	link = EngineerChip_4293627892
 	attN = top,KzProcFairingBaseRing2.5_4293702246
 	attN = bottom,liquidEngine2-2_4293695766
 	EVENTS
@@ -8590,7 +8590,7 @@ PART
 	sqor = -1
 	attm = 0
 	link = fuelTank1-2_4293695578
-	link = EngineerChipFlight_4293694098
+	link = EngineerChip_4293694098
 	link = solarPanels5_4293694070
 	link = solarPanels5_4293694042
 	link = solarPanels5_4293694014
@@ -10522,7 +10522,7 @@ PART
 }
 PART
 {
-	part = EngineerChipFlight_4293694098
+	part = EngineerChip_4293694098
 	partName = Part
 	pos = 0.5932218,15.26475,0.586912
 	rot = -3.090862E-08,0.7071068,-0.7071068,-3.090862E-08
@@ -10542,7 +10542,7 @@ PART
 	}
 	MODULE
 	{
-		name = BuildEngineer
+		
 		isEnabled = True
 		EVENTS
 		{
@@ -10553,7 +10553,7 @@ PART
 	}
 	MODULE
 	{
-		name = FlightEngineer
+		name = FlightEngineerModule
 		isEnabled = True
 		EVENTS
 		{
@@ -14295,7 +14295,7 @@ PART
 }
 PART
 {
-	part = EngineerChipFlight_4293627892
+	part = EngineerChip_4293627892
 	partName = Part
 	pos = 0.260087,18.78779,0.5963885
 	rot = -0.09229597,0.7010581,-0.7010567,-0.09229597
@@ -14315,7 +14315,7 @@ PART
 	}
 	MODULE
 	{
-		name = BuildEngineer
+		
 		isEnabled = True
 		EVENTS
 		{
@@ -14326,7 +14326,7 @@ PART
 	}
 	MODULE
 	{
-		name = FlightEngineer
+		name = FlightEngineerModule
 		isEnabled = True
 		EVENTS
 		{

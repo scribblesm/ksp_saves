@@ -20,7 +20,7 @@ PART
 	link = radialDecoupler2_4293264904
 	link = radialDecoupler2_4293264856
 	link = asasmodule1-2_4293250782
-	link = EngineerChipFlight_4293230436
+	link = EngineerChip_4293230436
 	link = liquidEngine1-2_4293143938
 	attN = top,asasmodule1-2_4293250782
 	attN = bottom,liquidEngine1-2_4293143938
@@ -531,7 +531,7 @@ PART
 }
 PART
 {
-	part = EngineerChipFlight_4293230436
+	part = EngineerChip_4293230436
 	partName = Part
 	pos = 1.192994,13.64995,-0.8840555
 	rot = 0.2705981,0.6532815,-0.6532816,0.2705981
@@ -551,7 +551,7 @@ PART
 	}
 	MODULE
 	{
-		name = BuildEngineer
+		
 		isEnabled = True
 		EVENTS
 		{
@@ -562,7 +562,7 @@ PART
 	}
 	MODULE
 	{
-		name = FlightEngineer
+		name = FlightEngineerModule
 		isEnabled = True
 		EVENTS
 		{
@@ -4259,7 +4259,7 @@ PART
 	attm = 0
 	link = trussPiece1x_4293023400
 	link = trussPiece1x_4293023214
-	link = EngineerChipFlight_4293023028
+	link = EngineerChip_4293023028
 	link = solarPanels5_4293022996
 	link = solarPanels5_4293022964
 	link = solarPanels3_4293022932
@@ -4896,7 +4896,7 @@ PART
 }
 PART
 {
-	part = EngineerChipFlight_4293023028
+	part = EngineerChip_4293023028
 	partName = Part
 	pos = -0.9400418,21.20355,0.3482792
 	rot = -0.560985,0.4304597,-0.4304591,-0.5609862
@@ -4916,7 +4916,7 @@ PART
 	}
 	MODULE
 	{
-		name = BuildEngineer
+		
 		isEnabled = True
 		EVENTS
 		{
@@ -4927,7 +4927,7 @@ PART
 	}
 	MODULE
 	{
-		name = FlightEngineer
+		name = FlightEngineerModule
 		isEnabled = True
 		EVENTS
 		{

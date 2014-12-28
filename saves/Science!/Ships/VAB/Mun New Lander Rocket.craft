@@ -4751,7 +4751,7 @@ PART
 	link = solarPanels5_4293045262
 	link = solarPanels5_4293045236
 	link = solarPanels5_4293045210
-	link = EngineerChipFlight_4293045184
+	link = EngineerChip_4293045184
 	attN = top,probeCoreOcto2_4293045518
 	attN = bottom,fuelTank4-2_4293045456
 	EVENTS
@@ -5380,7 +5380,7 @@ PART
 }
 PART
 {
-	part = EngineerChipFlight_4293045184
+	part = EngineerChip_4293045184
 	partName = Part
 	pos = -0.1831065,28.90247,-1.348622
 	rot = 0.2705977,0.6532821,-0.6532809,0.2705984
@@ -5400,7 +5400,7 @@ PART
 	}
 	MODULE
 	{
-		name = BuildEngineer
+		
 		isEnabled = True
 		EVENTS
 		{
@@ -5411,7 +5411,7 @@ PART
 	}
 	MODULE
 	{
-		name = FlightEngineer
+		name = FlightEngineerModule
 		isEnabled = True
 		EVENTS
 		{
