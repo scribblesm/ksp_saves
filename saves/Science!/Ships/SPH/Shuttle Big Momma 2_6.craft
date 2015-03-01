@@ -2,12 +2,12 @@ ship = Shuttle Big Momma 2.6
 version = 0.90.0
 description = 
 type = SPH
-size = 21.64485,9.631741,25.58181
+size = 21.64486,9.631742,25.58182
 PART
 {
 	part = mk3FuselageMONO_4293893986
 	partName = Part
-	pos = 3.505941,8.692654,-4.534103
+	pos = 3.657988,4.034628,-4.138319
 	attPos = 0,0,0
 	attPos0 = 1.65615,10.17192,-1.155262
 	rot = 0.7071068,0,0,0.7071068
@@ -61,9 +61,9 @@ PART
 {
 	part = mk3Cockpit.Shuttle_4294592108
 	partName = Part
-	pos = 3.505941,8.692654,-2.659095
+	pos = 3.657988,4.034628,-2.263311
 	attPos = 0,0,0
-	attPos0 = 3.505941,8.692654,-2.659095
+	attPos0 = 3.657988,4.034628,-2.263311
 	rot = 0.7071068,0,0,0.7071068
 	attRot = 0,0,0,1
 	attRot0 = 0.7071068,0,0,0.7071068
@@ -393,10 +393,10 @@ PART
 {
 	part = structuralWing2_4294596062
 	partName = Part
-	pos = 2.805942,6.792652,-5.359099
+	pos = 2.957989,2.134624,-4.963315
 	attPos = -0.2390285,-2.380715,0.1796335
 	attPos0 = -0.4609714,-0.3192859,1.720368
-	rot = -0.5092608,0.5161705,0.4903829,0.4834731
+	rot = -0.5092608,0.5161704,0.4903829,0.4834731
 	attRot = 0.1019808,0.7010235,0.0920375,0.6997824
 	attRot0 = 0.6983435,-0.7032716,0.1109795,-0.0735467
 	mir = 1,1,1
@@ -424,6 +424,14 @@ PART
 	{
 		name = FARWingAerodynamicModel
 		isEnabled = True
+		massMultiplier = 1
+		massMultiplier_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0.1
+			maxValue = 2
+			stepIncrement = 0.01
+		}
 		EVENTS
 		{
 		}
@@ -436,7 +444,7 @@ PART
 {
 	part = structuralWing2_4294579070
 	partName = Part
-	pos = 4.205941,6.792653,-5.359099
+	pos = 4.357988,2.134627,-4.963315
 	attPos = 0.2390285,-2.380715,0.1796325
 	attPos0 = 0.4609714,-0.3192859,1.720368
 	rot = 0.4903828,0.4834732,-0.5092607,0.5161706
@@ -467,6 +475,14 @@ PART
 	{
 		name = FARWingAerodynamicModel
 		isEnabled = True
+		massMultiplier = 1
+		massMultiplier_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0.1
+			maxValue = 2
+			stepIncrement = 0.01
+		}
 		EVENTS
 		{
 		}
@@ -479,7 +495,7 @@ PART
 {
 	part = strutConnectorMedium_4294251566
 	partName = StrutConnector
-	pos = 5.123651,9.449666,-3.857073
+	pos = 5.275699,4.79164,-3.461289
 	attPos = 0,0,0
 	attPos0 = 1.61771,-1.197977,-0.7570123
 	rot = -0.04117461,0.705907,0.705907,0.04117465
@@ -495,7 +511,7 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = (0.0, 0.0, 0.0)
-	cData = tgt: mk3FuselageMONO_1; pos: 0.008700403,-0.05136738,0.00339985; dir: 0.16664,-0.9838644,0.0651298
+	cData = tgt: mk3Cockpit.Shuttle_0; pos: 8.339503E-07,-3.022985E-06,5.706546E-14; dir: 0.16664,-0.9838644,0.0651298
 	sym = strutConnectorMedium_4294249904
 	srfN = srfAttach,mk3Cockpit.Shuttle_4294592108
 	EVENTS
@@ -512,7 +528,7 @@ PART
 {
 	part = strutConnectorMedium_4294249904
 	partName = StrutConnector
-	pos = 1.888231,9.449666,-3.857073
+	pos = 2.040278,4.79164,-3.461289
 	attPos = 0,0,0
 	attPos0 = -1.61771,-1.197977,-0.7570123
 	rot = -0.705907,-0.04117468,0.04117457,-0.705907
@@ -528,7 +544,7 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = (0.0, 0.0, 0.0)
-	cData = tgt: mk3Cockpit.Shuttle_0; pos: 8.793439E-05,-0.0005194892,-3.433227E-05; dir: 0.16664,-0.9838648,-0.06512982
+	cData = tgt: mk3Cockpit.Shuttle_0; pos: 8.804526E-05,-0.0005204365,-3.433225E-05; dir: 0.16664,-0.9838648,-0.06512982
 	sym = strutConnectorMedium_4294251566
 	srfN = srfAttach,mk3Cockpit.Shuttle_4294592108
 	EVENTS
@@ -545,7 +561,7 @@ PART
 {
 	part = mk3FuselageLFO.50_4293870192
 	partName = Part
-	pos = 3.505941,8.692654,-7.659152
+	pos = 3.657988,4.034628,-7.263375
 	attPos = 0,0,0
 	attPos0 = 0,-3.125,3.72529E-07
 	rot = 0.7071068,0,0,0.7071068
@@ -612,10 +628,10 @@ PART
 {
 	part = wingConnector_4294641404
 	partName = Part
-	pos = 3.505941,6.848959,-7.233769
+	pos = 3.657988,2.190932,-6.837993
 	attPos = 0,0,0
 	attPos0 = 0,0.4253852,1.84369
-	rot = 0.5,-0.5,0.5000001,0.5000001
+	rot = 0.4999999,-0.4999999,0.5000001,0.5000001
 	attRot = -0.4999999,-0.4999999,0.4999999,0.4999999
 	attRot0 = -8.42937E-08,8.42937E-08,0.7071068,0.7071068
 	mir = 1,1,1
@@ -644,6 +660,14 @@ PART
 	{
 		name = FARWingAerodynamicModel
 		isEnabled = True
+		massMultiplier = 1
+		massMultiplier_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0.1
+			maxValue = 2
+			stepIncrement = 0.01
+		}
 		EVENTS
 		{
 		}
@@ -656,10 +680,10 @@ PART
 {
 	part = wingConnector_4294641230
 	partName = Part
-	pos = 3.505941,6.845601,-9.121367
+	pos = 3.657988,2.187575,-8.725595
 	attPos = 0,0,0
 	attPos0 = 0,-1.462207,1.847052
-	rot = 0.5,-0.5,0.5000001,0.5000001
+	rot = 0.4999999,-0.4999999,0.5000001,0.5000001
 	attRot = -0.4999999,-0.4999999,0.4999999,0.4999999
 	attRot0 = -8.42937E-08,8.42937E-08,0.7071068,0.7071068
 	mir = 1,1,1
@@ -688,6 +712,14 @@ PART
 	{
 		name = FARWingAerodynamicModel
 		isEnabled = True
+		massMultiplier = 1
+		massMultiplier_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0.1
+			maxValue = 2
+			stepIncrement = 0.01
+		}
 		EVENTS
 		{
 		}
@@ -700,10 +732,10 @@ PART
 {
 	part = wingConnector_4294565996
 	partName = Part
-	pos = 1.559664,6.845601,-10.97107
+	pos = 1.711711,2.187575,-10.57529
 	attPos = 0,0,0
 	attPos0 = -1.849692,1.946277,7.510918E-07
-	rot = 0.7071069,-2.104241E-07,1.472038E-07,0.7071069
+	rot = 0.7071068,-2.104241E-07,1.472038E-07,0.7071068
 	attRot = 0.7071068,0,0,0.7071068
 	attRot0 = 2.288121E-08,-8.610153E-08,-0.7071066,0.707107
 	mir = 1,1,1
@@ -732,6 +764,14 @@ PART
 	{
 		name = FARWingAerodynamicModel
 		isEnabled = True
+		massMultiplier = 1
+		massMultiplier_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0.1
+			maxValue = 2
+			stepIncrement = 0.01
+		}
 		EVENTS
 		{
 		}
@@ -744,10 +784,10 @@ PART
 {
 	part = structuralWing_4294551574
 	partName = Part
-	pos = -0.3088703,6.845601,-10.94959
+	pos = -0.1568282,2.187575,-10.55381
 	attPos = 0,0,0
 	attPos0 = -1.868503,0.02148338,6.457053E-07
-	rot = 0.707107,-1.472038E-07,2.104241E-07,0.7071068
+	rot = 0.7071069,-1.472038E-07,2.104241E-07,0.7071068
 	attRot = 0,0,0,0.9999999
 	attRot0 = 1.685874E-07,8.940691E-08,4.386398E-10,1
 	mir = 1,1,1
@@ -775,6 +815,14 @@ PART
 	{
 		name = FARWingAerodynamicModel
 		isEnabled = True
+		massMultiplier = 1
+		massMultiplier_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0.1
+			maxValue = 2
+			stepIncrement = 0.01
+		}
 		EVENTS
 		{
 		}
@@ -787,10 +835,10 @@ PART
 {
 	part = wingConnector_4294565762
 	partName = Part
-	pos = 5.452218,6.845601,-10.97107
+	pos = 5.604266,2.187575,-10.57529
 	attPos = 0,0,0
 	attPos0 = -1.849693,-1.946277,7.510918E-07
-	rot = 1.162952E-07,0.7071069,0.7071069,-2.413327E-07
+	rot = 1.162952E-07,0.7071068,0.7071068,-2.413327E-07
 	attRot = 0.7071068,0,0,0.7071068
 	attRot0 = 0.707107,0.7071066,8.720784E-08,-3.782974E-08
 	mir = 1,1,1
@@ -819,6 +867,14 @@ PART
 	{
 		name = FARWingAerodynamicModel
 		isEnabled = True
+		massMultiplier = 1
+		massMultiplier_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0.1
+			maxValue = 2
+			stepIncrement = 0.01
+		}
 		EVENTS
 		{
 		}
@@ -831,10 +887,10 @@ PART
 {
 	part = structuralWing_4294551518
 	partName = Part
-	pos = 7.320769,6.845601,-10.94953
+	pos = 7.472824,2.187575,-10.55375
 	attPos = 0,0,0
 	attPos0 = -1.868503,0.02148334,-8.10866E-07
-	rot = 1.795155E-07,0.7071068,0.707107,-1.781125E-07
+	rot = 1.795154E-07,0.7071067,0.7071069,-1.781125E-07
 	attRot = 0,0,0,0.9999999
 	attRot0 = -2.528811E-07,-8.940688E-08,4.385873E-10,1
 	mir = 1,1,1
@@ -862,6 +918,14 @@ PART
 	{
 		name = FARWingAerodynamicModel
 		isEnabled = True
+		massMultiplier = 1
+		massMultiplier_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0.1
+			maxValue = 2
+			stepIncrement = 0.01
+		}
 		EVENTS
 		{
 		}
@@ -874,10 +938,10 @@ PART
 {
 	part = wingConnector_4294652712
 	partName = Part
-	pos = 3.505941,6.843396,-5.365366
+	pos = 3.657988,2.185369,-4.969584
 	attPos = 0,-0.0249629,-0.04313993
 	attPos0 = 0,2.293735,1.849257
-	rot = 0.5,-0.5,0.5000001,0.5000001
+	rot = 0.4999999,-0.4999999,0.5000001,0.5000001
 	attRot = -0.4999999,-0.4999999,0.4999999,0.4999999
 	attRot0 = -8.42937E-08,8.42937E-08,0.7071068,0.7071068
 	mir = 1,1,1
@@ -892,8 +956,6 @@ PART
 	modSize = (0.0, 0.0, 0.0)
 	link = structuralWing_4294573168
 	link = structuralWing_4294572992
-	link = strutConnector_4293441114
-	link = strutConnector_4293440716
 	srfN = srfAttach,mk3FuselageLFO.50_4293870192
 	EVENTS
 	{
@@ -908,6 +970,14 @@ PART
 	{
 		name = FARWingAerodynamicModel
 		isEnabled = True
+		massMultiplier = 1
+		massMultiplier_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0.1
+			maxValue = 2
+			stepIncrement = 0.01
+		}
 		EVENTS
 		{
 		}
@@ -920,10 +990,10 @@ PART
 {
 	part = structuralWing_4294573168
 	partName = Part
-	pos = 1.559663,6.843395,-7.224929
+	pos = 1.711709,2.185369,-6.829156
 	attPos = 0,0,0
 	attPos0 = -1.859507,1.946278,6.295425E-07
-	rot = -0.7071069,2.104241E-07,-1.472038E-07,-0.7071069
+	rot = -0.7071068,2.104241E-07,-1.472038E-07,-0.7071068
 	attRot = -0.7071067,0,0,-0.7071067
 	attRot0 = -2.288121E-08,8.610153E-08,0.7071066,-0.707107
 	mir = 1,1,1
@@ -952,6 +1022,14 @@ PART
 	{
 		name = FARWingAerodynamicModel
 		isEnabled = True
+		massMultiplier = 1
+		massMultiplier_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0.1
+			maxValue = 2
+			stepIncrement = 0.01
+		}
 		EVENTS
 		{
 		}
@@ -964,10 +1042,10 @@ PART
 {
 	part = structuralWing_4294572992
 	partName = Part
-	pos = 5.452219,6.843395,-7.224929
+	pos = 5.604267,2.185368,-6.829156
 	attPos = 0,0,0
 	attPos0 = -1.859508,-1.946278,6.295423E-07
-	rot = 1.162952E-07,0.7071069,0.7071069,-2.413327E-07
+	rot = 1.162952E-07,0.7071068,0.7071068,-2.413327E-07
 	attRot = -0.7071067,0,0,-0.7071067
 	attRot0 = 0.707107,0.7071066,8.720784E-08,-3.782974E-08
 	mir = 1,1,1
@@ -996,6 +1074,14 @@ PART
 	{
 		name = FARWingAerodynamicModel
 		isEnabled = True
+		massMultiplier = 1
+		massMultiplier_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0.1
+			maxValue = 2
+			stepIncrement = 0.01
+		}
 		EVENTS
 		{
 		}
@@ -1008,7 +1094,7 @@ PART
 {
 	part = mk3CargoBayL_4294439994
 	partName = Part
-	pos = 3.505941,8.692654,-15.15911
+	pos = 3.657988,4.034628,-14.76333
 	attPos = 0,0,0
 	attPos0 = 0,-7.500003,8.9407E-07
 	rot = 0.7071068,0,0,0.7071068
@@ -1055,9 +1141,9 @@ PART
 		name = ModuleAnimateGeneric
 		isEnabled = True
 		status = Locked
-		animSwitch = True
-		animTime = 0
-		animSpeed = -1
+		animSwitch = False
+		animTime = 1
+		animSpeed = 1
 		EVENTS
 		{
 			Toggle
@@ -1066,7 +1152,7 @@ PART
 				guiActive = True
 				guiActiveEditor = True
 				guiIcon = Toggle
-				guiName = Close
+				guiName = Open
 				category = Toggle
 				guiActiveUnfocused = True
 				unfocusedRange = 5
@@ -1119,10 +1205,10 @@ PART
 {
 	part = wingConnector_4294641042
 	partName = Part
-	pos = 3.505941,6.838137,-11.06172
+	pos = 3.657988,2.18011,-10.66594
 	attPos = 0,0,0
 	attPos0 = 0,4.09746,1.854516
-	rot = 0.5000001,-0.5000001,0.5000001,0.5000001
+	rot = 0.5,-0.5,0.5,0.5
 	attRot = -0.4999999,-0.4999999,0.4999999,0.4999999
 	attRot0 = 0,0,0.7071068,0.7071068
 	mir = 1,1,1
@@ -1153,6 +1239,14 @@ PART
 	{
 		name = FARWingAerodynamicModel
 		isEnabled = True
+		massMultiplier = 1
+		massMultiplier_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0.1
+			maxValue = 2
+			stepIncrement = 0.01
+		}
 		EVENTS
 		{
 		}
@@ -1165,10 +1259,10 @@ PART
 {
 	part = wingConnector_4294640960
 	partName = Part
-	pos = 3.505941,6.849491,-12.93263
+	pos = 3.657988,2.191463,-12.53685
 	attPos = 0,0,0
 	attPos0 = 0,2.226476,1.843162
-	rot = 0.5000001,-0.5000001,0.5000001,0.5000001
+	rot = 0.5,-0.5,0.5,0.5
 	attRot = -0.4999999,-0.4999999,0.4999999,0.4999999
 	attRot0 = 0,0,0.7071068,0.7071068
 	mir = 1,1,1
@@ -1197,6 +1291,14 @@ PART
 	{
 		name = FARWingAerodynamicModel
 		isEnabled = True
+		massMultiplier = 1
+		massMultiplier_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0.1
+			maxValue = 2
+			stepIncrement = 0.01
+		}
 		EVENTS
 		{
 		}
@@ -1209,10 +1311,10 @@ PART
 {
 	part = wingConnector_4294565688
 	partName = Part
-	pos = 1.559665,6.849491,-14.75109
+	pos = 1.711712,2.191462,-14.35531
 	attPos = 0,0,0
 	attPos0 = -1.818453,1.946277,7.152557E-07
-	rot = 0.7071069,-2.104241E-07,1.472038E-07,0.7071069
+	rot = 0.7071068,-2.104241E-07,1.472038E-07,0.7071068
 	attRot = 0.7071068,0,0,0.7071068
 	attRot0 = -6.141246E-08,-1.80782E-09,-0.7071066,0.707107
 	mir = 1,1,1
@@ -1243,6 +1345,14 @@ PART
 	{
 		name = FARWingAerodynamicModel
 		isEnabled = True
+		massMultiplier = 1
+		massMultiplier_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0.1
+			maxValue = 2
+			stepIncrement = 0.01
+		}
 		EVENTS
 		{
 		}
@@ -1255,10 +1365,10 @@ PART
 {
 	part = wingConnector_4294551442
 	partName = Part
-	pos = -0.3094161,6.84949,-14.76052
+	pos = -0.1573739,2.191462,-14.36474
 	attPos = 0,0,0
 	attPos0 = -1.869051,-0.009435701,6.439434E-07
-	rot = 0.707107,-5.5989E-08,1.824296E-07,0.7071068
+	rot = 0.7071069,-5.598897E-08,1.824295E-07,0.7071067
 	attRot = 0,0,0,0.9999999
 	attRot0 = 1.264406E-07,1.341104E-07,-4.426485E-08,1
 	mir = 1,1,1
@@ -1287,6 +1397,14 @@ PART
 	{
 		name = FARWingAerodynamicModel
 		isEnabled = True
+		massMultiplier = 1
+		massMultiplier_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0.1
+			maxValue = 2
+			stepIncrement = 0.01
+		}
 		EVENTS
 		{
 		}
@@ -1299,10 +1417,10 @@ PART
 {
 	part = structuralWing_4294546486
 	partName = Part
-	pos = -2.209441,6.849489,-14.76052
+	pos = -2.057405,2.191462,-14.36474
 	attPos = -0.03119659,-0.0832243,1.546749E-08
 	attPos0 = -1.868806,0.08321933,5.984613E-07
-	rot = 0.7071072,-1.022649E-08,3.474014E-07,0.7071066
+	rot = 0.7071071,-1.022646E-08,3.474013E-07,0.7071065
 	attRot = 0,0,0,0.9999999
 	attRot0 = 2.107343E-07,1.490116E-07,1.022656E-08,1
 	mir = 1,1,1
@@ -1330,6 +1448,14 @@ PART
 	{
 		name = FARWingAerodynamicModel
 		isEnabled = True
+		massMultiplier = 1
+		massMultiplier_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0.1
+			maxValue = 2
+			stepIncrement = 0.01
+		}
 		EVENTS
 		{
 		}
@@ -1342,10 +1468,10 @@ PART
 {
 	part = wingConnector_4294565398
 	partName = Part
-	pos = 5.452217,6.849491,-14.75109
+	pos = 5.604265,2.191462,-14.35531
 	attPos = 0,0,0
 	attPos0 = -1.818453,-1.946276,7.152557E-07
-	rot = 1.162952E-07,0.7071069,0.7071069,-2.413327E-07
+	rot = 1.162952E-07,0.7071068,0.7071068,-2.413327E-07
 	attRot = 0.7071068,0,0,0.7071068
 	attRot0 = 0.707107,0.7071066,2.914117E-09,-1.221234E-07
 	mir = 1,1,1
@@ -1376,6 +1502,14 @@ PART
 	{
 		name = FARWingAerodynamicModel
 		isEnabled = True
+		massMultiplier = 1
+		massMultiplier_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0.1
+			maxValue = 2
+			stepIncrement = 0.01
+		}
 		EVENTS
 		{
 		}
@@ -1388,10 +1522,10 @@ PART
 {
 	part = wingConnector_4294542522
 	partName = Part
-	pos = 7.321314,6.84949,-14.76051
+	pos = 7.47337,2.191462,-14.36473
 	attPos = 0,0,0
 	attPos0 = -1.869051,-0.009435733,-8.073409E-07
-	rot = 1.51521E-07,0.7071068,0.707107,-8.68976E-08
+	rot = 1.51521E-07,0.7071067,0.7071069,-8.689757E-08
 	attRot = 0,0,0,0.9999999
 	attRot0 = -1.685874E-07,-1.341104E-07,-4.426489E-08,1
 	mir = 1,1,1
@@ -1420,6 +1554,14 @@ PART
 	{
 		name = FARWingAerodynamicModel
 		isEnabled = True
+		massMultiplier = 1
+		massMultiplier_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0.1
+			maxValue = 2
+			stepIncrement = 0.01
+		}
 		EVENTS
 		{
 		}
@@ -1432,10 +1574,10 @@ PART
 {
 	part = structuralWing_4294542032
 	partName = Part
-	pos = 9.221391,6.849489,-14.76052
+	pos = 9.373457,2.191462,-14.36474
 	attPos = -0.03119755,-0.08322632,-5.02048E-07
 	attPos0 = -1.868806,0.08321846,-7.548234E-07
-	rot = 3.164927E-07,0.7071065,0.7071072,-4.113518E-08
+	rot = 3.164927E-07,0.7071065,0.7071072,-4.113517E-08
 	attRot = 0,0,0,0.9999999
 	attRot0 = -2.528811E-07,-1.490116E-07,1.022653E-08,1
 	mir = 1,1,1
@@ -1463,6 +1605,14 @@ PART
 	{
 		name = FARWingAerodynamicModel
 		isEnabled = True
+		massMultiplier = 1
+		massMultiplier_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0.1
+			maxValue = 2
+			stepIncrement = 0.01
+		}
 		EVENTS
 		{
 		}
@@ -1475,10 +1625,10 @@ PART
 {
 	part = wingConnector_4294640874
 	partName = Part
-	pos = 3.505941,6.844777,-14.82427
+	pos = 3.657988,2.186749,-14.42849
 	attPos = 0,0,0
 	attPos0 = 0,0.3348351,1.847872
-	rot = 0.5000001,-0.5000001,0.5000001,0.5000001
+	rot = 0.5,-0.5,0.5,0.5
 	attRot = -0.4999999,-0.4999999,0.4999999,0.4999999
 	attRot0 = 0,0,0.7071068,0.7071068
 	mir = 1,1,1
@@ -1505,6 +1655,14 @@ PART
 	{
 		name = FARWingAerodynamicModel
 		isEnabled = True
+		massMultiplier = 1
+		massMultiplier_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0.1
+			maxValue = 2
+			stepIncrement = 0.01
+		}
 		EVENTS
 		{
 		}
@@ -1517,10 +1675,10 @@ PART
 {
 	part = wingConnector_4294640716
 	partName = Part
-	pos = 3.505941,6.848977,-16.69331
+	pos = 3.657988,2.190951,-16.29753
 	attPos = 0,0,0
 	attPos0 = 0,-1.534194,1.843674
-	rot = 0.5000001,-0.5000001,0.5000001,0.5000001
+	rot = 0.5,-0.5,0.5,0.5
 	attRot = -0.4999999,-0.4999999,0.4999999,0.4999999
 	attRot0 = 0,0,0.7071068,0.7071068
 	mir = 1,1,1
@@ -1549,6 +1707,14 @@ PART
 	{
 		name = FARWingAerodynamicModel
 		isEnabled = True
+		massMultiplier = 1
+		massMultiplier_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0.1
+			maxValue = 2
+			stepIncrement = 0.01
+		}
 		EVENTS
 		{
 		}
@@ -1561,10 +1727,10 @@ PART
 {
 	part = wingConnector_4294565324
 	partName = Part
-	pos = 1.559662,6.848977,-18.54373
+	pos = 1.711709,2.19095,-18.14795
 	attPos = -0.01080322,0.05372298,4.768372E-07
 	attPos0 = -1.850416,1.946278,7.152557E-07
-	rot = 0.7071069,-2.104241E-07,1.472038E-07,0.7071069
+	rot = 0.7071068,-2.104241E-07,1.472038E-07,0.7071068
 	attRot = 0.7071068,0,0,0.7071068
 	attRot0 = -6.141246E-08,-1.807819E-09,-0.7071066,0.7071069
 	mir = 1,1,1
@@ -1594,6 +1760,14 @@ PART
 	{
 		name = FARWingAerodynamicModel
 		isEnabled = True
+		massMultiplier = 1
+		massMultiplier_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0.1
+			maxValue = 2
+			stepIncrement = 0.01
+		}
 		EVENTS
 		{
 		}
@@ -1606,10 +1780,10 @@ PART
 {
 	part = wingConnector_4294550764
 	partName = Part
-	pos = -0.3110602,6.848977,-18.54553
+	pos = -0.159018,2.19095,-18.14975
 	attPos = 0.06915104,0.0007514707,4.707179E-07
 	attPos0 = -1.870692,-0.001812647,6.439373E-07
-	rot = 0.7071069,-1.541249E-07,3.227123E-07,0.7071069
+	rot = 0.7071068,-1.541249E-07,3.227123E-07,0.7071068
 	attRot = 0,0,0,0.9999999
 	attRot0 = 8.429374E-08,1.639128E-07,4.51421E-08,1
 	mir = 1,1,1
@@ -1641,6 +1815,14 @@ PART
 	{
 		name = FARWingAerodynamicModel
 		isEnabled = True
+		massMultiplier = 1
+		massMultiplier_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0.1
+			maxValue = 2
+			stepIncrement = 0.01
+		}
 		EVENTS
 		{
 		}
@@ -1653,10 +1835,10 @@ PART
 {
 	part = wingConnector_4292959970
 	partName = Part
-	pos = -2.180226,6.848976,-18.54852
+	pos = -2.028186,2.190947,-18.15274
 	attPos = 0,0,0
 	attPos0 = -1.86914,-0.002981872,5.08288E-07
-	rot = 0.7071071,-4.875774E-08,4.280795E-07,0.7071067
+	rot = 0.707107,-4.875771E-08,4.280794E-07,0.7071066
 	attRot = 0,0,0,1
 	attRot0 = 2.107343E-07,1.490116E-07,-9.349198E-09,1
 	mir = 1,1,1
@@ -1688,6 +1870,14 @@ PART
 	{
 		name = FARWingAerodynamicModel
 		isEnabled = True
+		massMultiplier = 1
+		massMultiplier_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0.1
+			maxValue = 2
+			stepIncrement = 0.01
+		}
 		EVENTS
 		{
 		}
@@ -1700,10 +1890,10 @@ PART
 {
 	part = delta.small_4292954360
 	partName = Part
-	pos = -4.05052,6.848974,-17.82134
+	pos = -3.898486,2.190947,-17.42556
 	attPos = 0,0,0
 	attPos0 = -1.870265,0.7271723,4.170749E-07
-	rot = 0.7071072,6.714608E-08,5.439833E-07,0.7071066
+	rot = 0.7071071,6.71461E-08,5.439832E-07,0.7071065
 	attRot = 0,0,0,1
 	attRot0 = 1.685874E-07,1.639127E-07,5.551914E-09,1
 	mir = 1,1,1
@@ -1731,6 +1921,14 @@ PART
 	{
 		name = FARWingAerodynamicModel
 		isEnabled = True
+		massMultiplier = 1
+		massMultiplier_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0.1
+			maxValue = 2
+			stepIncrement = 0.01
+		}
 		EVENTS
 		{
 		}
@@ -1743,10 +1941,10 @@ PART
 {
 	part = wingConnector3_4292951202
 	partName = Part
-	pos = -4.04887,6.848975,-19.41673
+	pos = -3.896836,2.190947,-19.02095
 	attPos = 0,0,0
 	attPos0 = -1.868616,-0.8682156,3.275386E-08
-	rot = 0.7071072,6.714608E-08,5.439833E-07,0.7071066
+	rot = 0.7071071,6.71461E-08,5.439832E-07,0.7071065
 	attRot = 0,0,0,1
 	attRot0 = 1.685874E-07,1.639127E-07,5.551914E-09,1
 	mir = 1,1,1
@@ -1776,6 +1974,14 @@ PART
 	{
 		name = FARWingAerodynamicModel
 		isEnabled = True
+		massMultiplier = 1
+		massMultiplier_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0.1
+			maxValue = 2
+			stepIncrement = 0.01
+		}
 		EVENTS
 		{
 		}
@@ -1788,10 +1994,10 @@ PART
 {
 	part = structuralIBeam3_4294394280
 	partName = Part
-	pos = -1.211069,6.648971,-17.64555
+	pos = -1.059029,1.990942,-17.24977
 	attPos = 0.02720773,-0.0229646,0.1999997
 	attPos0 = -0.9272087,0.9229574,1.090238E-06
-	rot = 0.7071068,0.7071071,0,-1.47514E-07
+	rot = 0.7071066,0.7071069,6.610836E-09,-1.40903E-07
 	attRot = -2.492654E-07,0.7071069,-3.124858E-07,0.7071069
 	attRot0 = 0.5000003,0.4999999,-0.5000001,0.4999998
 	mir = 1,1,1
@@ -1835,10 +2041,10 @@ PART
 {
 	part = SmallGearBay_4294416900
 	partName = Part
-	pos = -1.292642,6.353331,-17.64555
+	pos = -1.140602,1.695302,-17.24977
 	attPos = 0,0,0
 	attPos0 = -0.2956419,-0.08157072,3.738088E-06
-	rot = -4.214685E-08,4.470347E-08,-6.4075E-07,-1
+	rot = -7.194911E-08,2.425036E-08,-6.322027E-07,-1
 	attRot = 0,0.7071067,0,-0.7071067
 	attRot0 = 0.7071072,0.7071065,1.053672E-07,6.32202E-08
 	mir = 1,1,1
@@ -2123,10 +2329,10 @@ PART
 {
 	part = SmallGearBay_4294416106
 	partName = Part
-	pos = -0.8357272,6.353331,-17.64555
+	pos = -0.6836862,1.695302,-17.24977
 	attPos = 0,0,0
 	attPos0 = -0.2956429,0.3753413,3.796141E-06
-	rot = -4.214685E-08,4.470347E-08,-6.4075E-07,-1
+	rot = -7.194911E-08,2.425036E-08,-6.322027E-07,-1
 	attRot = 0,0.7071067,0,-0.7071067
 	attRot0 = 0.7071072,0.7071065,1.053672E-07,6.32202E-08
 	mir = 1,1,1
@@ -2411,10 +2617,10 @@ PART
 {
 	part = SmallGearBay_4294378170
 	partName = Part
-	pos = -1.688474,6.353186,-17.64556
+	pos = -1.536434,1.695158,-17.24978
 	attPos = 0,0,0
 	attPos0 = -0.2958016,-0.4773984,7.633458E-06
-	rot = -1.264406E-07,-2.980236E-08,7.152559E-07,1
+	rot = -9.663834E-08,-9.349244E-09,6.322027E-07,1
 	attRot = 0,-0.7071067,0,-0.7071067
 	attRot0 = -0.7071071,-0.7071065,-1.264406E-07,-8.429364E-08
 	mir = 1,1,1
@@ -2700,10 +2906,10 @@ PART
 {
 	part = wingConnector_4294546040
 	partName = Part
-	pos = 5.452219,6.848977,-18.54373
+	pos = 5.604267,2.19095,-18.14795
 	attPos = -0.01080322,0.05372298,4.768372E-07
 	attPos0 = -1.850417,-1.946277,7.152557E-07
-	rot = 1.162952E-07,0.7071069,0.7071069,-2.413327E-07
+	rot = 1.162952E-07,0.7071068,0.7071068,-2.413327E-07
 	attRot = 0.7071068,0,0,0.7071068
 	attRot0 = 0.707107,0.7071066,6.251879E-08,-6.251879E-08
 	mir = 1,1,1
@@ -2733,6 +2939,14 @@ PART
 	{
 		name = FARWingAerodynamicModel
 		isEnabled = True
+		massMultiplier = 1
+		massMultiplier_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0.1
+			maxValue = 2
+			stepIncrement = 0.01
+		}
 		EVENTS
 		{
 		}
@@ -2745,10 +2959,10 @@ PART
 {
 	part = wingConnector_4294545668
 	partName = Part
-	pos = 7.322959,6.848977,-18.54553
+	pos = 7.475013,2.19095,-18.14975
 	attPos = 0.06915104,0.0007514707,4.707179E-07
 	attPos0 = -1.870693,-0.001813012,-8.076315E-07
-	rot = 2.918036E-07,0.7071069,0.7071069,-1.850336E-07
+	rot = 2.918036E-07,0.7071068,0.7071068,-1.850336E-07
 	attRot = 0,0,0,0.9999999
 	attRot0 = -4.540811E-14,-1.639127E-07,4.5142E-08,1
 	mir = 1,1,1
@@ -2780,6 +2994,14 @@ PART
 	{
 		name = FARWingAerodynamicModel
 		isEnabled = True
+		massMultiplier = 1
+		massMultiplier_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0.1
+			maxValue = 2
+			stepIncrement = 0.01
+		}
 		EVENTS
 		{
 		}
@@ -2792,10 +3014,10 @@ PART
 {
 	part = wingConnector_4294523640
 	partName = Part
-	pos = 9.192135,6.848976,-18.54852
+	pos = 9.344198,2.190947,-18.15274
 	attPos = 0,0,0
 	attPos0 = -1.869139,-0.002981903,-6.714429E-07
-	rot = 3.971708E-07,0.7071066,0.7071072,-7.966644E-08
+	rot = 3.971707E-07,0.7071065,0.7071071,-7.966641E-08
 	attRot = 0,0,0,1
 	attRot0 = -3.371748E-07,-1.490116E-07,-9.34927E-09,1
 	mir = 1,1,1
@@ -2827,6 +3049,14 @@ PART
 	{
 		name = FARWingAerodynamicModel
 		isEnabled = True
+		massMultiplier = 1
+		massMultiplier_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0.1
+			maxValue = 2
+			stepIncrement = 0.01
+		}
 		EVENTS
 		{
 		}
@@ -2839,10 +3069,10 @@ PART
 {
 	part = delta.small_4294523500
 	partName = Part
-	pos = 11.06232,6.848969,-17.82134
+	pos = 11.21437,2.190942,-17.42556
 	attPos = 0,0,0
 	attPos0 = -1.870265,0.7271723,4.170749E-07
-	rot = 5.130747E-07,0.7071065,0.7071072,3.623752E-08
+	rot = 5.130747E-07,0.7071065,0.7071072,3.623754E-08
 	attRot = 0,0,0,1
 	attRot0 = 1.685874E-07,1.639127E-07,5.551914E-09,1
 	mir = 1,1,1
@@ -2870,6 +3100,14 @@ PART
 	{
 		name = FARWingAerodynamicModel
 		isEnabled = True
+		massMultiplier = 1
+		massMultiplier_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0.1
+			maxValue = 2
+			stepIncrement = 0.01
+		}
 		EVENTS
 		{
 		}
@@ -2882,10 +3120,10 @@ PART
 {
 	part = wingConnector3_4294523010
 	partName = Part
-	pos = 11.06067,6.848975,-19.41673
+	pos = 11.21272,2.190947,-19.02095
 	attPos = 0,0,0
 	attPos0 = -1.868616,-0.8682155,-3.424843E-07
-	rot = 5.130747E-07,0.7071065,0.7071072,3.623752E-08
+	rot = 5.130747E-07,0.7071065,0.7071072,3.623754E-08
 	attRot = 0,0,0,1
 	attRot0 = -1.685875E-07,-1.639127E-07,5.551837E-09,1
 	mir = 1,1,1
@@ -2915,6 +3153,14 @@ PART
 	{
 		name = FARWingAerodynamicModel
 		isEnabled = True
+		massMultiplier = 1
+		massMultiplier_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0.1
+			maxValue = 2
+			stepIncrement = 0.01
+		}
 		EVENTS
 		{
 		}
@@ -2927,10 +3173,10 @@ PART
 {
 	part = structuralIBeam3_4294393674
 	partName = Part
-	pos = 8.222979,6.648971,-17.64554
+	pos = 8.375034,1.990942,-17.24976
 	attPos = 0.02721155,-0.02296835,-0.2000002
 	attPos0 = -0.9272075,0.9229574,-1.171298E-06
-	rot = 0.7071071,-0.7071068,4.214685E-08,-8.42937E-08
+	rot = 0.7071069,-0.7071066,1.446248E-08,-9.875627E-08
 	attRot = -2.492654E-07,0.7071069,-3.124858E-07,0.7071069
 	attRot0 = 0.5000001,0.4999998,-0.5000003,0.4999999
 	mir = 1,1,1
@@ -2974,10 +3220,10 @@ PART
 {
 	part = SmallGearBay_4294387164
 	partName = Part
-	pos = 8.304552,6.353304,-17.64554
+	pos = 8.456612,1.695271,-17.24976
 	attPos = 0,0,0
 	attPos0 = 0.295641,-0.0815697,2.254711E-08
-	rot = 3.793216E-07,1.341105E-07,-6.705523E-07,1
+	rot = 4.091239E-07,1.434597E-07,-6.743495E-07,1
 	attRot = 0,0.7071067,0,-0.7071067
 	attRot0 = -0.7071073,0.7071064,4.214688E-08,-2.107339E-08
 	mir = 1,1,1
@@ -3262,10 +3508,10 @@ PART
 {
 	part = SmallGearBay_4294382668
 	partName = Part
-	pos = 7.847597,6.353331,-17.64554
+	pos = 7.999653,1.695302,-17.24976
 	attPos = 0,0,0
 	attPos0 = 0.2956418,0.3753426,-9.190622E-07
-	rot = 3.793216E-07,1.341105E-07,-6.705523E-07,1
+	rot = 4.091239E-07,1.434597E-07,-6.743495E-07,1
 	attRot = 0,0.7071067,0,-0.7071067
 	attRot0 = -0.7071073,0.7071064,4.214688E-08,-2.107339E-08
 	mir = 1,1,1
@@ -3550,10 +3796,10 @@ PART
 {
 	part = SmallGearBay_4294389774
 	partName = Part
-	pos = 8.700382,6.353157,-17.64557
+	pos = 8.852444,1.695124,-17.24979
 	attPos = 0,0,0
 	attPos0 = 0.2958007,-0.4773969,2.833227E-06
-	rot = -1.264406E-07,4.470349E-08,-6.705523E-07,1
+	rot = -9.663821E-08,5.405272E-08,-6.743495E-07,1
 	attRot = 0,-0.7071067,0,-0.7071067
 	attRot0 = 0.7071072,-0.7071064,-6.322029E-08,4.214682E-08
 	mir = 1,1,1
@@ -3839,10 +4085,10 @@ PART
 {
 	part = wingConnector_4294564870
 	partName = Part
-	pos = 3.505941,6.842965,-18.57396
+	pos = 3.657988,2.184937,-18.17818
 	attPos = 0,0,0
 	attPos0 = 0,-3.414843,1.849686
-	rot = 0.5000001,-0.5000001,0.5000001,0.5000001
+	rot = 0.5,-0.5,0.5,0.5
 	attRot = -0.4999999,-0.4999999,0.4999999,0.4999999
 	attRot0 = 0,0,0.7071068,0.7071068
 	mir = 1,1,1
@@ -3869,6 +4115,14 @@ PART
 	{
 		name = FARWingAerodynamicModel
 		isEnabled = True
+		massMultiplier = 1
+		massMultiplier_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0.1
+			maxValue = 2
+			stepIncrement = 0.01
+		}
 		EVENTS
 		{
 		}
@@ -3881,7 +4135,7 @@ PART
 {
 	part = strutConnectorMedium_4294249756
 	partName = StrutConnector
-	pos = 4.820879,7.377714,-10.21018
+	pos = 4.972926,2.719687,-9.814405
 	attPos = 0,0,0
 	attPos0 = 1.314939,4.948997,1.314939
 	rot = 0.2705981,0.6532815,0.6532816,0.270598
@@ -3897,7 +4151,7 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = (0.0, 0.0, 0.0)
-	cData = tgt: mk3FuselageMONO_1; pos: 0.04849223,5.571247,-0.1656631; dir: 0.008700016,0.9995204,-0.02972087
+	cData = tgt: mk3FuselageMONO_1; pos: 0.048494,5.571441,-0.1656681; dir: 0.008700016,0.9995204,-0.02972087
 	sym = strutConnectorMedium_4294244618
 	srfN = srfAttach,mk3CargoBayL_4294439994
 	EVENTS
@@ -3914,7 +4168,7 @@ PART
 {
 	part = strutConnectorMedium_4294244618
 	partName = StrutConnector
-	pos = 2.191002,7.377713,-10.21018
+	pos = 2.343049,2.719687,-9.814405
 	attPos = 0,0,0
 	attPos0 = -1.314939,4.948997,1.314939
 	rot = -0.6532816,-0.270598,-0.2705981,-0.6532815
@@ -3930,7 +4184,7 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = (0.0, 0.0, 0.0)
-	cData = tgt: mk3FuselageMONO_1; pos: 0.04849387,5.571479,0.1656715; dir: 0.008699901,0.9995208,0.02972085
+	cData = tgt: mk3FuselageMONO_1; pos: 0.04849466,5.571595,0.165674; dir: 0.008699901,0.9995208,0.02972085
 	sym = strutConnectorMedium_4294249756
 	srfN = srfAttach,mk3CargoBayL_4294439994
 	EVENTS
@@ -3947,10 +4201,10 @@ PART
 {
 	part = strutConnectorMedium_4293782292
 	partName = StrutConnector
-	pos = 0.9422264,6.684049,-12.8646
+	pos = 1.094272,2.026021,-12.46882
 	attPos = 0,0,0
 	attPos0 = -0.617435,1.886481,0.1654417
-	rot = 0.7010577,0.09229583,0.09229601,0.7010575
+	rot = 0.7010575,0.09229582,0.092296,0.7010573
 	attRot = 0,0,0,1
 	attRot0 = 1.594481E-07,0.1305262,-1.348138E-07,0.9914449
 	mir = 1,1,1
@@ -3963,7 +4217,7 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = (0.0, 0.0, 0.0)
-	cData = tgt: wingConnector_38; pos: -2.50982,-4.100013,-0.7461879; dir: -0.5159171,-0.8427944,-0.1533858
+	cData = tgt: wingConnector_36; pos: -2.509896,-4.100132,-0.7462106; dir: -0.5159171,-0.8427944,-0.1533858
 	sym = strutConnectorMedium_4293782184
 	srfN = srfAttach,wingConnector_4294565688
 	EVENTS
@@ -3980,10 +4234,10 @@ PART
 {
 	part = strutConnectorMedium_4293782184
 	partName = StrutConnector
-	pos = 6.069689,6.684049,-12.8646
+	pos = 6.221744,2.026021,-12.46882
 	attPos = 0,0,0
 	attPos0 = -0.6174346,1.886481,-0.1654418
-	rot = 0.09229591,0.7010574,0.7010577,0.09229586
+	rot = 0.09229589,0.7010573,0.7010576,0.09229584
 	attRot = 0,0,0,1
 	attRot0 = -2.01595E-07,-0.1305262,-1.348139E-07,0.9914449
 	mir = 1,1,1
@@ -3996,7 +4250,7 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = (0.0, 0.0, 0.0)
-	cData = tgt: wingConnector_56; pos: -2.509835,-4.10003,0.7461948; dir: -0.5159174,-0.8427952,0.1533866
+	cData = tgt: wingConnector_54; pos: -2.509894,-4.100125,0.7462131; dir: -0.5159174,-0.8427952,0.1533866
 	sym = strutConnectorMedium_4293782292
 	srfN = srfAttach,wingConnector_4294565398
 	EVENTS
@@ -4013,10 +4267,10 @@ PART
 {
 	part = strutConnectorMedium_4293780810
 	partName = StrutConnector
-	pos = 1.164319,6.737461,-8.516085
+	pos = 1.316364,2.079435,-8.120314
 	attPos = 0,0,0
 	attPos0 = -0.3953443,-1.291126,0.1059325
-	rot = 0.7010577,0.09229585,0.09229606,0.7010574
+	rot = 0.7010576,0.09229583,0.09229604,0.7010573
 	attRot = 0,0,0,1
 	attRot0 = -1.594482E-07,-0.1305262,1.032037E-07,-0.9914449
 	mir = 1,1,1
@@ -4029,7 +4283,7 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = (0.0, 0.0, 0.0)
-	cData = tgt: wingConnector_7; pos: -0.5381829,-4.160957,-0.1590984; dir: -0.1281806,-0.9910266,-0.03789284
+	cData = tgt: wingConnector_7; pos: -0.5381639,-4.160814,-0.1590933; dir: -0.1281806,-0.9910266,-0.03789284
 	sym = strutConnectorMedium_4293780366
 	srfN = srfAttach,structuralWing_4294573168
 	EVENTS
@@ -4046,10 +4300,10 @@ PART
 {
 	part = strutConnectorMedium_4293780366
 	partName = StrutConnector
-	pos = 5.847562,6.737461,-8.516064
+	pos = 5.999609,2.079434,-8.120295
 	attPos = 0,0,0
 	attPos0 = -0.3953433,-1.291126,-0.1059326
-	rot = 0.09229601,0.7010575,0.7010576,0.0922958
+	rot = 0.092296,0.7010574,0.7010575,0.09229579
 	attRot = 0,0,0,1
 	attRot0 = -1.173013E-07,-0.1305262,-1.032037E-07,0.9914449
 	mir = 1,1,1
@@ -4062,7 +4316,7 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = (0.0, 0.0, 0.0)
-	cData = tgt: wingConnector_9; pos: -0.5382044,-4.161139,0.1591081; dir: -0.1281807,-0.9910275,0.03789375
+	cData = tgt: wingConnector_9; pos: -0.5382052,-4.161137,0.1591101; dir: -0.1281807,-0.9910275,0.03789375
 	sym = strutConnectorMedium_4293780810
 	srfN = srfAttach,structuralWing_4294572992
 	EVENTS
@@ -4079,10 +4333,10 @@ PART
 {
 	part = strutConnectorMedium_4293779198
 	partName = StrutConnector
-	pos = 2.344593,6.69426,-11.59866
+	pos = 2.49664,2.036232,-11.20288
 	attPos = 0,0,0
 	attPos0 = -0.5369436,1.161347,0.1438738
-	rot = 0.4304597,-0.4304594,0.5609854,0.5609856
+	rot = 0.4304596,-0.4304594,0.5609853,0.5609856
 	attRot = 0,0,0,1
 	attRot0 = 1.043081E-07,0.130526,-2.831221E-07,0.9914449
 	mir = 1,1,1
@@ -4095,7 +4349,7 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = (0.0, 0.0, 0.0)
-	cData = tgt: wingConnector_7; pos: 1.151656,1.858108,0.2489645; dir: 0.5234347,0.8445187,0.1131553
+	cData = tgt: wingConnector_7; pos: 1.151691,1.858163,0.2489716; dir: 0.5234347,0.8445187,0.1131553
 	sym = strutConnectorMedium_4293778642
 	srfN = srfAttach,wingConnector_4294641042
 	EVENTS
@@ -4112,7 +4366,7 @@ PART
 {
 	part = strutConnectorMedium_4293778642
 	partName = StrutConnector
-	pos = 4.667295,6.69426,-11.59866
+	pos = 4.819345,2.036232,-11.20288
 	attPos = 0,0,0
 	attPos0 = -0.5369439,-1.161347,0.1438738
 	rot = 0.5609854,0.5609854,0.4304599,-0.4304594
@@ -4128,7 +4382,7 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = (0.0, 0.0, 0.0)
-	cData = tgt: wingConnector_9; pos: 1.15175,1.858262,-0.2489849; dir: 0.5234348,0.8445193,-0.1131553
+	cData = tgt: wingConnector_9; pos: 1.151794,1.858331,-0.2489949; dir: 0.5234348,0.8445193,-0.1131553
 	sym = strutConnectorMedium_4293779198
 	srfN = srfAttach,wingConnector_4294641042
 	EVENTS
@@ -4145,10 +4399,10 @@ PART
 {
 	part = strutConnectorMedium_4293760146
 	partName = StrutConnector
-	pos = 3.05539,6.699705,-7.790805
+	pos = 3.207437,2.041677,-7.395032
 	attPos = 0,0,0
 	attPos0 = -0.5570336,0.4505514,0.1492567
-	rot = 0.4304596,-0.4304592,0.5609855,0.5609857
+	rot = 0.4304595,-0.4304591,0.5609854,0.5609856
 	attRot = 0,0,0,1
 	attRot0 = 8.9407E-08,0.1305261,-2.682209E-07,0.9914449
 	mir = 1,1,1
@@ -4161,7 +4415,7 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = (0.0, 0.0, 0.0)
-	cData = tgt: wingConnector_11; pos: 2.096976,0.6588864,0.5101829; dir: 0.929311,0.291996,0.2260959
+	cData = tgt: wingConnector_11; pos: 2.097027,0.658902,0.5101948; dir: 0.929311,0.291996,0.2260959
 	sym = strutConnectorMedium_4293759954
 	srfN = srfAttach,wingConnector_4294641404
 	EVENTS
@@ -4178,10 +4432,10 @@ PART
 {
 	part = strutConnectorMedium_4293759954
 	partName = StrutConnector
-	pos = 3.956491,6.699705,-7.790805
+	pos = 4.108539,2.041677,-7.395032
 	attPos = 0,0,0
 	attPos0 = -0.5570337,-0.4505513,0.1492567
-	rot = 0.5609855,0.5609856,0.4304596,-0.4304593
+	rot = 0.5609854,0.5609856,0.4304595,-0.4304592
 	attRot = 0,0,0,1
 	attRot0 = 0.9914449,2.831221E-07,-0.130526,1.043082E-07
 	mir = 1,1,1
@@ -4194,7 +4448,7 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = (0.0, 0.0, 0.0)
-	cData = tgt: wingConnector_11; pos: 2.097005,0.6588954,-0.5101904; dir: 0.9293113,0.2919964,-0.2260962
+	cData = tgt: wingConnector_11; pos: 2.097057,0.6589113,-0.5102028; dir: 0.9293113,0.2919964,-0.2260962
 	sym = strutConnectorMedium_4293760146
 	srfN = srfAttach,wingConnector_4294641404
 	EVENTS
@@ -4211,10 +4465,10 @@ PART
 {
 	part = strutConnectorMedium_4293751606
 	partName = StrutConnector
-	pos = 1.80029,6.679829,-11.65249
+	pos = 1.952337,2.021801,-11.25671
 	attPos = 0,0,0
 	attPos0 = -0.5907766,1.70565,0.1582981
-	rot = 0.4304597,-0.4304594,0.5609854,0.5609856
+	rot = 0.4304596,-0.4304594,0.5609853,0.5609856
 	attRot = 0,0,0,1
 	attRot0 = 1.043081E-07,0.130526,-2.831221E-07,0.9914449
 	mir = 1,1,1
@@ -4227,7 +4481,7 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = (0.0, 0.0, 0.0)
-	cData = tgt: wingConnector_39; pos: -4.963576,4.139731,-1.408036; dir: -0.7503614,0.6258188,-0.2128583
+	cData = tgt: wingConnector_37; pos: -4.963571,4.13973,-1.408034; dir: -0.7503614,0.6258188,-0.2128583
 	sym = strutConnectorMedium_4293750080
 	srfN = srfAttach,wingConnector_4294641042
 	EVENTS
@@ -4244,7 +4498,7 @@ PART
 {
 	part = strutConnectorMedium_4293750080
 	partName = StrutConnector
-	pos = 5.211591,6.679829,-11.65249
+	pos = 5.363638,2.021801,-11.25671
 	attPos = 0,0,0
 	attPos0 = -0.590777,-1.70565,0.1582981
 	rot = 0.5609854,0.5609854,0.4304599,-0.4304594
@@ -4260,7 +4514,7 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = (0.0, 0.0, 0.0)
-	cData = tgt: wingConnector_57; pos: -4.963746,4.139871,1.408084; dir: -0.7503618,0.6258188,0.2128584
+	cData = tgt: wingConnector_55; pos: -4.963727,4.139856,1.408079; dir: -0.7503618,0.6258188,0.2128584
 	sym = strutConnectorMedium_4293751606
 	srfN = srfAttach,wingConnector_4294641042
 	EVENTS
@@ -4277,10 +4531,10 @@ PART
 {
 	part = strutConnectorMedium_4293748390
 	partName = StrutConnector
-	pos = -2.668248,6.71821,-19.23314
+	pos = -2.516212,2.060183,-18.83736
 	attPos = 0,0,0
 	attPos0 = -0.4880235,-0.6846129,0.1307657
-	rot = 0.7010579,0.092296,0.09229624,0.7010573
+	rot = 0.7010577,0.09229597,0.09229621,0.7010571
 	attRot = 0,0,0,1
 	attRot0 = 1.729748E-07,0.1305261,-1.831382E-07,0.9914449
 	mir = 1,1,1
@@ -4293,7 +4547,7 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = (0.0, 0.0, 0.0)
-	cData = tgt: wingConnector_56; pos: 9.885801,0.7098463,2.610572; dir: 0.9645348,0.06925882,0.2547074
+	cData = tgt: wingConnector_54; pos: 9.885736,0.7098442,2.610556; dir: 0.9645348,0.06925882,0.2547074
 	sym = strutConnectorMedium_4293748210
 	srfN = srfAttach,wingConnector_4292959970
 	EVENTS
@@ -4310,10 +4564,10 @@ PART
 {
 	part = strutConnectorMedium_4293748210
 	partName = StrutConnector
-	pos = 9.680153,6.71821,-19.23313
+	pos = 9.832212,2.060183,-18.83735
 	attPos = 0,0,0
 	attPos0 = -0.4880195,-0.6846128,-0.1307659
-	rot = 0.09229617,0.7010573,0.7010579,0.09229593
+	rot = 0.09229615,0.7010571,0.7010577,0.09229591
 	attRot = 0,0,0,1
 	attRot0 = -8.976276E-08,-0.1305261,-1.943737E-07,0.9914449
 	mir = 1,1,1
@@ -4326,7 +4580,7 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = (0.0, 0.0, 0.0)
-	cData = tgt: wingConnector_38; pos: 9.88464,0.7097605,-2.610262; dir: 0.964536,0.06925878,-0.2547074
+	cData = tgt: wingConnector_36; pos: 9.884705,0.7097737,-2.610279; dir: 0.964536,0.06925878,-0.2547074
 	sym = strutConnectorMedium_4293748390
 	srfN = srfAttach,wingConnector_4294523640
 	EVENTS
@@ -4343,10 +4597,10 @@ PART
 {
 	part = strutConnectorMedium_4293476908
 	partName = StrutConnector
-	pos = -0.8476377,6.705202,-19.94641
+	pos = -0.6955948,2.047173,-19.55063
 	attPos = 0,0,0
 	attPos0 = -0.536572,-1.400878,0.143774
-	rot = 0.7010576,0.09229602,0.09229608,0.7010575
+	rot = 0.7010575,0.09229601,0.09229607,0.7010574
 	attRot = 0,0,0,1
 	attRot0 = 1.283039E-07,0.1305262,-2.86875E-07,0.9914449
 	mir = 1,1,1
@@ -4359,7 +4613,7 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = (0.0, 0.0, 0.0)
-	cData = tgt: wingConnector_73; pos: 3.173658,-0.231726,0.8048171; dir: 0.9668992,-0.07059564,0.2451986
+	cData = tgt: wingConnector_71; pos: 3.173674,-0.2317221,0.804821; dir: 0.9668992,-0.07059564,0.2451986
 	sym = strutConnectorMedium_4293476608
 	srfN = srfAttach,wingConnector_4294550764
 	EVENTS
@@ -4376,10 +4630,10 @@ PART
 {
 	part = strutConnectorMedium_4293476608
 	partName = StrutConnector
-	pos = 7.859521,6.705202,-19.94641
+	pos = 8.011575,2.047173,-19.55063
 	attPos = 0,0,0
 	attPos0 = -0.5365675,-1.400878,-0.1437741
-	rot = 0.09229603,0.7010574,0.7010577,0.09229597
+	rot = 0.09229601,0.7010573,0.7010576,0.09229595
 	attRot = 0,0,0,1
 	attRot0 = -2.125975E-07,-0.1305262,-2.763383E-07,0.9914449
 	mir = 1,1,1
@@ -4392,7 +4646,7 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = (0.0, 0.0, 0.0)
-	cData = tgt: wingConnector_73; pos: 3.173598,-0.2317219,-0.8048011; dir: 0.9669002,-0.07059582,-0.2451985
+	cData = tgt: wingConnector_71; pos: 3.173616,-0.2317182,-0.8048051; dir: 0.9669002,-0.07059582,-0.2451985
 	sym = strutConnectorMedium_4293476908
 	srfN = srfAttach,wingConnector_4294545668
 	EVENTS
@@ -4409,10 +4663,10 @@ PART
 {
 	part = strutConnectorMedium_4293475006
 	partName = StrutConnector
-	pos = -0.09507585,6.755734,-14.83747
+	pos = 0.0569675,2.097706,-14.44169
 	attPos = 0,0,0
 	attPos0 = -1.654725,-0.08637537,0.09375253
-	rot = 0.4999999,0.5000001,0.5000004,0.5000001
+	rot = 0.4999998,0.5,0.5000003,0.5
 	attRot = 0,0,0,1
 	attRot0 = 1.022656E-08,0.7071069,-1.022651E-08,0.7071067
 	mir = 1,1,1
@@ -4425,7 +4679,7 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = (0.0, 0.0, 0.0)
-	cData = tgt: wingConnector_35; pos: -0.0003272978,-1.651948,1.654739; dir: -0.0001396934,-0.7065074,0.7077056
+	cData = tgt: wingConnector_33; pos: -0.0003267646,-1.651946,1.654743; dir: -0.0001396934,-0.7065074,0.7077056
 	sym = strutConnectorMedium_4293474494
 	srfN = srfAttach,wingConnector_4294565688
 	EVENTS
@@ -4442,10 +4696,10 @@ PART
 {
 	part = strutConnectorMedium_4293474494
 	partName = StrutConnector
-	pos = 7.106976,6.755734,-14.83746
+	pos = 7.25903,2.097706,-14.44168
 	attPos = 0,0,0
 	attPos0 = -1.654725,-0.08637545,-0.0937527
-	rot = 0.5000005,0.5000001,0.4999999,0.5000002
+	rot = 0.5000003,0.4999999,0.4999997,0.5
 	attRot = 0,0,0,1
 	attRot0 = -3.129999E-08,-0.7071069,1.084692E-08,0.7071067
 	mir = 1,1,1
@@ -4458,7 +4712,7 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = (0.0, 0.0, 0.0)
-	cData = tgt: wingConnector_35; pos: -0.000353229,-1.794275,-1.797308; dir: -0.0001388926,-0.7065086,-0.7077059
+	cData = tgt: wingConnector_33; pos: -0.0003524759,-1.794278,-1.797315; dir: -0.0001388926,-0.7065086,-0.7077059
 	sym = strutConnectorMedium_4293475006
 	srfN = srfAttach,wingConnector_4294565398
 	EVENTS
@@ -4475,10 +4729,10 @@ PART
 {
 	part = elevon2_4294684176
 	partName = Part
-	pos = -1.224349,6.848976,-20.34926
+	pos = -1.072308,2.190947,-19.95348
 	attPos = 0,0,0
 	attPos0 = -0.9132817,-1.803729,4.975126E-07
-	rot = -0.7071069,-1.572248E-13,-1.572248E-13,-0.7071069
+	rot = -0.7071068,-1.877868E-13,-2.041083E-13,-0.7071068
 	attRot = 0.4999999,0.4999999,0.4999999,-0.4999999
 	attRot0 = 0,1.192093E-07,3.371748E-07,-1
 	mir = 1,1,1
@@ -4506,25 +4760,50 @@ PART
 	{
 		name = FARControllableSurface
 		isEnabled = True
-		pitchaxis = True
-		yawaxis = False
-		rollaxis = True
-		isFlap = False
+		pitchaxis = 100
+		yawaxis = 0
+		rollaxis = 100
+		pitchaxisDueToAoA = 0
+		maxdeflect = 20
+		isFlap = True
 		isSpoiler = False
 		flapDeflectionLevel = 2
-		maxdeflect = 20
 		maxdeflectFlap = 15
+		massMultiplier = 1
 		pitchaxis_UIEditor
 		{
 			controlEnabled = True
+			minValue = -100
+			maxValue = 100
+			stepIncrement = 5
 		}
 		yawaxis_UIEditor
 		{
 			controlEnabled = True
+			minValue = -100
+			maxValue = 100
+			stepIncrement = 5
 		}
 		rollaxis_UIEditor
 		{
 			controlEnabled = True
+			minValue = -100
+			maxValue = 100
+			stepIncrement = 5
+		}
+		pitchaxisDueToAoA_UIEditor
+		{
+			controlEnabled = True
+			minValue = -200
+			maxValue = 200
+			stepIncrement = 5
+		}
+		maxdeflect_UIEditor
+		{
+			controlEnabled = True
+			minValue = -40
+			maxValue = 40
+			stepIncrement = 0.5
 		}
 		isFlap_UIEditor
 		{
@@ -4534,25 +4813,25 @@ PART
 		{
 			controlEnabled = True
 		}
-		maxdeflect_UIEditor
-		{
-			controlEnabled = True
-			minValue = -15
-			maxValue = 30
-			stepIncrement = 0.5
-		}
 		maxdeflectFlap_UIEditor
 		{
 			controlEnabled = True
-			minValue = -30
+			minValue = -85
 			maxValue = 85
 			stepIncrement = 0.5
+		}
+		massMultiplier_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0.1
+			maxValue = 2
+			stepIncrement = 0.01
 		}
 		EVENTS
 		{
 			DeflectMore
 			{
-				active = False
+				active = True
 				guiActive = True
 				guiIcon = Deflect more
 				guiName = Deflect more
@@ -4563,7 +4842,7 @@ PART
 			}
 			DeflectLess
 			{
-				active = False
+				active = True
 				guiActive = True
 				guiIcon = Deflect less
 				guiName = Deflect less
@@ -4581,11 +4860,11 @@ PART
 			}
 			IncreaseDeflect
 			{
-				actionGroup = None
+				actionGroup = Custom02
 			}
 			DecreaseDeflect
 			{
-				actionGroup = None
+				actionGroup = Custom03
 			}
 		}
 	}
@@ -4594,10 +4873,10 @@ PART
 {
 	part = elevon2_4294683826
 	partName = Part
-	pos = 8.236217,6.848976,-20.34926
+	pos = 8.388268,2.190947,-19.95348
 	attPos = 0,0,0
 	attPos0 = -0.9132748,-1.803729,-5.773556E-07
-	rot = -3.090864E-08,0.7071069,0.7071069,-3.090864E-08
+	rot = -3.090867E-08,0.7071068,0.7071068,-3.090861E-08
 	attRot = 0.4999999,0.4999999,0.4999999,-0.4999999
 	attRot0 = 1.476596E-14,1.192092E-07,-3.371748E-07,1
 	mir = 1,1,1
@@ -4625,25 +4904,50 @@ PART
 	{
 		name = FARControllableSurface
 		isEnabled = True
-		pitchaxis = True
-		yawaxis = False
-		rollaxis = True
-		isFlap = False
+		pitchaxis = 100
+		yawaxis = 0
+		rollaxis = 100
+		pitchaxisDueToAoA = 0
+		maxdeflect = 20
+		isFlap = True
 		isSpoiler = False
 		flapDeflectionLevel = 2
-		maxdeflect = 20
 		maxdeflectFlap = 15
+		massMultiplier = 1
 		pitchaxis_UIEditor
 		{
 			controlEnabled = True
+			minValue = -100
+			maxValue = 100
+			stepIncrement = 5
 		}
 		yawaxis_UIEditor
 		{
 			controlEnabled = True
+			minValue = -100
+			maxValue = 100
+			stepIncrement = 5
 		}
 		rollaxis_UIEditor
 		{
 			controlEnabled = True
+			minValue = -100
+			maxValue = 100
+			stepIncrement = 5
+		}
+		pitchaxisDueToAoA_UIEditor
+		{
+			controlEnabled = True
+			minValue = -200
+			maxValue = 200
+			stepIncrement = 5
+		}
+		maxdeflect_UIEditor
+		{
+			controlEnabled = True
+			minValue = -40
+			maxValue = 40
+			stepIncrement = 0.5
 		}
 		isFlap_UIEditor
 		{
@@ -4653,25 +4957,25 @@ PART
 		{
 			controlEnabled = True
 		}
-		maxdeflect_UIEditor
-		{
-			controlEnabled = True
-			minValue = -15
-			maxValue = 30
-			stepIncrement = 0.5
-		}
 		maxdeflectFlap_UIEditor
 		{
 			controlEnabled = True
-			minValue = -30
+			minValue = -85
 			maxValue = 85
 			stepIncrement = 0.5
+		}
+		massMultiplier_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0.1
+			maxValue = 2
+			stepIncrement = 0.01
 		}
 		EVENTS
 		{
 			DeflectMore
 			{
-				active = False
+				active = True
 				guiActive = True
 				guiIcon = Deflect more
 				guiName = Deflect more
@@ -4682,7 +4986,7 @@ PART
 			}
 			DeflectLess
 			{
-				active = False
+				active = True
 				guiActive = True
 				guiIcon = Deflect less
 				guiName = Deflect less
@@ -4700,11 +5004,11 @@ PART
 			}
 			IncreaseDeflect
 			{
-				actionGroup = None
+				actionGroup = Custom02
 			}
 			DecreaseDeflect
 			{
-				actionGroup = None
+				actionGroup = Custom03
 			}
 		}
 	}
@@ -4713,10 +5017,10 @@ PART
 {
 	part = elevon3_4294684992
 	partName = Part
-	pos = 0.6238453,6.848977,-20.34745
+	pos = 0.775889,2.19095,-19.95167
 	attPos = 0,0,0
 	attPos0 = -0.9358035,-1.803729,3.220859E-07
-	rot = -0.7071069,-1.496883E-13,-1.496883E-13,-0.7071069
+	rot = -0.7071068,-1.887864E-13,-1.809303E-13,-0.7071068
 	attRot = 0.4999999,0.4999999,0.4999999,-0.4999999
 	attRot0 = 0,-4.470349E-08,2.528811E-07,-1
 	mir = 1,1,1
@@ -4744,25 +5048,50 @@ PART
 	{
 		name = FARControllableSurface
 		isEnabled = True
-		pitchaxis = True
-		yawaxis = False
-		rollaxis = True
-		isFlap = False
+		pitchaxis = 100
+		yawaxis = 0
+		rollaxis = 100
+		pitchaxisDueToAoA = 0
+		maxdeflect = 20
+		isFlap = True
 		isSpoiler = False
 		flapDeflectionLevel = 2
-		maxdeflect = 20
 		maxdeflectFlap = 15
+		massMultiplier = 1
 		pitchaxis_UIEditor
 		{
 			controlEnabled = True
+			minValue = -100
+			maxValue = 100
+			stepIncrement = 5
 		}
 		yawaxis_UIEditor
 		{
 			controlEnabled = True
+			minValue = -100
+			maxValue = 100
+			stepIncrement = 5
 		}
 		rollaxis_UIEditor
 		{
 			controlEnabled = True
+			minValue = -100
+			maxValue = 100
+			stepIncrement = 5
+		}
+		pitchaxisDueToAoA_UIEditor
+		{
+			controlEnabled = True
+			minValue = -200
+			maxValue = 200
+			stepIncrement = 5
+		}
+		maxdeflect_UIEditor
+		{
+			controlEnabled = True
+			minValue = -40
+			maxValue = 40
+			stepIncrement = 0.5
 		}
 		isFlap_UIEditor
 		{
@@ -4772,25 +5101,25 @@ PART
 		{
 			controlEnabled = True
 		}
-		maxdeflect_UIEditor
-		{
-			controlEnabled = True
-			minValue = -15
-			maxValue = 30
-			stepIncrement = 0.5
-		}
 		maxdeflectFlap_UIEditor
 		{
 			controlEnabled = True
-			minValue = -30
+			minValue = -85
 			maxValue = 85
 			stepIncrement = 0.5
+		}
+		massMultiplier_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0.1
+			maxValue = 2
+			stepIncrement = 0.01
 		}
 		EVENTS
 		{
 			DeflectMore
 			{
-				active = False
+				active = True
 				guiActive = True
 				guiIcon = Deflect more
 				guiName = Deflect more
@@ -4801,7 +5130,7 @@ PART
 			}
 			DeflectLess
 			{
-				active = False
+				active = True
 				guiActive = True
 				guiIcon = Deflect less
 				guiName = Deflect less
@@ -4819,11 +5148,11 @@ PART
 			}
 			IncreaseDeflect
 			{
-				actionGroup = None
+				actionGroup = Custom02
 			}
 			DecreaseDeflect
 			{
-				actionGroup = None
+				actionGroup = Custom03
 			}
 		}
 	}
@@ -4832,10 +5161,10 @@ PART
 {
 	part = elevon3_4294683712
 	partName = Part
-	pos = 6.388022,6.848977,-20.34745
+	pos = 6.540071,2.19095,-19.95167
 	attPos = 0,0,0
 	attPos0 = -0.9358032,-1.803729,-4.038964E-07
-	rot = -3.090862E-08,0.7071069,0.7071069,-3.090862E-08
+	rot = -3.090862E-08,0.7071068,0.7071068,-3.090861E-08
 	attRot = 0.4999999,0.4999999,0.4999999,-0.4999999
 	attRot0 = 1.110223E-14,-4.470347E-08,-2.528811E-07,1
 	mir = 1,1,1
@@ -4863,25 +5192,50 @@ PART
 	{
 		name = FARControllableSurface
 		isEnabled = True
-		pitchaxis = True
-		yawaxis = False
-		rollaxis = True
-		isFlap = False
+		pitchaxis = 100
+		yawaxis = 0
+		rollaxis = 100
+		pitchaxisDueToAoA = 0
+		maxdeflect = 20
+		isFlap = True
 		isSpoiler = False
 		flapDeflectionLevel = 2
-		maxdeflect = 20
 		maxdeflectFlap = 15
+		massMultiplier = 1
 		pitchaxis_UIEditor
 		{
 			controlEnabled = True
+			minValue = -100
+			maxValue = 100
+			stepIncrement = 5
 		}
 		yawaxis_UIEditor
 		{
 			controlEnabled = True
+			minValue = -100
+			maxValue = 100
+			stepIncrement = 5
 		}
 		rollaxis_UIEditor
 		{
 			controlEnabled = True
+			minValue = -100
+			maxValue = 100
+			stepIncrement = 5
+		}
+		pitchaxisDueToAoA_UIEditor
+		{
+			controlEnabled = True
+			minValue = -200
+			maxValue = 200
+			stepIncrement = 5
+		}
+		maxdeflect_UIEditor
+		{
+			controlEnabled = True
+			minValue = -40
+			maxValue = 40
+			stepIncrement = 0.5
 		}
 		isFlap_UIEditor
 		{
@@ -4891,25 +5245,25 @@ PART
 		{
 			controlEnabled = True
 		}
-		maxdeflect_UIEditor
-		{
-			controlEnabled = True
-			minValue = -15
-			maxValue = 30
-			stepIncrement = 0.5
-		}
 		maxdeflectFlap_UIEditor
 		{
 			controlEnabled = True
-			minValue = -30
+			minValue = -85
 			maxValue = 85
 			stepIncrement = 0.5
+		}
+		massMultiplier_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0.1
+			maxValue = 2
+			stepIncrement = 0.01
 		}
 		EVENTS
 		{
 			DeflectMore
 			{
-				active = False
+				active = True
 				guiActive = True
 				guiIcon = Deflect more
 				guiName = Deflect more
@@ -4920,7 +5274,7 @@ PART
 			}
 			DeflectLess
 			{
-				active = False
+				active = True
 				guiActive = True
 				guiIcon = Deflect less
 				guiName = Deflect less
@@ -4938,11 +5292,11 @@ PART
 			}
 			IncreaseDeflect
 			{
-				actionGroup = None
+				actionGroup = Custom02
 			}
 			DecreaseDeflect
 			{
-				actionGroup = None
+				actionGroup = Custom03
 			}
 		}
 	}
@@ -4951,10 +5305,10 @@ PART
 {
 	part = StandardCtrlSrf_4292959932
 	partName = Part
-	pos = -3.088939,6.848977,-20.35225
+	pos = -2.936905,2.19095,-19.95648
 	attPos = 0,0,0
 	attPos0 = -0.9086945,-1.803729,-1.384161E-07
-	rot = 0.7071069,-5.863712E-13,-5.863712E-13,0.7071069
+	rot = 0.7071068,-6.98187E-13,-7.445957E-13,0.7071068
 	attRot = 0,0,0,1
 	attRot0 = -2.950279E-07,-2.682209E-07,-3.371748E-07,1
 	mir = 1,1,1
@@ -4982,25 +5336,50 @@ PART
 	{
 		name = FARControllableSurface
 		isEnabled = True
-		pitchaxis = True
-		yawaxis = False
-		rollaxis = True
-		isFlap = False
+		pitchaxis = 100
+		yawaxis = 0
+		rollaxis = 100
+		pitchaxisDueToAoA = 0
+		maxdeflect = 20
+		isFlap = True
 		isSpoiler = False
 		flapDeflectionLevel = 2
-		maxdeflect = 20
 		maxdeflectFlap = 15
+		massMultiplier = 1
 		pitchaxis_UIEditor
 		{
 			controlEnabled = True
+			minValue = -100
+			maxValue = 100
+			stepIncrement = 5
 		}
 		yawaxis_UIEditor
 		{
 			controlEnabled = True
+			minValue = -100
+			maxValue = 100
+			stepIncrement = 5
 		}
 		rollaxis_UIEditor
 		{
 			controlEnabled = True
+			minValue = -100
+			maxValue = 100
+			stepIncrement = 5
+		}
+		pitchaxisDueToAoA_UIEditor
+		{
+			controlEnabled = True
+			minValue = -200
+			maxValue = 200
+			stepIncrement = 5
+		}
+		maxdeflect_UIEditor
+		{
+			controlEnabled = True
+			minValue = -40
+			maxValue = 40
+			stepIncrement = 0.5
 		}
 		isFlap_UIEditor
 		{
@@ -5010,25 +5389,25 @@ PART
 		{
 			controlEnabled = True
 		}
-		maxdeflect_UIEditor
-		{
-			controlEnabled = True
-			minValue = -15
-			maxValue = 30
-			stepIncrement = 0.5
-		}
 		maxdeflectFlap_UIEditor
 		{
 			controlEnabled = True
-			minValue = -30
+			minValue = -85
 			maxValue = 85
 			stepIncrement = 0.5
+		}
+		massMultiplier_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0.1
+			maxValue = 2
+			stepIncrement = 0.01
 		}
 		EVENTS
 		{
 			DeflectMore
 			{
-				active = False
+				active = True
 				guiActive = True
 				guiIcon = Deflect more
 				guiName = Deflect more
@@ -5039,7 +5418,7 @@ PART
 			}
 			DeflectLess
 			{
-				active = False
+				active = True
 				guiActive = True
 				guiIcon = Deflect less
 				guiName = Deflect less
@@ -5057,11 +5436,11 @@ PART
 			}
 			IncreaseDeflect
 			{
-				actionGroup = None
+				actionGroup = Custom02
 			}
 			DecreaseDeflect
 			{
-				actionGroup = None
+				actionGroup = Custom03
 			}
 		}
 	}
@@ -5070,10 +5449,10 @@ PART
 {
 	part = StandardCtrlSrf_4294683614
 	partName = Part
-	pos = 10.10076,6.848977,-20.35224
+	pos = 10.25281,2.19095,-19.95646
 	attPos = 0,0,0
 	attPos0 = -0.9086857,-1.803729,-3.971572E-07
-	rot = 0.7071069,3.280371E-13,3.280371E-13,0.7071069
+	rot = 0.7071068,3.622857E-13,4.287915E-13,0.7071068
 	attRot = 0,0,0,1
 	attRot0 = -3.371748E-07,-1,-3.371747E-07,2.245095E-07
 	mir = 1,1,1
@@ -5101,25 +5480,50 @@ PART
 	{
 		name = FARControllableSurface
 		isEnabled = True
-		pitchaxis = True
-		yawaxis = False
-		rollaxis = True
-		isFlap = False
+		pitchaxis = 100
+		yawaxis = 0
+		rollaxis = 100
+		pitchaxisDueToAoA = 0
+		maxdeflect = 20
+		isFlap = True
 		isSpoiler = False
 		flapDeflectionLevel = 2
-		maxdeflect = 20
 		maxdeflectFlap = 15
+		massMultiplier = 1
 		pitchaxis_UIEditor
 		{
 			controlEnabled = True
+			minValue = -100
+			maxValue = 100
+			stepIncrement = 5
 		}
 		yawaxis_UIEditor
 		{
 			controlEnabled = True
+			minValue = -100
+			maxValue = 100
+			stepIncrement = 5
 		}
 		rollaxis_UIEditor
 		{
 			controlEnabled = True
+			minValue = -100
+			maxValue = 100
+			stepIncrement = 5
+		}
+		pitchaxisDueToAoA_UIEditor
+		{
+			controlEnabled = True
+			minValue = -200
+			maxValue = 200
+			stepIncrement = 5
+		}
+		maxdeflect_UIEditor
+		{
+			controlEnabled = True
+			minValue = -40
+			maxValue = 40
+			stepIncrement = 0.5
 		}
 		isFlap_UIEditor
 		{
@@ -5129,25 +5533,25 @@ PART
 		{
 			controlEnabled = True
 		}
-		maxdeflect_UIEditor
-		{
-			controlEnabled = True
-			minValue = -15
-			maxValue = 30
-			stepIncrement = 0.5
-		}
 		maxdeflectFlap_UIEditor
 		{
 			controlEnabled = True
-			minValue = -30
+			minValue = -85
 			maxValue = 85
 			stepIncrement = 0.5
+		}
+		massMultiplier_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0.1
+			maxValue = 2
+			stepIncrement = 0.01
 		}
 		EVENTS
 		{
 			DeflectMore
 			{
-				active = False
+				active = True
 				guiActive = True
 				guiIcon = Deflect more
 				guiName = Deflect more
@@ -5158,7 +5562,7 @@ PART
 			}
 			DeflectLess
 			{
-				active = False
+				active = True
 				guiActive = True
 				guiIcon = Deflect less
 				guiName = Deflect less
@@ -5176,11 +5580,11 @@ PART
 			}
 			IncreaseDeflect
 			{
-				actionGroup = None
+				actionGroup = Custom02
 			}
 			DecreaseDeflect
 			{
-				actionGroup = None
+				actionGroup = Custom03
 			}
 		}
 	}
@@ -5189,10 +5593,10 @@ PART
 {
 	part = StandardCtrlSrf_4292946010
 	partName = Part
-	pos = -4.961396,6.848974,-20.35426
+	pos = -4.809362,2.190947,-19.95849
 	attPos = 0,0,0
 	attPos0 = -0.9125245,-0.9375035,5.976385E-07
-	rot = 0.7071069,1.654449E-14,1.654449E-14,0.7071069
+	rot = 0.7071068,4.269181E-14,1.638068E-14,0.7071068
 	attRot = 0,0,0,1
 	attRot0 = -4.214684E-07,-4.321336E-07,-3.371748E-07,1
 	mir = 1,1,1
@@ -5220,25 +5624,50 @@ PART
 	{
 		name = FARControllableSurface
 		isEnabled = True
-		pitchaxis = True
-		yawaxis = False
-		rollaxis = True
-		isFlap = False
+		pitchaxis = 100
+		yawaxis = 0
+		rollaxis = 100
+		pitchaxisDueToAoA = 0
+		maxdeflect = 20
+		isFlap = True
 		isSpoiler = False
 		flapDeflectionLevel = 2
-		maxdeflect = 20
 		maxdeflectFlap = 15
+		massMultiplier = 1
 		pitchaxis_UIEditor
 		{
 			controlEnabled = True
+			minValue = -100
+			maxValue = 100
+			stepIncrement = 5
 		}
 		yawaxis_UIEditor
 		{
 			controlEnabled = True
+			minValue = -100
+			maxValue = 100
+			stepIncrement = 5
 		}
 		rollaxis_UIEditor
 		{
 			controlEnabled = True
+			minValue = -100
+			maxValue = 100
+			stepIncrement = 5
+		}
+		pitchaxisDueToAoA_UIEditor
+		{
+			controlEnabled = True
+			minValue = -200
+			maxValue = 200
+			stepIncrement = 5
+		}
+		maxdeflect_UIEditor
+		{
+			controlEnabled = True
+			minValue = -40
+			maxValue = 40
+			stepIncrement = 0.5
 		}
 		isFlap_UIEditor
 		{
@@ -5248,25 +5677,25 @@ PART
 		{
 			controlEnabled = True
 		}
-		maxdeflect_UIEditor
-		{
-			controlEnabled = True
-			minValue = -15
-			maxValue = 30
-			stepIncrement = 0.5
-		}
 		maxdeflectFlap_UIEditor
 		{
 			controlEnabled = True
-			minValue = -30
+			minValue = -85
 			maxValue = 85
 			stepIncrement = 0.5
+		}
+		massMultiplier_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0.1
+			maxValue = 2
+			stepIncrement = 0.01
 		}
 		EVENTS
 		{
 			DeflectMore
 			{
-				active = False
+				active = True
 				guiActive = True
 				guiIcon = Deflect more
 				guiName = Deflect more
@@ -5277,7 +5706,7 @@ PART
 			}
 			DeflectLess
 			{
-				active = False
+				active = True
 				guiActive = True
 				guiIcon = Deflect less
 				guiName = Deflect less
@@ -5295,11 +5724,11 @@ PART
 			}
 			IncreaseDeflect
 			{
-				actionGroup = None
+				actionGroup = Custom02
 			}
 			DecreaseDeflect
 			{
-				actionGroup = None
+				actionGroup = Custom03
 			}
 		}
 	}
@@ -5308,10 +5737,10 @@ PART
 {
 	part = StandardCtrlSrf_4294683492
 	partName = Part
-	pos = 11.97322,6.848974,-20.35424
+	pos = 12.12527,2.190947,-19.95846
 	attPos = 0,0,0
 	attPos0 = -0.9125478,-0.9375033,-8.354468E-07
-	rot = 0.7071069,6.482103E-15,6.482103E-15,0.7071069
+	rot = 0.7071068,-2.006243E-15,1.009405E-14,0.7071068
 	attRot = 0,0,0,1
 	attRot0 = -3.371747E-07,-1,-4.214684E-07,3.884224E-07
 	mir = 1,1,1
@@ -5339,25 +5768,50 @@ PART
 	{
 		name = FARControllableSurface
 		isEnabled = True
-		pitchaxis = True
-		yawaxis = False
-		rollaxis = True
-		isFlap = False
+		pitchaxis = 100
+		yawaxis = 0
+		rollaxis = 100
+		pitchaxisDueToAoA = 0
+		maxdeflect = 20
+		isFlap = True
 		isSpoiler = False
 		flapDeflectionLevel = 2
-		maxdeflect = 20
 		maxdeflectFlap = 15
+		massMultiplier = 1
 		pitchaxis_UIEditor
 		{
 			controlEnabled = True
+			minValue = -100
+			maxValue = 100
+			stepIncrement = 5
 		}
 		yawaxis_UIEditor
 		{
 			controlEnabled = True
+			minValue = -100
+			maxValue = 100
+			stepIncrement = 5
 		}
 		rollaxis_UIEditor
 		{
 			controlEnabled = True
+			minValue = -100
+			maxValue = 100
+			stepIncrement = 5
+		}
+		pitchaxisDueToAoA_UIEditor
+		{
+			controlEnabled = True
+			minValue = -200
+			maxValue = 200
+			stepIncrement = 5
+		}
+		maxdeflect_UIEditor
+		{
+			controlEnabled = True
+			minValue = -40
+			maxValue = 40
+			stepIncrement = 0.5
 		}
 		isFlap_UIEditor
 		{
@@ -5367,25 +5821,25 @@ PART
 		{
 			controlEnabled = True
 		}
-		maxdeflect_UIEditor
-		{
-			controlEnabled = True
-			minValue = -15
-			maxValue = 30
-			stepIncrement = 0.5
-		}
 		maxdeflectFlap_UIEditor
 		{
 			controlEnabled = True
-			minValue = -30
+			minValue = -85
 			maxValue = 85
 			stepIncrement = 0.5
+		}
+		massMultiplier_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0.1
+			maxValue = 2
+			stepIncrement = 0.01
 		}
 		EVENTS
 		{
 			DeflectMore
 			{
-				active = False
+				active = True
 				guiActive = True
 				guiIcon = Deflect more
 				guiName = Deflect more
@@ -5396,7 +5850,7 @@ PART
 			}
 			DeflectLess
 			{
-				active = False
+				active = True
 				guiActive = True
 				guiIcon = Deflect less
 				guiName = Deflect less
@@ -5414,11 +5868,11 @@ PART
 			}
 			IncreaseDeflect
 			{
-				actionGroup = None
+				actionGroup = Custom02
 			}
 			DecreaseDeflect
 			{
-				actionGroup = None
+				actionGroup = Custom03
 			}
 		}
 	}
@@ -5427,7 +5881,7 @@ PART
 {
 	part = dockingPortLarge_4293183668
 	partName = Part
-	pos = 3.505941,8.692653,-10.15915
+	pos = 3.657988,4.034627,-9.763376
 	attPos = -1.193841,-2.116175,0.8417429
 	attPos0 = 0,4.999998,3.576281E-07
 	rot = -0.7071068,0,0,0.7071068
@@ -5604,7 +6058,7 @@ PART
 {
 	part = dockingPort2_4294491560
 	partName = Part
-	pos = 3.505895,7.123452,-17.81561
+	pos = 3.657942,2.465425,-17.41983
 	attPos = 0,0,0
 	attPos0 = -4.577637E-05,-2.656496,1.569202
 	rot = 0,1,0,0
@@ -5781,10 +6235,10 @@ PART
 {
 	part = roverBody_4294296316
 	partName = Part
-	pos = 3.505941,8.692656,-19.93498
+	pos = 3.657988,4.03463,-19.5392
 	attPos = 0,0,0
 	attPos0 = 0,-4.775861,-3.843475E-07
-	rot = 0.5000001,0.5000001,0.5000001,0.5000001
+	rot = 0.5,0.5,0.5,0.5
 	attRot = 0,0.7071068,0,0.7071068
 	attRot0 = 0,0.7071068,0,0.7071068
 	mir = 1,1,1
@@ -5852,10 +6306,10 @@ PART
 {
 	part = dockingPort2_4294493662
 	partName = Part
-	pos = 3.505941,8.692656,-19.71085
+	pos = 3.657988,4.03463,-19.31507
 	attPos = 0,0,0
 	attPos0 = 2.671937E-08,0.2241383,3.185196E-15
-	rot = 0.7071069,0,0,0.7071069
+	rot = 0.7071068,0,0,0.7071068
 	attRot = 0,0,0,1
 	attRot0 = 0,-0.7071068,0,0.7071068
 	mir = 1,1,1
@@ -6029,10 +6483,10 @@ PART
 {
 	part = solarPanels4_4294278546
 	partName = Part
-	pos = 4.098966,9.195666,-19.89302
+	pos = 4.251014,4.537641,-19.49724
 	attPos = 0,0,0
 	attPos0 = 0.5030118,0.04195213,0.5930246
-	rot = 0.6431116,-0.7648485,0.01734651,-0.03337365
+	rot = 0.6431115,-0.7648484,0.01734651,-0.03337365
 	attRot = -0.7293401,0.06888219,-0.05285516,-0.67862
 	attRot0 = -0.0528549,-0.6786199,0.72934,-0.06888205
 	mir = 1,1,1
@@ -6167,10 +6621,10 @@ PART
 {
 	part = solarPanels4_4294277840
 	partName = Part
-	pos = 2.912917,9.195666,-19.89302
+	pos = 3.064964,4.537642,-19.49724
 	attPos = 0,0,0
 	attPos0 = 0.5030119,0.04195213,-0.5930245
-	rot = 0.01734651,-0.03337369,0.6431116,-0.7648485
+	rot = 0.01734651,-0.03337369,0.6431115,-0.7648482
 	attRot = -0.7293401,0.06888219,-0.05285516,-0.67862
 	attRot0 = 0.0528549,0.6786199,0.72934,-0.0688821
 	mir = 1,1,1
@@ -6305,10 +6759,10 @@ PART
 {
 	part = delta.small_4294268412
 	partName = Part
-	pos = -5.924392,6.852229,-19.764
+	pos = -5.772362,2.1942,-19.36823
 	attPos = 0,0,0
 	attPos0 = -1.875504,-0.3472394,-0.003256219
-	rot = 0.6532822,-0.2705978,-0.2705978,0.6532813
+	rot = 0.6532821,-0.2705977,-0.2705977,0.6532812
 	attRot = 0,-0.3826835,0,0.9238796
 	attRot0 = 1.137855E-07,-0.3826834,-8.699958E-08,0.9238796
 	mir = 1,1,1
@@ -6336,6 +6790,14 @@ PART
 	{
 		name = FARWingAerodynamicModel
 		isEnabled = True
+		massMultiplier = 1
+		massMultiplier_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0.1
+			maxValue = 2
+			stepIncrement = 0.01
+		}
 		EVENTS
 		{
 		}
@@ -6348,10 +6810,10 @@ PART
 {
 	part = delta.small_4294268170
 	partName = Part
-	pos = 12.93621,6.852229,-19.76397
+	pos = 13.08826,2.1942,-19.36819
 	attPos = 0,0,0
 	attPos0 = -1.875536,-0.3472393,0.003255997
-	rot = -0.2705978,0.6532812,0.6532822,-0.2705979
+	rot = -0.2705977,0.6532811,0.6532821,-0.2705978
 	attRot = 0,-0.3826835,0,0.9238796
 	attRot0 = 6.238574E-09,0.3826834,-5.474186E-08,0.9238796
 	mir = 1,1,1
@@ -6379,6 +6841,14 @@ PART
 	{
 		name = FARWingAerodynamicModel
 		isEnabled = True
+		massMultiplier = 1
+		massMultiplier_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0.1
+			maxValue = 2
+			stepIncrement = 0.01
+		}
 		EVENTS
 		{
 		}
@@ -6391,10 +6861,10 @@ PART
 {
 	part = telescopicLadderBay_4294655802
 	partName = Part
-	pos = 1.945296,7.771393,-3.377429
+	pos = 2.097343,3.113367,-2.981645
 	attPos = 0,0,0
 	attPos0 = -1.560645,-0.7183327,0.921261
-	rot = 0.002577154,0.05902527,0.04354319,0.9973032
+	rot = 0.002577153,0.05902526,0.04354319,0.9973031
 	attRot = -0.7064337,0.03084356,0.03084356,0.7064337
 	attRot0 = -0.7033775,0.07252685,-0.01094748,0.7070221
 	mir = 1,1,1
@@ -6528,10 +6998,10 @@ PART
 {
 	part = telescopicLadderBay_4293767596
 	partName = Part
-	pos = 5.066586,7.771393,-3.377429
+	pos = 5.218634,3.113367,-2.981645
 	attPos = 0,0,0
 	attPos0 = 1.560645,-0.7183328,0.921261
-	rot = 0.04354319,0.9973032,0.002577154,0.05902522
+	rot = 0.04354319,0.9973031,0.002577153,0.05902521
 	attRot = -0.7064337,0.03084356,0.03084356,0.7064337
 	attRot0 = -0.01094745,0.7070221,-0.7033775,0.07252681
 	mir = 1,1,1
@@ -6665,7 +7135,7 @@ PART
 {
 	part = kmssh1_4293578670
 	partName = Part
-	pos = 1.162427,8.595732,-20.62108
+	pos = 1.314474,3.937706,-20.2253
 	attPos = -1.094296,-0.8013229,0.09692298
 	attPos0 = -1.249218,-4.66064,-3.98083E-07
 	rot = -4.214685E-08,-0.7071068,-0.7071069,0
@@ -6710,7 +7180,7 @@ PART
 {
 	part = kmssh1_4293577848
 	partName = Part
-	pos = 5.849454,8.595732,-20.62108
+	pos = 6.001501,3.937706,-20.2253
 	attPos = 1.094297,-0.8013268,0.09692298
 	attPos0 = 1.249217,-4.66064,-3.98083E-07
 	rot = -0.7071071,-3.090863E-08,-7.305545E-08,-0.7071066
@@ -6755,10 +7225,10 @@ PART
 {
 	part = km.ssme.rs25ss_4293526774
 	partName = Part
-	pos = 1.162427,8.595732,-21.13486
+	pos = 1.314474,3.937706,-20.73908
 	attPos = 0,0,0
 	attPos0 = -3.06228E-08,-0.5137653,-1.045528E-07
-	rot = 0.7071068,2.741812E-14,-2.386541E-14,0.7071069
+	rot = 0.7071068,3.443428E-14,-3.41295E-14,0.7071068
 	attRot = 0,0,0,1
 	attRot0 = 2.980232E-08,1,8.42937E-08,-2.980232E-08
 	mir = 1,1,1
@@ -7032,10 +7502,10 @@ PART
 {
 	part = km.ssme.rs25ss_4293525680
 	partName = Part
-	pos = 5.849454,8.595732,-21.13486
+	pos = 6.001501,3.937706,-20.73908
 	attPos = 0,0,0
 	attPos0 = -3.062283E-08,-0.5137653,4.07703E-07
-	rot = 0.7071068,-6.89166E-16,-7.583072E-15,0.7071068
+	rot = 0.7071068,5.620083E-15,-1.630575E-14,0.7071068
 	attRot = 0,0,0,1
 	attRot0 = 2.528811E-07,7.351372E-08,2.980231E-08,-1
 	mir = 1,1,1
@@ -7307,150 +7777,12 @@ PART
 }
 PART
 {
-	part = strutConnector_4293441114
-	partName = CompoundPart
-	pos = 5.071295,6.740006,-5.544436
-	attPos = 0,0,0
-	attPos0 = -0.17907,-1.565354,0.1033854
-	rot = 0.3535535,-0.3535533,0.6123725,0.6123726
-	attRot = 0,0,0,1
-	attRot0 = 1.490119E-08,0.258819,-2.533197E-07,0.9659259
-	mir = 1,1,1
-	symMethod = Mirror
-	istg = 0
-	dstg = 0
-	sidx = -1
-	sqor = -1
-	attm = 1
-	modCost = 0
-	modMass = 0
-	modSize = (0.0, 0.0, 0.0)
-	sym = strutConnector_4293440716
-	srfN = srfAttach,wingConnector_4294652712
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-		tgt = 4291858260
-		pos = 1.343716,1.775355,0.9349325
-		rot = 0.3708417,0.3708417,-0.6020613,-0.6020612
-		dir = 0.5564359,0.7351788,0.3871578
-	}
-	MODULE
-	{
-		name = CModuleLinkedMesh
-		isEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = CModuleStrut
-		isEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = FARBasicDragModel
-		isEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-}
-PART
-{
-	part = strutConnector_4293440716
-	partName = CompoundPart
-	pos = 1.940586,6.740006,-5.544436
-	attPos = 0,0,0
-	attPos0 = -0.1790694,1.565354,0.1033854
-	rot = 0.6123724,0.6123726,0.3535536,-0.3535534
-	attRot = 0,0,0,1
-	attRot0 = 0.9659259,2.682209E-07,-0.2588189,2.980235E-08
-	mir = 1,1,1
-	symMethod = Mirror
-	istg = 0
-	dstg = 0
-	sidx = -1
-	sqor = -1
-	attm = 1
-	modCost = 0
-	modMass = 0
-	modSize = (0.0, 0.0, 0.0)
-	sym = strutConnector_4293441114
-	srfN = srfAttach,wingConnector_4294652712
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-		tgt = 4291858260
-		pos = 0.06952848,2.065352,-1.542282
-		rot = 0.3708416,0.3708416,0.6020618,0.6020612
-		dir = 0.02696372,0.8009606,-0.5981096
-	}
-	MODULE
-	{
-		name = CModuleLinkedMesh
-		isEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = CModuleStrut
-		isEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = FARBasicDragModel
-		isEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-}
-PART
-{
 	part = strutConnector_4293438746
 	partName = CompoundPart
-	pos = -1.688475,6.411106,-18.3647
+	pos = -1.536437,1.753078,-17.96892
 	attPos = 0,0,0
 	attPos0 = -7.046443E-07,0.05792157,-0.7191508
-	rot = -5.689825E-07,0.7071068,-2.739545E-07,-0.7071072
+	rot = -5.734753E-07,0.7071066,-2.363007E-07,-0.707107
 	attRot = 0,0,0,1
 	attRot0 = -2.78614E-13,0.7071068,-4.038028E-13,-0.7071068
 	mir = 1,1,1
@@ -7500,26 +7832,15 @@ PART
 		{
 		}
 	}
-	MODULE
-	{
-		name = FARBasicDragModel
-		isEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
 }
 PART
 {
 	part = strutConnector_4293438396
 	partName = CompoundPart
-	pos = 8.700372,6.411096,-18.3647
+	pos = 8.852432,1.753067,-17.96892
 	attPos = 0,0,0
 	attPos0 = -6.870633E-06,0.05793063,-0.7191415
-	rot = 4.214685E-07,0.7071069,5.689825E-07,-0.7071072
+	rot = 4.030802E-07,0.7071066,5.927409E-07,-0.707107
 	attRot = 0,0,0,1
 	attRot0 = -1.053656E-08,0.7071068,-1.053663E-08,-0.7071069
 	mir = 1,1,1
@@ -7569,26 +7890,15 @@ PART
 		{
 		}
 	}
-	MODULE
-	{
-		name = FARBasicDragModel
-		isEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
 }
 PART
 {
 	part = strutConnector_4293411260
 	partName = CompoundPart
-	pos = -0.4360638,6.585998,-17.62868
+	pos = -0.2840214,1.927969,-17.2329
 	attPos = 0,0,0
 	attPos0 = -0.06296003,0.7750006,-0.01686587
-	rot = -5.364419E-07,1,-2.95028E-07,-4.470349E-07
+	rot = -4.636154E-07,1,-2.652257E-07,-4.67488E-07
 	attRot = 0,0,0,1
 	attRot0 = 5.087575E-07,-6.022489E-08,-0.7071069,0.7071068
 	mir = 1,1,1
@@ -7638,26 +7948,15 @@ PART
 		{
 		}
 	}
-	MODULE
-	{
-		name = FARBasicDragModel
-		isEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
 }
 PART
 {
 	part = strutConnector_4293410882
 	partName = CompoundPart
-	pos = 7.44796,6.585998,-17.62868
+	pos = 7.600016,1.927969,-17.2329
 	attPos = 0,0,0
 	attPos0 = 0.06295927,0.7750111,-0.01686578
-	rot = 1.685874E-07,3.427267E-07,3.427267E-07,-1
+	rot = 1.38785E-07,3.333775E-07,3.371748E-07,-1
 	attRot = 0,0,0,1
 	attRot0 = 0.7071072,-0.7071065,-4.35702E-07,2.791358E-08
 	mir = 1,1,1
@@ -7707,26 +8006,15 @@ PART
 		{
 		}
 	}
-	MODULE
-	{
-		name = FARBasicDragModel
-		isEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
 }
 PART
 {
 	part = BD.Adj.LG.Medium_4291858260
 	partName = Part
-	pos = 3.505941,6.220042,-4.159096
+	pos = 3.657988,1.562016,-3.763312
 	attPos = 0,-3.166722,0.5104289
 	attPos0 = 0,1.666722,1.962183
-	rot = -6.221812E-10,0.9998988,0.01423384,-4.370696E-08
+	rot = -6.221811E-10,0.9998987,0.01423383,-4.370696E-08
 	attRot = -3.348487E-08,0.6427878,0.7660446,-2.809714E-08
 	attRot0 = -0.7568175,0,0,0.6536263
 	mir = 1,1,1
@@ -8254,7 +8542,7 @@ PART
 {
 	part = advSasModule_4294622340
 	partName = Part
-	pos = 3.505941,8.092653,-0.159091
+	pos = 3.657988,3.434628,0.2366979
 	attPos = 0,-0.8865263,-0.0249995
 	attPos0 = 0,3.386528,0.6249996
 	rot = 0.7071068,0,0,0.7071068
@@ -8334,7 +8622,7 @@ PART
 {
 	part = advSasModule_4294621498
 	partName = Part
-	pos = 3.505941,8.092653,0.2389629
+	pos = 3.657988,3.434628,0.6347519
 	attPos = 0,0,0
 	attPos0 = 0,0.3980541,0
 	rot = 0.7071068,0,0,0.7071068
@@ -8414,7 +8702,7 @@ PART
 {
 	part = dockingPort1_4294192588
 	partName = Part
-	pos = 3.505941,8.092653,0.4432988
+	pos = 3.657988,3.434628,0.8390878
 	attPos = 0,0.0554347,0
 	attPos0 = 0,0.2043359,-5.960464E-08
 	rot = 0.7071068,0,0,0.7071068
@@ -8622,7 +8910,7 @@ PART
 {
 	part = adapterSize3-Mk3_4294150970
 	partName = Part
-	pos = 3.505941,8.692655,-21.09662
+	pos = 3.657988,4.034629,-20.70084
 	attPos = 0,0,0
 	attPos0 = 0,-5.937504,-2.458688E-07
 	rot = 0.7071068,0,0,0.7071068
@@ -8698,7 +8986,7 @@ PART
 {
 	part = strutCube_4292340678
 	partName = Part
-	pos = 3.505941,9.622225,-22.16287
+	pos = 3.657988,4.964199,-21.76709
 	attPos = 0,0,0
 	attPos0 = 0,-1.066236,-0.9295702
 	rot = 0.7071068,0,0,-0.7071068
@@ -8786,7 +9074,7 @@ PART
 {
 	part = strutCube_4292340958
 	partName = Part
-	pos = 2.305941,8.692655,-21.89664
+	pos = 2.457989,4.034629,-21.50086
 	attPos = -0.0562005,0.2662315,-0.6603728
 	attPos0 = -1.1438,-1.066236,0.6603729
 	rot = 0.7071068,0,0,-0.7071068
@@ -8875,7 +9163,7 @@ PART
 {
 	part = strutCube_4292311516
 	partName = Part
-	pos = 4.705941,8.692655,-21.89664
+	pos = 4.857988,4.034629,-21.50086
 	attPos = 0.05620098,0.2662277,-0.6603728
 	attPos0 = 1.143799,-1.066236,0.6603729
 	rot = -0.7071069,0,0,0.7071068
@@ -8964,10 +9252,10 @@ PART
 {
 	part = strutConnectorMedium_4294243462
 	partName = StrutConnector
-	pos = 5.11746,7.762239,-20.27976
+	pos = 5.269507,3.104213,-19.88398
 	attPos = 0,0,0
 	attPos0 = 1.611519,0.8168564,0.9304113
-	rot = 0.1830127,0.6830127,0.6830128,0.1830128
+	rot = 0.1830127,0.6830127,0.6830127,0.1830128
 	attRot = 0,0,0,1
 	attRot0 = -3.161013E-08,0.9659259,4.214685E-08,0.2588191
 	mir = 1,1,1
@@ -8980,7 +9268,7 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = (0.0, 0.0, 0.0)
-	cData = tgt: mk3CargoBayL_18; pos: -5.471334E-05,0.1206379,-0.0004094392; dir: -0.0004498222,0.9999942,-0.003385534
+	cData = tgt: mk3CargoBayL_16; pos: -5.435556E-05,0.1206436,-0.0004088215; dir: -0.0004498222,0.9999942,-0.003385534
 	sym = strutConnectorMedium_4294240604
 	srfN = srfAttach,adapterSize3-Mk3_4294150970
 	EVENTS
@@ -8997,10 +9285,10 @@ PART
 {
 	part = strutConnectorMedium_4294240604
 	partName = StrutConnector
-	pos = 1.894422,7.762239,-20.27976
+	pos = 2.046469,3.104213,-19.88398
 	attPos = 0,0,0
 	attPos0 = -1.611519,0.8168564,0.9304113
-	rot = -0.683013,-0.1830128,-0.1830127,-0.6830125
+	rot = -0.683013,-0.1830128,-0.1830127,-0.6830124
 	attRot = 0,0,0,1
 	attRot0 = -2.528811E-07,-0.2588191,4.214685E-08,-0.9659258
 	mir = 1,1,1
@@ -9013,7 +9301,7 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = (0.0, 0.0, 0.0)
-	cData = tgt: mk3CargoBayL_18; pos: -5.479556E-05,0.1206379,0.0004093009; dir: -0.0004498159,0.9999945,0.003385135
+	cData = tgt: mk3CargoBayL_16; pos: -5.4334E-05,0.1206436,0.000408737; dir: -0.0004498159,0.9999945,0.003385135
 	sym = strutConnectorMedium_4294243462
 	srfN = srfAttach,adapterSize3-Mk3_4294150970
 	EVENTS
@@ -9030,7 +9318,7 @@ PART
 {
 	part = km.bb2_4294669678
 	partName = Part
-	pos = 3.505941,8.692655,-23.22914
+	pos = 3.657988,4.034629,-22.83336
 	attPos = 0,0,0
 	attPos0 = 0,-2.132504,2.542142E-07
 	rot = 0.7071068,0,0,0.7071068
@@ -9280,10 +9568,10 @@ PART
 {
 	part = sweptWing2_4289889692
 	partName = Part
-	pos = 3.505941,10.53603,-22.00333
+	pos = 3.657988,5.878006,-21.60755
 	attPos = 0,0,0
 	attPos0 = -2.384186E-07,-0.9067116,-1.843377
-	rot = -0.5000001,0.5000001,0.5000001,-0.5000001
+	rot = -0.5,0.5,0.5,-0.5
 	attRot = 0,0,0,1
 	attRot0 = 0,0.7071068,0,-0.7071068
 	mir = 1,1,1
@@ -9314,6 +9602,14 @@ PART
 	{
 		name = FARWingAerodynamicModel
 		isEnabled = True
+		massMultiplier = 1
+		massMultiplier_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0.1
+			maxValue = 2
+			stepIncrement = 0.01
+		}
 		EVENTS
 		{
 		}
@@ -9326,10 +9622,10 @@ PART
 {
 	part = elevon5_4289888366
 	partName = Part
-	pos = 3.498945,13.32669,-23.39868
+	pos = 3.650992,8.668668,-23.00294
 	attPos = 0,0,0
 	attPos0 = -2.790661,-1.395338,0.006995535
-	rot = 0.371748,0.6015011,0.3717478,0.6015012
+	rot = 0.371748,0.601501,0.3717478,0.6015012
 	attRot = 0,0,-0.7071067,0.7071067
 	attRot0 = 0.2297532,-0.973249,2.980232E-08,-1.490116E-07
 	mir = 1,1,1
@@ -9356,25 +9652,50 @@ PART
 	{
 		name = FARControllableSurface
 		isEnabled = True
-		pitchaxis = False
-		yawaxis = True
-		rollaxis = False
+		pitchaxis = 0
+		yawaxis = 100
+		rollaxis = 0
+		pitchaxisDueToAoA = 0
+		maxdeflect = 20
 		isFlap = False
 		isSpoiler = False
 		flapDeflectionLevel = 2
-		maxdeflect = 20
 		maxdeflectFlap = 15
+		massMultiplier = 1
 		pitchaxis_UIEditor
 		{
 			controlEnabled = True
+			minValue = -100
+			maxValue = 100
+			stepIncrement = 5
 		}
 		yawaxis_UIEditor
 		{
 			controlEnabled = True
+			minValue = -100
+			maxValue = 100
+			stepIncrement = 5
 		}
 		rollaxis_UIEditor
 		{
 			controlEnabled = True
+			minValue = -100
+			maxValue = 100
+			stepIncrement = 5
+		}
+		pitchaxisDueToAoA_UIEditor
+		{
+			controlEnabled = True
+			minValue = -200
+			maxValue = 200
+			stepIncrement = 5
+		}
+		maxdeflect_UIEditor
+		{
+			controlEnabled = True
+			minValue = -40
+			maxValue = 40
+			stepIncrement = 0.5
 		}
 		isFlap_UIEditor
 		{
@@ -9384,19 +9705,19 @@ PART
 		{
 			controlEnabled = True
 		}
-		maxdeflect_UIEditor
-		{
-			controlEnabled = True
-			minValue = -15
-			maxValue = 30
-			stepIncrement = 0.5
-		}
 		maxdeflectFlap_UIEditor
 		{
 			controlEnabled = True
-			minValue = -30
+			minValue = -85
 			maxValue = 85
 			stepIncrement = 0.5
+		}
+		massMultiplier_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0.1
+			maxValue = 2
+			stepIncrement = 0.01
 		}
 		EVENTS
 		{
@@ -9444,10 +9765,10 @@ PART
 {
 	part = elevon5_4289847634
 	partName = Part
-	pos = 3.503376,11.53941,-22.50503
+	pos = 3.655423,6.881388,-22.10925
 	attPos = 0.1330147,0.02877426,-1.676381E-08
 	attPos0 = -1.003379,-0.5016956,0.002564312
-	rot = 0.371748,0.6015011,0.3717478,0.6015012
+	rot = 0.371748,0.601501,0.3717478,0.6015012
 	attRot = 0,0,-0.7071067,0.7071067
 	attRot0 = 0.2297532,-0.973249,2.980232E-08,-1.490116E-07
 	mir = 1,1,1
@@ -9474,25 +9795,50 @@ PART
 	{
 		name = FARControllableSurface
 		isEnabled = True
-		pitchaxis = False
-		yawaxis = True
-		rollaxis = False
+		pitchaxis = 0
+		yawaxis = 100
+		rollaxis = 0
+		pitchaxisDueToAoA = 0
+		maxdeflect = 20
 		isFlap = False
 		isSpoiler = False
 		flapDeflectionLevel = 2
-		maxdeflect = 20
 		maxdeflectFlap = 15
+		massMultiplier = 1
 		pitchaxis_UIEditor
 		{
 			controlEnabled = True
+			minValue = -100
+			maxValue = 100
+			stepIncrement = 5
 		}
 		yawaxis_UIEditor
 		{
 			controlEnabled = True
+			minValue = -100
+			maxValue = 100
+			stepIncrement = 5
 		}
 		rollaxis_UIEditor
 		{
 			controlEnabled = True
+			minValue = -100
+			maxValue = 100
+			stepIncrement = 5
+		}
+		pitchaxisDueToAoA_UIEditor
+		{
+			controlEnabled = True
+			minValue = -200
+			maxValue = 200
+			stepIncrement = 5
+		}
+		maxdeflect_UIEditor
+		{
+			controlEnabled = True
+			minValue = -40
+			maxValue = 40
+			stepIncrement = 0.5
 		}
 		isFlap_UIEditor
 		{
@@ -9502,19 +9848,19 @@ PART
 		{
 			controlEnabled = True
 		}
-		maxdeflect_UIEditor
-		{
-			controlEnabled = True
-			minValue = -15
-			maxValue = 30
-			stepIncrement = 0.5
-		}
 		maxdeflectFlap_UIEditor
 		{
 			controlEnabled = True
-			minValue = -30
+			minValue = -85
 			maxValue = 85
 			stepIncrement = 0.5
+		}
+		massMultiplier_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0.1
+			maxValue = 2
+			stepIncrement = 0.01
 		}
 		EVENTS
 		{
@@ -9562,10 +9908,10 @@ PART
 {
 	part = delta.small_4289857428
 	partName = Part
-	pos = 3.412197,14.2166,-23.164
+	pos = 3.564245,9.558578,-22.76826
 	attPos = 0,0,0
 	attPos0 = -3.680568,-1.160658,0.09374377
-	rot = -0.707107,2.799452E-08,9.121479E-08,-0.7071068
+	rot = -0.7071069,2.799452E-08,9.121478E-08,-0.7071068
 	attRot = 0,0,0,1
 	attRot0 = 5.779683E-08,0.7071068,-1.210171E-07,0.7071069
 	mir = 1,1,1
@@ -9594,6 +9940,14 @@ PART
 	{
 		name = FARWingAerodynamicModel
 		isEnabled = True
+		massMultiplier = 1
+		massMultiplier_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0.1
+			maxValue = 2
+			stepIncrement = 0.01
+		}
 		EVENTS
 		{
 		}
@@ -9606,10 +9960,10 @@ PART
 {
 	part = StandardCtrlSrf_4289858496
 	partName = Part
-	pos = 2.485703,14.2166,-23.789
+	pos = 2.637749,9.558578,-23.39326
 	attPos = 0,0,0
 	attPos0 = -0.9264939,-0.6250029,-5.019811E-07
-	rot = 0.7071069,0,0,0.7071069
+	rot = 0.7071068,9.758624E-15,-8.472285E-16,0.7071069
 	attRot = 0,0,0,1
 	attRot0 = 1.264405E-07,-8.429369E-08,-4.470348E-08,-1
 	mir = 1,1,1
@@ -9637,25 +9991,50 @@ PART
 	{
 		name = FARControllableSurface
 		isEnabled = True
-		pitchaxis = True
-		yawaxis = False
-		rollaxis = False
+		pitchaxis = 100
+		yawaxis = 0
+		rollaxis = 0
+		pitchaxisDueToAoA = 0
+		maxdeflect = 20
 		isFlap = False
 		isSpoiler = False
 		flapDeflectionLevel = 2
-		maxdeflect = 20
 		maxdeflectFlap = 15
+		massMultiplier = 1
 		pitchaxis_UIEditor
 		{
 			controlEnabled = True
+			minValue = -100
+			maxValue = 100
+			stepIncrement = 5
 		}
 		yawaxis_UIEditor
 		{
 			controlEnabled = True
+			minValue = -100
+			maxValue = 100
+			stepIncrement = 5
 		}
 		rollaxis_UIEditor
 		{
 			controlEnabled = True
+			minValue = -100
+			maxValue = 100
+			stepIncrement = 5
+		}
+		pitchaxisDueToAoA_UIEditor
+		{
+			controlEnabled = True
+			minValue = -200
+			maxValue = 200
+			stepIncrement = 5
+		}
+		maxdeflect_UIEditor
+		{
+			controlEnabled = True
+			minValue = -40
+			maxValue = 40
+			stepIncrement = 0.5
 		}
 		isFlap_UIEditor
 		{
@@ -9665,19 +10044,19 @@ PART
 		{
 			controlEnabled = True
 		}
-		maxdeflect_UIEditor
-		{
-			controlEnabled = True
-			minValue = -15
-			maxValue = 30
-			stepIncrement = 0.5
-		}
 		maxdeflectFlap_UIEditor
 		{
 			controlEnabled = True
-			minValue = -30
+			minValue = -85
 			maxValue = 85
 			stepIncrement = 0.5
+		}
+		massMultiplier_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0.1
+			maxValue = 2
+			stepIncrement = 0.01
 		}
 		EVENTS
 		{
@@ -9725,10 +10104,10 @@ PART
 {
 	part = delta.small_4289847256
 	partName = Part
-	pos = 3.599684,14.2166,-23.164
+	pos = 3.75173,9.558578,-22.76826
 	attPos = 0,0,0
 	attPos0 = -3.680568,-1.160658,-0.0937429
-	rot = -1.210171E-07,0.7071068,0.707107,-5.779686E-08
+	rot = -1.210171E-07,0.7071067,0.7071069,-5.779685E-08
 	attRot = 0,0,0,1
 	attRot0 = -8.759915E-08,-0.7071068,-1.508194E-07,0.7071069
 	mir = 1,1,1
@@ -9757,6 +10136,14 @@ PART
 	{
 		name = FARWingAerodynamicModel
 		isEnabled = True
+		massMultiplier = 1
+		massMultiplier_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0.1
+			maxValue = 2
+			stepIncrement = 0.01
+		}
 		EVENTS
 		{
 		}
@@ -9769,10 +10156,10 @@ PART
 {
 	part = StandardCtrlSrf_4289847220
 	partName = Part
-	pos = 4.52618,14.2166,-23.789
+	pos = 4.678233,9.558578,-23.39326
 	attPos = 0,0,0
 	attPos0 = -0.9264939,-0.6250029,-5.019811E-07
-	rot = 0.7071069,-2.980233E-08,-2.980233E-08,0.7071069
+	rot = 0.7071068,-2.980232E-08,-2.980233E-08,0.7071068
 	attRot = 0,0,0,1
 	attRot0 = 1.264405E-07,-8.429369E-08,-4.470348E-08,-1
 	mir = 1,1,1
@@ -9800,25 +10187,50 @@ PART
 	{
 		name = FARControllableSurface
 		isEnabled = True
-		pitchaxis = True
-		yawaxis = False
-		rollaxis = False
+		pitchaxis = 100
+		yawaxis = 0
+		rollaxis = 0
+		pitchaxisDueToAoA = 0
+		maxdeflect = 20
 		isFlap = False
 		isSpoiler = False
 		flapDeflectionLevel = 2
-		maxdeflect = 20
 		maxdeflectFlap = 15
+		massMultiplier = 1
 		pitchaxis_UIEditor
 		{
 			controlEnabled = True
+			minValue = -100
+			maxValue = 100
+			stepIncrement = 5
 		}
 		yawaxis_UIEditor
 		{
 			controlEnabled = True
+			minValue = -100
+			maxValue = 100
+			stepIncrement = 5
 		}
 		rollaxis_UIEditor
 		{
 			controlEnabled = True
+			minValue = -100
+			maxValue = 100
+			stepIncrement = 5
+		}
+		pitchaxisDueToAoA_UIEditor
+		{
+			controlEnabled = True
+			minValue = -200
+			maxValue = 200
+			stepIncrement = 5
+		}
+		maxdeflect_UIEditor
+		{
+			controlEnabled = True
+			minValue = -40
+			maxValue = 40
+			stepIncrement = 0.5
 		}
 		isFlap_UIEditor
 		{
@@ -9828,19 +10240,19 @@ PART
 		{
 			controlEnabled = True
 		}
-		maxdeflect_UIEditor
-		{
-			controlEnabled = True
-			minValue = -15
-			maxValue = 30
-			stepIncrement = 0.5
-		}
 		maxdeflectFlap_UIEditor
 		{
 			controlEnabled = True
-			minValue = -30
+			minValue = -85
 			maxValue = 85
 			stepIncrement = 0.5
+		}
+		massMultiplier_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0.1
+			maxValue = 2
+			stepIncrement = 0.01
 		}
 		EVENTS
 		{
@@ -9888,7 +10300,7 @@ PART
 {
 	part = ksp.r.largeBatteryPack_4294450282
 	partName = Part
-	pos = 3.170186,7.421374,-20.15912
+	pos = 3.322233,2.763345,-19.76334
 	attPos = 0,0,0
 	attPos0 = -0.3357553,0.9374962,1.27128
 	rot = 0,1,0,0
@@ -9941,7 +10353,7 @@ PART
 {
 	part = ksp.r.largeBatteryPack_4289114858
 	partName = Part
-	pos = 3.841696,7.421374,-20.15912
+	pos = 3.993743,2.763345,-19.76334
 	attPos = 0,0,0
 	attPos0 = 0.3357553,0.9374962,1.27128
 	rot = 0,1,0,0
@@ -9994,10 +10406,10 @@ PART
 {
 	part = ksp.r.largeBatteryPack_4294294760
 	partName = Part
-	pos = 2.517614,7.609655,-20.15912
+	pos = 2.669661,2.951627,-19.76334
 	attPos = 0,0,0
 	attPos0 = -0.9883265,0.9374962,1.082999
-	rot = 0.7071066,0.7071071,4.509713E-06,4.404346E-06
+	rot = 0.7071065,0.7071071,4.48864E-06,4.404346E-06
 	attRot = 0,0,0,1
 	attRot0 = 0.4999968,0.5000033,-0.499997,0.500003
 	mir = 1,1,1
@@ -10047,10 +10459,10 @@ PART
 {
 	part = ksp.r.largeBatteryPack_4289114174
 	partName = Part
-	pos = 4.494267,7.609655,-20.15912
+	pos = 4.646315,2.951627,-19.76334
 	attPos = 0,0,0
 	attPos0 = 0.9883265,0.9374962,1.082999
-	rot = -0.7071067,0.7071069,4.509713E-06,-4.404346E-06
+	rot = -0.7071067,0.7071069,4.48864E-06,-4.404346E-06
 	attRot = 0,0,0,1
 	attRot0 = -0.4999968,0.5000033,-0.4999969,-0.500003
 	mir = 1,1,1
@@ -10100,10 +10512,10 @@ PART
 {
 	part = ksp.r.largeBatteryPack_4289115876
 	partName = Part
-	pos = 2.451591,8.258284,-20.15912
+	pos = 2.603638,3.600258,-19.76334
 	attPos = -0.1500001,-1.196907,0.5648634
 	attPos0 = -1.05435,0.9374943,0.4343709
-	rot = 0.7071066,0.7071071,4.509713E-06,4.404346E-06
+	rot = 0.7071065,0.7071071,4.48864E-06,4.404346E-06
 	attRot = 0,0,0,1
 	attRot0 = 0.4999968,0.5000033,-0.499997,0.500003
 	mir = 1,1,1
@@ -10153,10 +10565,10 @@ PART
 {
 	part = ksp.r.largeBatteryPack_4289113966
 	partName = Part
-	pos = 4.560291,8.258284,-20.15912
+	pos = 4.712338,3.600258,-19.76334
 	attPos = -0.1500001,-1.196907,0.5648634
 	attPos0 = 1.05435,0.9374943,0.4343709
-	rot = -0.7071067,0.7071069,4.509713E-06,-4.404346E-06
+	rot = -0.7071067,0.7071069,4.48864E-06,-4.404346E-06
 	attRot = 0,0,0,1
 	attRot0 = -0.4999968,0.5000033,-0.4999969,-0.500003
 	mir = 1,1,1
